@@ -1,0 +1,7 @@
+# Environment variables for deployment script
+
+# Path to project-dev repository
+DEV_PATH=/Users/benanandappa/Documents/git_repos/family-history
+
+# Path to project-prod repository
+PROD_PATH=/Users/benanandappa/Documents/git_repos/family-history-prod
