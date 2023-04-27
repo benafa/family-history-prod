@@ -26,7 +26,7 @@ python3 assets/scripts/update_baseurl.py $PROJECT_DEV_PATH/docs/_config.yml "/fa
 if [ ! -f "$PROJECT_DEV_PATH/docs/Gemfile.lock" ]; then
   bundle install
 fi
-bundle exec jekyll build --incremental
+bundle exec jekyll build
 
 # Delete old contents of project-prod repository (excluding .git and _config.yml)
 cd $PROJECT_PROD_PATH
