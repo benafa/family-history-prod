@@ -66,6 +66,12 @@ for (i = 0; i < coll.length; i++) {
 	});
 }
 
+// adjusgt height on load 
+var root = document.getElementsByClassName("root")[0];
+var level_0 = document.getElementsByClassName("level-0")[0];
+adjustHeight(root, level_0, false)
+
+
 // the below is used to expand or collapse all descendents 
 var isExpanded = false;
 function activateAll() {
@@ -83,6 +89,24 @@ function activateAll() {
     	nestedList.classList.add("active");
     } else {
     	nestedList.classList.remove("active");
+    }
+  }
+
+  // Loop through each nested list
+  for (var i = 0; i < nestedLists.length; i++) {
+    var nestedList = nestedLists[i];
+
+    // Add the "active" class to the nested list
+    if (!isExpanded) {
+    	if (!nestedList.classList.contains("level-0")) {
+			adjustHeight(nestedList.previousElementSibling, nestedList, false)
+		} else {
+			var root = document.getElementsByClassName("root")[0];
+			adjustHeight(root, nestedList, false)
+		}
+    } else {
+    	var root = document.getElementsByClassName("root")[0];
+		adjustHeight(root, nestedList, false)
     }
   }
 
@@ -119,8 +143,11 @@ function onScroll() {
 
 window.addEventListener('scroll', onScroll);
 
+/* move this to inline 
 window.onload = function() {
+  console.log("hello");
   var root = document.getElementsByClassName("root")[0];
   var level_0 = document.getElementsByClassName("level-0")[0];
   adjustHeight(root, level_0, false)
 };
+*/ 

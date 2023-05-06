@@ -105,6 +105,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function clearSearchAndResetRows() {
   searchInput.value = "";
+  const table = document.getElementById("myTable");
   const rows = table.querySelectorAll("tr:not(:first-child)");
   rows.forEach((row) => {
     row.style.display = "";
@@ -113,5 +114,6 @@ function clearSearchAndResetRows() {
 
 // Clear the search input and reset rows display when the back button is pressed
 window.addEventListener("pageshow", function (event) {
+  console.log("hello")
   clearSearchAndResetRows();
 });
