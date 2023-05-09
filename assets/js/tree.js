@@ -24,12 +24,7 @@ function adjustHeight(parent_li, parent_ul, recursive) {
 
 	parent_of_parent_ul = parent_ul.parentElement;
 	if (recursive & parent_of_parent_ul.tagName === 'UL') {
-		if (!parent_of_parent_ul.classList.contains("level-0")) {
-			adjustHeight(parent_of_parent_ul.previousElementSibling, parent_of_parent_ul, true)
-		} else {
-			var root = document.getElementsByClassName("root")[0];
-			adjustHeight(root, parent_of_parent_ul, true)
-		}
+		adjustHeight(parent_of_parent_ul.previousElementSibling, parent_of_parent_ul, true)
 	}
 }
 
@@ -69,7 +64,7 @@ for (i = 0; i < coll.length; i++) {
 // adjusgt height on load 
 var root = document.getElementsByClassName("root")[0];
 var level_0 = document.getElementsByClassName("level-0")[0];
-adjustHeight(root, level_0, false)
+adjustHeight(level_0.previousElementSibling, level_0, false)
 
 
 // the below is used to expand or collapse all descendents 
@@ -88,26 +83,20 @@ function activateAll() {
     if (!isExpanded) {
     	nestedList.classList.add("active");
     } else {
-    	nestedList.classList.remove("active");
+    	if (!nestedList.classList.contains("level-0")) {
+    		nestedList.classList.remove("active");
+    	}
     }
   }
 
   // Loop through each nested list
-  for (var i = 0; i < nestedLists.length; i++) {
-    var nestedList = nestedLists[i];
-
-    // Add the "active" class to the nested list
-    if (!isExpanded) {
-    	if (!nestedList.classList.contains("level-0")) {
+  if (!isExpanded) {
+	  for (var i = 0; i < nestedLists.length; i++) {
+	    var nestedList = nestedLists[i];
 			adjustHeight(nestedList.previousElementSibling, nestedList, false)
-		} else {
-			var root = document.getElementsByClassName("root")[0];
-			adjustHeight(root, nestedList, false)
-		}
-    } else {
-    	var root = document.getElementsByClassName("root")[0];
-		adjustHeight(root, nestedList, false)
-    }
+	  }
+  } else {
+  	adjustHeight(level_0.previousElementSibling, level_0, false)
   }
 
   var collapseButtons = document.getElementsByClassName("collapsible");
@@ -142,6 +131,35 @@ function onScroll() {
 }
 
 window.addEventListener('scroll', onScroll);
+
+
+function debounce(func, wait) {
+  let timeout;
+  return function () {
+    const context = this;
+    const args = arguments;
+    const later = function () {
+      timeout = null;
+      func.apply(context, args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+function onWindowResize() {
+  console.log('Window resized:', window.innerWidth, window.innerHeight);
+  // Get all nested lists in the document
+  var nestedLists = document.querySelectorAll('.nested.active'); 
+  // Loop through each nested list
+  for (var i = 0; i < nestedLists.length; i++) {
+    var nestedList = nestedLists[i];
+	adjustHeight(nestedList.previousElementSibling, nestedList, false)
+  }
+}
+
+const debouncedResizeHandler = debounce(onWindowResize, 10);
+window.addEventListener('resize', debouncedResizeHandler);
 
 /* move this to inline 
 window.onload = function() {

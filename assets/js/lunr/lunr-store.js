@@ -7494,7 +7494,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Descendents of Christopher Fernandopulle",
-        "excerpt":" \tChristopher Fernandopulle &#128141; Rosaline Adaman    Fun facts!    \t  Number of unique descendents: 0 \t  Top 5 male names: Christopher (1 times) \t  Top 5 female names:   ","categories": [],
+        "excerpt":" \t \t\t \t\t\tChristopher Fernandopulle &#128141; Rosaline Adaman \t\t \t   Fun facts!    \t  Number of unique descendents: 0 \t  Top 5 male names: Christopher (1 times) \t  Top 5 female names:   ","categories": [],
         "tags": ["fernandopulle"],
         "url": "/tree/I0722",
         "teaser": null
@@ -7572,7 +7572,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Descendents of Roscius Solomon Muttukisna",
-        "excerpt":" \tRoscius Solomon Muttukisna &#128141; Unknown    \t \t\t \t\t\tGranville Oliver Muttukisna &#128141; Myrtle Enid Candappa (daughter of Philip Bastian Candappa & Unknown) \t\t \t   Fun facts!    \t  Number of unique descendents: 1 \t  Top 5 male names: Roscius (1 times), Solomon (1 times), Granville (1 times), Oliver (1 times) \t  Top 5 female names:   ","categories": [],
+        "excerpt":" \t \t\t \t\t\tRoscius Solomon Muttukisna &#128141; Unknown \t\t \t \t \t\t \t\t\t \t\t\t\tGranville Oliver Muttukisna &#128141; Myrtle Enid Candappa (daughter of Philip Bastian Candappa & Unknown) \t\t\t \t\t \t   Fun facts!    \t  Number of unique descendents: 1 \t  Top 5 male names: Roscius (1 times), Solomon (1 times), Granville (1 times), Oliver (1 times) \t  Top 5 female names:   ","categories": [],
         "tags": ["muttukisna"],
         "url": "/tree/I0779",
         "teaser": null

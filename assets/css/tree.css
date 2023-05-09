@@ -4,6 +4,11 @@
 	  position: relative;
 	}
 
+	ul.root {
+		display: block;
+		list-style-type: none; 
+	}
+
 	ul.nested:before {
 	  background-color: lightgray;
 	  width: 2px;
@@ -16,20 +21,11 @@
 	  height: var(--ul-before-margin, auto);
 	}
 
-	ul.level-0:before {
-	  background-color: lightgray;
-	  width: 2px;
-	  content: '';
-	  position: absolute;
-	  top: 110px;
-	  bottom: 15px;
-	  left: 30px;
-	  height: var(--ul-before-margin, auto);
-	}
-
-	@media screen and (max-width: 768px) {
-	  ul.level-0:before{
-	    top: 93px;
+	@media screen and (min-width: 1280px) {
+	  /* Adjust the top position for smaller screens */
+	  ul.nested:before {
+	  	left: 30px;
+	  	height: calc(var(--ul-before-margin) - 1.5px);
 	  }
 	}
 
@@ -39,10 +35,6 @@
 	  	left: 28px;
 	  	height: calc(var(--ul-before-margin) + 1.6px);
 	  }
-	  ul.level-0:before{
-	    top: 85px;
-	    left: 28px;
-	  }
 	}
 
 	@media screen and (max-width: 340px) {
@@ -50,11 +42,6 @@
 	  ul.nested:before {
 	  	left: 28px;
 	  	height: calc(var(--ul-before-margin) + 1.6px);
-	  }
-	  ul.level-0:before{
-	    top: 105px;
-	    height: calc(var(--ul-before-margin) + 3px);
-	    left: 28px;
 	  }
 	}
 
@@ -128,6 +115,11 @@
 		position: relative;
 	}
 
+	li.root {
+		font-size: 14px;
+		position: relative;
+	}
+
 	div.root {
 	  display: inline-block;
 	  margin: 0.5rem;
@@ -143,11 +135,22 @@
 	  list-style-type: none; 
 	}
 
+	ul.root > li {
+	  margin: 0.5rem;
+	  padding: 0.5rem;
+	  border-radius: 0.25rem;
+	  color: grey;
+	}
+
 	ul.nested > li {
 	  margin: 0.5rem;
 	  padding: 0.5rem;
 	  border-radius: 0.25rem;
 	  color: grey;
+	}
+
+	ul.root > li {
+	   background-color: #49557960;
 	}
 
 	ul.level-0 > li {

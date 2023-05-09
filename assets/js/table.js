@@ -99,7 +99,7 @@ window.addEventListener("DOMContentLoaded", function () {
           row.style.display = "none";
         }
       }
-    }, 250)
+    }, 100)
   );
 });
 
