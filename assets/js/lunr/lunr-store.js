@@ -1,4 +1,10 @@
 var store = [{
+        "title": "Marriage of Herny Morris Casie Chetty and Anna Rodrigo Candappa",
+        "excerpt":" ","categories": ["marriage"],
+        "tags": [],
+        "url": "/marriage/marriage-of-herny-morris-casie-chetty-and-anna-rodrigo-candappa",
+        "teaser": null
+      },{
         "title": "Marriage of John Domingo Casie Chetty and Annie Rodrigo Muniarem Perumal",
         "excerpt":" ","categories": ["marriage"],
         "tags": [],
@@ -77,10 +83,10 @@ var store = [{
         "url": "/marriage/marriage-of-philip-marian-muttukumaru-and-mary-mount-carmel-alles",
         "teaser": null
       },{
-        "title": "Marriage of Herny Morris Casie Chetty and Anna Rodrigo Candappa",
+        "title": "Marriage of Henry Morris Casie Chetty and Anna Rodrigo Candappa",
         "excerpt":" ","categories": ["marriage"],
         "tags": [],
-        "url": "/marriage/marriage-of-herny-morris-casie-chetty-and-anna-rodrigo-candappa",
+        "url": "/marriage/marriage-of-henry-morris-casie-chetty-and-anna-rodrigo-candappa",
         "teaser": null
       },{
         "title": "Marriage of Theodore Carl Ondatjie and Christina Isabella Gomes Annayappa",
