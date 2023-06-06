@@ -259,7 +259,19 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 	  }
 	};
 
-	const checkMemberWithRetry = retryOnError(checkMember, 5);
+	function checkMemberPromise() {
+	    return new Promise((resolve, reject) => {
+	        try {
+	            // Perform your variable check and style change here...
+	        	checkMember()
+	            resolve(); // When your operation succeeds
+	        } catch (error) {
+	            reject(error); // When your operation fails
+	        }
+	    });
+	}
+
+	const checkMemberWithRetry = retryOnError(checkMemberPromise, 5);
 
 
 	window.addEventListener("pageshow", function (event) {
