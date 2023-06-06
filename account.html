@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Login or Create an Account - Colombo Chetty Genealogy</title>
-<meta name="description" content="Login or Create an Account">
+<!-- begin _includes/seo.html --><title>Login or create an account - Colombo Chetty Genealogy</title>
+<meta name="description" content="Login or create an account">
 
 
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Colombo Chetty Genealogy">
-<meta property="og:title" content="Login or Create an Account">
+<meta property="og:title" content="Login or create an account">
 <meta property="og:url" content="https://colombochetty.com//account">
 
 
-  <meta property="og:description" content="Login or Create an Account">
+  <meta property="og:description" content="Login or create an account">
 
 
 
@@ -187,7 +187,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Login or Create an Account">
+    <meta itemprop="headline" content="Login or create an account">
     
     
     
@@ -195,7 +195,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Login or Create an Account
+          <h1 id="page-title" class="page__title" itemprop="headline">Login or create an account
 </h1>
           
 
@@ -208,6 +208,28 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
         <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 
 <script>
+	function retryOnError(func, retries = 3, delay = 100) {
+	    return function(...args) {
+	        return new Promise((resolve, reject) => {
+	            const execute = (attempts) => {
+	                func(...args)
+	                    .then(resolve)
+	                    .catch((error) => {
+	                        console.error(`Attempt ${attempts} failed with error:`, error);
+	                        if (attempts <= retries) {
+	                            console.log(`Retrying in ${delay}ms...`);
+	                            setTimeout(() => execute(attempts + 1), delay);
+	                        } else {
+	                            console.error('Max retries exceeded. Rejecting...');
+	                            reject(error);
+	                        }
+	                    });
+	            };
+	            execute(1);
+	        });
+	    };
+	}
+
 	const checkMember = () => {
 	  const data = MemberSpace.getMemberInfo();
 
@@ -233,12 +255,20 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
         // using textContent
 		var title = document.getElementById('page-title');
-		title.textContent = 'Login or Create an Account'; 
+		title.textContent = 'Login or create an account'; 
 	  }
 	};
 
+	const checkMemberWithRetry = retryOnError(checkMember, 5);
+
+
 	window.addEventListener("pageshow", function (event) {
-	  checkMember()
+	    checkMemberWithRetry().then((result) => {
+	        console.log('checkMember succeeded with result:', result);
+	    })
+	    .catch((error) => {
+	        console.error('checkMember failed with error:', error);
+	    });
 	});
 </script>
 
