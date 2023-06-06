@@ -220,12 +220,20 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
         for (var i = 0; i < elements.length; i++) {
             elements[i].style.display = 'none';
         }
+
+        // using textContent
+		var title = document.getElementById('page-title');
+		title.textContent = 'Account Homepage'; 
 	  } else {
 	  	var elements = document.getElementsByClassName('site_info');
 
         for (var i = 0; i < elements.length; i++) {
             elements[i].style.display = 'block';
         }
+
+        // using textContent
+		var title = document.getElementById('page-title');
+		title.textContent = 'Login or Create an Account'; 
 	  }
 	};
 
