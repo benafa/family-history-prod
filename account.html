@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Be a part of our project… - Colombo Chetty Genealogy</title>
-<meta name="description" content="Be a part of our project...">
+<!-- begin _includes/seo.html --><title>Login or Create an Account - Colombo Chetty Genealogy</title>
+<meta name="description" content="Login or Create an Account">
 
 
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Colombo Chetty Genealogy">
-<meta property="og:title" content="Be a part of our project…">
-<meta property="og:url" content="https://colombochetty.com//contribute">
+<meta property="og:title" content="Login or Create an Account">
+<meta property="og:url" content="https://colombochetty.com//account">
 
 
-  <meta property="og:description" content="Be a part of our project...">
+  <meta property="og:description" content="Login or Create an Account">
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-<link rel="canonical" href="https://colombochetty.com//contribute">
+<link rel="canonical" href="https://colombochetty.com//account">
 
 
 
@@ -148,13 +148,13 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/account">Account</a>
+            </li><li class="masthead__menu-item">
               <a href="/about">About</a>
             </li><li class="masthead__menu-item">
               <a href="/trees">Trees</a>
             </li><li class="masthead__menu-item">
               <a href="/posts">Posts</a>
-            </li><li class="masthead__menu-item">
-              <a href="/contribute">Contribute</a>
             </li><li class="masthead__menu-item">
               <a href="/records">Records</a>
             </li><li class="masthead__menu-item">
@@ -187,7 +187,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Be a part of our project…">
+    <meta itemprop="headline" content="Login or Create an Account">
     
     
     
@@ -195,7 +195,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Be a part of our project…
+          <h1 id="page-title" class="page__title" itemprop="headline">Login or Create an Account
 </h1>
           
 
@@ -205,7 +205,43 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
       <section class="page__content" itemprop="text">
         
-        <div style="width:100%;text-align:center;"><iframe src="https://colombochetty.com?msopen=/member/sign_in" width="100%" height="500" frameborder="0" seamless="true"></iframe></div>
+        <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
+
+<script>
+	const checkMember = () => {
+	  const data = MemberSpace.getMemberInfo();
+
+	  console.log(data);
+	  // either { isLoggedIn: true, memberInfo: {...} }
+	  // or     { isLoggedIn: false }
+	  if(data.isLoggedIn) {
+	  	var elements = document.getElementsByClassName('site_info');
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'none';
+        }
+	  } else {
+	  	var elements = document.getElementsByClassName('site_info');
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'block';
+        }
+	  }
+	};
+
+	window.addEventListener("pageshow", function (event) {
+	  checkMember()
+	});
+</script>
+
+<div style="width:100%;text-align:center;"><iframe src="https://colombochetty.com?msopen=/member/sign_in" width="100%" height="500" frameborder="0" seamless="true"></iframe></div>
+
+
+<div class="site_info"> 
+	<h2>Why create an account?</h2>
+	Creating an account will provide full access to content such as <a href="/records" class="link">historical documents</a>, <a href="/trees" class="link">family trees</a> and a <a href="/people" class="link"> list of all people in the Colombo Chetty database</a>. Account creation is required to help protect the privacy of the members and foster a closer community. 
+</div>
+
         
       </section>
 
