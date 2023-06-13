@@ -582,6 +582,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 		}
 
 		var jsonElement = JSON.parse(element);
+		console.log(jsonElement)
 		var comment = getCommentInfo(jsonElement.comment?.toString());var verifiedAuthorTag = "";
 		if (jsonElement.isAuthor == true || jsonElement.isAuthor === "TRUE") {
 			verifiedAuthorTag = "&nbsp;<strong>(Author)</strong>";
@@ -650,17 +651,17 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 		<p id="num-comments-displayed"></p>
 		<button id="load-more-comments" class="comment-button" onclick="loadMoreComments(true)" type="button">Load Older Comments</button>
 		<div id="no-comments" class="comment-info-text">
-			<p>There are currently no comments on this article, be the first to add one below</p>
+			<p>There are currently no comments on this article. Be the first to add one below! </p>
 		</div>
 		<div id="comment-container"></div>
 	</div>
 	<h4 class="post-subtitle">Add a Comment</h4>
 	<div class="comments">
 		<div class="comment-info-text">
-			<p>Note that I may remove comments for any reason, so try to be civil. If you are looking for a response to your comment, either leave your email address or check back on this page periodically.</p></div>	
+			<p>Describe your reaction, start a discussion or contribute additional information by writing a comment. Please check back on this page periodically for replies to comments.</p></div>	
 		<div class="comments-form"><form onsubmit="return postComment()" id="comment-form" autocomplete="off"><ul>
 					<li>
-						<input id="comment-name" name="username" type="text" placeholder="Name" required="" value=""></li>
+						<input id="comment-name" name="username" type="text" placeholder="Name" required="" value="" data-ms-member-info="name"></li>
 					<li><textarea id="comment-comment" name="comment" placeholder="Comment" required=""></textarea></li>
 					<li><button id="comment-submit" type="submit" class="comment-button">Post</button></li>
 				</ul><p>
