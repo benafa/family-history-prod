@@ -208,81 +208,6 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
         <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 
 <script>
-	function retryOnError(func, retries = 3, delay = 100) {
-	    return function(...args) {
-	        return new Promise((resolve, reject) => {
-	            const execute = (attempts) => {
-	                func(...args)
-	                    .then(resolve)
-	                    .catch((error) => {
-	                        console.error(`Attempt ${attempts} failed with error:`, error);
-	                        if (attempts <= retries) {
-	                            console.log(`Retrying in ${delay}ms...`);
-	                            setTimeout(() => execute(attempts + 1), delay);
-	                        } else {
-	                            console.error('Max retries exceeded. Rejecting...');
-	                            reject(error);
-	                        }
-	                    });
-	            };
-	            execute(1);
-	        });
-	    };
-	}
-
-	const checkMember = () => {
-	  const data = MemberSpace.getMemberInfo();
-
-	  console.log(data);
-	  // either { isLoggedIn: true, memberInfo: {...} }
-	  // or     { isLoggedIn: false }
-	  if(data.isLoggedIn) {
-	  	var elements = document.getElementsByClassName('site_info');
-
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].style.display = 'none';
-        }
-
-        // using textContent
-		var title = document.getElementById('page-title');
-		title.textContent = 'Account Homepage'; 
-	  } else {
-	  	var elements = document.getElementsByClassName('site_info');
-
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].style.display = 'block';
-        }
-
-        // using textContent
-		var title = document.getElementById('page-title');
-		title.textContent = 'Login or create an account'; 
-	  }
-	};
-
-	function checkMemberPromise() {
-	    return new Promise((resolve, reject) => {
-	        try {
-	            // Perform your variable check and style change here...
-	        	checkMember()
-	            resolve(); // When your operation succeeds
-	        } catch (error) {
-	            reject(error); // When your operation fails
-	        }
-	    });
-	}
-
-	const checkMemberWithRetry = retryOnError(checkMemberPromise, 5);
-
-	/*
-	window.addEventListener("pageshow", function (event) {
-	    checkMemberWithRetry().then((result) => {
-	        console.log('checkMember succeeded with result:', result);
-	    })
-	    .catch((error) => {
-	        console.error('checkMember failed with error:', error);
-	    });
-	}); */
-
 	const handleReady = ({ detail }) => {
 	  const { memberInfo } = detail;
 
@@ -385,7 +310,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
         
       
         
-          <li><a href="/contribute" rel="nofollow noopener noreferrer"> Contribute</a></li>
+          <li><a href="/account" rel="nofollow noopener noreferrer"> Account</a></li>
         
       
         
