@@ -150,8 +150,6 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/account">Account</a>
-            </li><li class="masthead__menu-item">
               <a href="/about">About</a>
             </li><li class="masthead__menu-item">
               <a href="/trees">Trees</a>
@@ -161,6 +159,8 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
               <a href="/records">Records</a>
             </li><li class="masthead__menu-item">
               <a href="/photos">Photos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/account">Account</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -624,10 +624,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 		  	"entry.2109089964" : comment?.toString(),
 		  	"entry.1517318323" : email?.toString()
 		  })
-		}).then(response => {
-			setValue("comment-name", '');
-			setValue("comment-email", '');
-			setValue("comment-comment", '');reloadComments();
+		}).then(response => {setValue("comment-comment", '');reloadComments();
 		})
 		.catch(error => {console.log(error);})
 		.finally(() => { enablePostCommentButton(); });
@@ -652,12 +649,12 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 			<p>Describe your reaction, start a discussion or contribute additional information by writing a comment. Please check back on this page periodically for replies to comments.</p></div>	
 		<div class="comments-form"><form onsubmit="return postComment()" id="comment-form" autocomplete="off"><ul>
 					<li>
-						<input id="comment-name" name="username" type="text" placeholder="Name" required="" value="" data-ms-member-info="name" readonly></li>
+						<input class="default-cursor" id="comment-name" name="username" type="text" placeholder="Name" required="" value="" data-ms-member-info="name" readonly></li>
 					<li>
 						<input id="comment-email" name="email" type="hidden" placeholder="Email" required="" value="" data-ms-member-info="email" readonly>
 					</li>
 					<li><textarea id="comment-comment" name="comment" placeholder="Comment" required=""></textarea></li>
-					<li><button id="comment-submit" type="submit" class="comment-button">Post</button></li>
+					<li><button id="comment-submit" type="submit" class="comment-button">Submit</button></li>
 				</ul><p>
 			</form>
 		</div>
@@ -734,7 +731,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 .comment-button {
 	border: 0;
 	border-radius: 8px;
-	background: #9ccc65;
+	background: hsl(261, 58%, 70%);;
 	color: #fff;
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: bold;
@@ -804,7 +801,6 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 	display: none;
 }
 
-#comment-name,
 #comment-comment {
 	width: 50%;
 	padding: 10px;
@@ -813,6 +809,17 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 	background: #f7f7f7;
 	font-family: "Source Sans Pro", sans-serif;
 }
+
+#comment-name {
+	width: 50%;
+	padding: 10px;
+	background: none;
+    border: none;
+    outline: none;
+	font-family: "Source Sans Pro", sans-serif;
+	box-shadow: none;
+}
+
 
 #comment-name::-webkit-input-placeholder,
 #comment-comment::-webkit-input-placeholder {
@@ -839,10 +846,16 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 	font-family: "Source Sans Pro", sans-serif;
 }
 
-#comment-name:focus,
 #comment-comment:focus {
 	background: #fff;
 	font-family: "Source Sans Pro", sans-serif;
+}
+
+#comment-name:focus {
+    outline: none;
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 
 #comment-comment {
@@ -872,16 +885,17 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 	justify-content: center;
 }#load-comments {
 	display: none;
+}
+
+input[readonly].default-cursor {
+    cursor: default;
+    color: black;
+    opacity: 1;
 }</style>
 
 <div class="back">
  <a href="/marriage" class="btn btn--primary"> View all marriage records </a>
 </div>
-
-
-
-<meta name="robots" content="noindex, nofollow"><style>#__memberspace_modal_protected_page { position:fixed; top:0; left:0; width:100%; height:100%; background:#fff; z-index:2147483646; }</style><div id="__memberspace_modal_protected_page"></div>
-
 
         
       </section>
