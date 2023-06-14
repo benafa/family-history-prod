@@ -31,7 +31,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-06-13T16:58:45-04:00">
+  <meta property="article:published_time" content="2023-06-14T08:57:03-04:00">
 
 
 
@@ -191,7 +191,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendents of Christina Rodrigo">
     <meta itemprop="description" content="						Christina Rodrigo &#128141; Emmanuel Anandappa													Maria Lucy Anandappa &#128141; Stanislaus Joseph Rodrigo Muniarem (son of John Philip Rodrigo Muniarem &amp; Maria Anthonia Casie Chetty)				  																			Johnnie Martin Joseph Rodrigo Muniarem &#128141; Mercy Philomena Josephine Pieris Tavarayan (daughter of Caitan Pieris Tavarayan &amp; Lucia Canjemanaden)					  																									Rienze Peter Joseph Rodrigo Muniarem																								Rani Marie Monica Rodrigo Muniarem																								Romany Lucy Rodrigo Muniarem																								Stanislaus John Rodrigo Muniarem																								Madona Bernadette Rodrigo Muniarem																								Sunny Rodrigo Muniarem																			Clatilda Rodrigo Muniarem																			Rita Rodrigo Muniarem																			Lu Rodrigo Muniarem																		Joseph Kaitan Anandappa &#128141; Juliana Fernandopulle (daughter of Anthony Michael Fernandopulle &amp; Unknown)														Maria Theresa Anandappa &#128141; Emmanuel Pieris Tavarayan (son of Christopher Pieris Tavarayan &amp; Unknown)														Francis Xavier Anandappa														Mary Agnes Anandappa						 Fun facts! 	  Number of unique descendents: 15	  Top 5 male names: Joseph (3 times), Johnnie (1 times), Martin (1 times), Rienze (1 times), Peter (1 times)	  Top 5 female names: Maria (2 times), Lucy (2 times), Christina (1 times), Rani (1 times), Marie (1 times)">
-    <meta itemprop="datePublished" content="2023-06-13T16:58:45-04:00">
+    <meta itemprop="datePublished" content="2023-06-14T08:57:03-04:00">
     
 
     <div class="page__inner-wrap">
@@ -1506,6 +1506,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 	};function postComment(recaptchaToken) {
 		disablePostCommentButton();
 		var username = getValue("comment-name");
+		var email = getValue("comment-email");
 		var comment = getCommentContent();
 
 		fetch(`https://docs.google.com/forms/d/e/1FAIpQLScJBOhKrRYnXFlNH5VJ0iOxWALEV4BQxwpufT6Vqm6RfGOvhw/formResponse`, {
@@ -1517,10 +1518,12 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 		  body: encodeFormData({
 		  	"entry.1752653560" : thisPageUrl?.toString(),
 		  	"entry.1655801826" : username?.toString(),
-		  	"entry.2109089964" : comment?.toString()
+		  	"entry.2109089964" : comment?.toString(),
+		  	"entry.1517318323" : email?.toString()
 		  })
 		}).then(response => {
 			setValue("comment-name", '');
+			setValue("comment-email", '');
 			setValue("comment-comment", '');reloadComments();
 		})
 		.catch(error => {console.log(error);})
@@ -1546,7 +1549,10 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 			<p>Describe your reaction, start a discussion or contribute additional information by writing a comment. Please check back on this page periodically for replies to comments.</p></div>	
 		<div class="comments-form"><form onsubmit="return postComment()" id="comment-form" autocomplete="off"><ul>
 					<li>
-						<input id="comment-name" name="username" type="text" placeholder="Name" required="" value="" data-ms-member-info="name"></li>
+						<input id="comment-name" name="username" type="text" placeholder="Name" required="" value="" data-ms-member-info="name" readonly></li>
+					<li>
+						<input id="comment-email" name="email" type="hidden" placeholder="Email" required="" value="" data-ms-member-info="email" readonly>
+					</li>
 					<li><textarea id="comment-comment" name="comment" placeholder="Comment" required=""></textarea></li>
 					<li><button id="comment-submit" type="submit" class="comment-button">Post</button></li>
 				</ul><p>
@@ -1782,7 +1788,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-06-13T16:58:45-04:00">June 13, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-06-14T08:57:03-04:00">June 14, 2023</time></p>
 
 
       </footer>

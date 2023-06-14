@@ -613,6 +613,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 	};function postComment(recaptchaToken) {
 		disablePostCommentButton();
 		var username = getValue("comment-name");
+		var email = getValue("comment-email");
 		var comment = getCommentContent();
 
 		fetch(`https://docs.google.com/forms/d/e/1FAIpQLScJBOhKrRYnXFlNH5VJ0iOxWALEV4BQxwpufT6Vqm6RfGOvhw/formResponse`, {
@@ -624,10 +625,12 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 		  body: encodeFormData({
 		  	"entry.1752653560" : thisPageUrl?.toString(),
 		  	"entry.1655801826" : username?.toString(),
-		  	"entry.2109089964" : comment?.toString()
+		  	"entry.2109089964" : comment?.toString(),
+		  	"entry.1517318323" : email?.toString()
 		  })
 		}).then(response => {
 			setValue("comment-name", '');
+			setValue("comment-email", '');
 			setValue("comment-comment", '');reloadComments();
 		})
 		.catch(error => {console.log(error);})
@@ -653,7 +656,10 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 			<p>Describe your reaction, start a discussion or contribute additional information by writing a comment. Please check back on this page periodically for replies to comments.</p></div>	
 		<div class="comments-form"><form onsubmit="return postComment()" id="comment-form" autocomplete="off"><ul>
 					<li>
-						<input id="comment-name" name="username" type="text" placeholder="Name" required="" value="" data-ms-member-info="name"></li>
+						<input id="comment-name" name="username" type="text" placeholder="Name" required="" value="" data-ms-member-info="name" readonly></li>
+					<li>
+						<input id="comment-email" name="email" type="hidden" placeholder="Email" required="" value="" data-ms-member-info="email" readonly>
+					</li>
 					<li><textarea id="comment-comment" name="comment" placeholder="Comment" required=""></textarea></li>
 					<li><button id="comment-submit" type="submit" class="comment-button">Post</button></li>
 				</ul><p>
