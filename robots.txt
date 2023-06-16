@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/family-history/sitemap.xml
+Sitemap: https://colombochetty.com//sitemap.xml
