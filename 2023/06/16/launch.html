@@ -207,7 +207,51 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
       <section class="page__content" itemprop="text">
         
-        <link rel="stylesheet" href="/assets/css/pagination.css" type="text/css" />
+        <script>
+	const handleReady = ({ detail }) => {
+	  var elements = document.getElementsByClassName('account_info');
+	  for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = 'block';
+      }
+
+	  const { memberInfo } = detail;
+
+	  if (memberInfo) {
+	    console.log(memberInfo.email)
+	    var elements = document.getElementsByClassName('comment-allowed');
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'block';
+        }
+
+        var elements = document.getElementsByClassName('comment-denied');
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'none';
+        }
+
+        
+	  } else {
+	  	var elements = document.getElementsByClassName('comment-allowed');
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'none';
+        }
+
+        var elements = document.getElementsByClassName('comment-denied');
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'block';
+        }
+
+	  }
+	}
+
+	document.addEventListener('MemberSpace.ready', handleReady);
+</script>
+
+
+<link rel="stylesheet" href="/assets/css/pagination.css" type="text/css" />
 
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css" />
 
@@ -216,8 +260,10 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <p>With over 200 historical documents and 1200+ people in our database, <a href="https://colombochetty.com" class="link">colombochetty.com</a> aims to preserve the genealogy of the Colombo Chetty people.</p>
 
 <p>Check out this overvew of the site:</p>
-<iframe width="100%" height="375" src="https://www.youtube.com/embed/ri1VNJBY-sw">
-</iframe>
+<div width="100%" height="375">
+	<iframe width="100%" height="375" src="https://www.youtube.com/embed/ri1VNJBY-sw">
+	</iframe>
+</div>
 
 <p><br />
 I hope you enjoy exploring <a href="/records" class="link"> historical documents</a> and <a href="/trees" class="link">family trees</a>, as well as the <a href="/" class="link">homepage</a> which has a profile of Anthony Xavier Anandappa whose 150th birth anniversary is this year. To get full access to all content and stay up to date, please <a href="/account" class="link">sign up (or login)</a>. For more background on the project, checkout this <a href="/about" class="link"> about page</a>.</p>
@@ -239,7 +285,8 @@ I hope you enjoy exploring <a href="/records" class="link"> historical documents
 <p>– Ben Anandappa</p>
 
 
-<script>function setText(elementId, textContent) {
+<div class="comment-allowed" style="display:none">
+	<script>function setText(elementId, textContent) {
 		document.getElementById(elementId).textContent = textContent;
 	};
 
@@ -445,7 +492,7 @@ I hope you enjoy exploring <a href="/records" class="link"> historical documents
 			<p>Describe your reaction, start a discussion or contribute additional information by writing a comment. Please check back on this page periodically for replies to comments.</p></div>	
 		<div class="comments-form"><form onsubmit="return postComment()" id="comment-form" autocomplete="off"><ul>
 					<li>
-						<input class="default-cursor" id="comment-name" name="username" type="text" placeholder="Name" required="" value=""></li>
+						<input class="default-cursor" id="comment-name" name="username" type="text" placeholder="Name" required="" value="" data-ms-member-info="name" readonly></li>
 					<li>
 						<input id="comment-email" name="email" type="hidden" placeholder="Email" required="" value="" data-ms-member-info="email" readonly>
 					</li>
@@ -456,12 +503,10 @@ I hope you enjoy exploring <a href="/records" class="link"> historical documents
 		</div>
 	</div>
 </div><style>
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 .comment-item {
 	position: relative;
 	padding: 0.5em 2.5em;
 	background: white;
-	font-family: "Source Sans Pro", sans-serif;
 	width: 95%;
 	margin: 1em auto;
 	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
@@ -505,7 +550,6 @@ I hope you enjoy exploring <a href="/records" class="link"> historical documents
 	margin-left: 1em;
 	margin-right: 1em;
 	width: 95%;
-	font-family: "Source Sans Pro", sans-serif;
 }
 
 .comments-form ul {
@@ -529,7 +573,6 @@ I hope you enjoy exploring <a href="/records" class="link"> historical documents
 	border-radius: 8px;
 	background: hsl(261, 58%, 70%);;
 	color: #fff;
-	font-family: "Source Sans Pro", sans-serif;
 	font-weight: bold;
 	font-size: 0.9em;
 	text-transform: uppercase;
@@ -603,48 +646,15 @@ I hope you enjoy exploring <a href="/records" class="link"> historical documents
 	border: 0;
 	border-radius: 8px;
 	background: #f7f7f7;
-	font-family: "Source Sans Pro", sans-serif;
 }
 
 #comment-name {
 	width: 50%;
 	padding: 10px;
-	background: #f7f7f7;
+	background: none;
     border: none;
     outline: none;
-	font-family: "Source Sans Pro", sans-serif;
 	box-shadow: none;
-}
-
-
-#comment-name::-webkit-input-placeholder,
-#comment-comment::-webkit-input-placeholder {
-	font-family: "Source Sans Pro", sans-serif;
-}
-
-#comment-name::-moz-placeholder,
-#comment-comment::-moz-placeholder {
-	font-family: "Source Sans Pro", sans-serif;
-}
-
-#comment-name:-ms-input-placeholder,
-#comment-comment:-ms-input-placeholder {
-	font-family: "Source Sans Pro", sans-serif;
-}
-
-#comment-name::-ms-input-placeholder,
-#comment-comment::-ms-input-placeholder {
-	font-family: "Source Sans Pro", sans-serif;
-}
-
-#comment-name::placeholder,
-#comment-comment::placeholder {
-	font-family: "Source Sans Pro", sans-serif;
-}
-
-#comment-comment:focus {
-	background: #fff;
-	font-family: "Source Sans Pro", sans-serif;
 }
 
 #comment-name:focus {
@@ -680,6 +690,12 @@ input[readonly].default-cursor {
     color: black;
     opacity: 1;
 }</style>
+</div>
+
+<div class="comment-denied" style="display:none">
+	<h2>Comments</h2>
+	<p>Please <a href="/account" class="link">sign up (or login)</a> to view and post comments</p>
+</div>
 
         
       </section>
