@@ -1116,7 +1116,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Launch Day!",
-        "excerpt":"Today - June 16 2023 - is the official launch of colombochetty.com! With over 200 historical documents and 1200+ people in our database, colombochetty.com aims to preserve the genealogy of the Colombo Chetty people. A quick aside… June 16 also happens to be the birthday of my grandfather, Benson Anandappa,...","categories": ["jekyll","update"],
+        "excerpt":"Today - June 16 2023 - is the official launch of colombochetty.com! With over 200 historical documents and 1200+ people in our database, colombochetty.com aims to preserve the genealogy of the Colombo Chetty people. Check out this overvew of the site: A quick aside… June 16 also happens to be...","categories": ["jekyll","update"],
         "tags": [],
         "url": "/2023/06/16/launch.html",
         "teaser": null
