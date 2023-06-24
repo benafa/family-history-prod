@@ -515,10 +515,10 @@ var store = [{
         "url": "/marriage/marriage-of-philip-joseph-canjemenathan-and-magdalene-dorothea-anandappa",
         "teaser": null
       },{
-        "title": "Marriage of John Edmund Anandappa and Agnes Lucuy Laity Ramanaden",
+        "title": "Marriage of John Edmund Anandappa and Agnes Lucy Laity Ramanaden",
         "excerpt":" ","categories": ["marriage"],
         "tags": [],
-        "url": "/marriage/marriage-of-john-edmund-anandappa-and-agnes-lucuy-laity-ramanaden",
+        "url": "/marriage/marriage-of-john-edmund-anandappa-and-agnes-lucy-laity-ramanaden",
         "teaser": null
       },{
         "title": "Marriage of Gabriel Canjemenaden and Nathalia Pieris Tavarayan",
