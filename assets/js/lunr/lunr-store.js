@@ -1120,4 +1120,10 @@ var store = [{
         "tags": [],
         "url": "/2023/06/16/launch.html",
         "teaser": null
+      },{
+        "title": "Photo of the Week #1: Anandappa - Casie Chetty Wedding",
+        "excerpt":"Each week, I plan to post a photo of Colombo Chetty ancestors and discuss the relationships that exist between those in the photo. For the very first post, I’ll start with the wedding of my grandparents… Benson Anandappa and Rajie Casie Chetty's Wedding You may recognize this from the banner...","categories": [],
+        "tags": [],
+        "url": "/members/2023/07/01/photo-of-the-week",
+        "teaser": null
       },]
