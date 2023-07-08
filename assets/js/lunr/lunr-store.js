@@ -1126,4 +1126,10 @@ var store = [{
         "tags": [],
         "url": "/members/2023/07/01/photo-of-the-week",
         "teaser": null
+      },{
+        "title": "Photo of the Week #2: The Adaman Family",
+        "excerpt":"Welcome back to the second installment of Colombo Chetty Genealogy’s Photo of the Week! If you missed last week’s post of Benson Anandappa and Rajie Casie Chetty’s wedding, be sure to check it out here. Let’s dive in to this week’s photo… 25th Wedding Anniversary of Ubaldus Adaman and Bridget...","categories": [],
+        "tags": [],
+        "url": "/members/2023/07/08/photo-of-the-week",
+        "teaser": null
       },]
