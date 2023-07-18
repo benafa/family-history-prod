@@ -1132,4 +1132,10 @@ var store = [{
         "tags": [],
         "url": "/members/2023/07/08/photo-of-the-week",
         "teaser": null
+      },{
+        "title": "Photo of the Week #3: An Anandappa Wedding",
+        "excerpt":"Welcome back to our Photo of the Week - the third in the series. If you missed previous posts, check them out below: 25th Wedding Anniversary of Ubaldus Adaman and Bridget Rodrigo Sathianathan Wedding of Benson Anandappa and Rajie Casie Chetty It’s time to dive into this week’s photo… Wedding...","categories": [],
+        "tags": [],
+        "url": "/members/2023/07/18/photo-of-the-week",
+        "teaser": null
       },]
