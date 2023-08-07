@@ -983,6 +983,12 @@ var store = [{
         "url": "/newspaper/anthony-silva-candappa",
         "teaser": null
       },{
+        "title": "Testamentary of Anthony Joseph Fernandopulle",
+        "excerpt":"IN THE DISTRICT COURT OF NEGOMBO Order Nisi Declaring Will, Proved No. 4,282/Testamentary. In the Matter of the Last Will and Testament of Anthony Joseph Fernando Pulle of Henmulls, deceased. Between Maurice Rene Fernando Pulle of Dankotuwa, Kochchikade, Petitioner. And: (1) Mary Anna Rasamma Juris Chitty of “Arunagiri”, Toppu, Kochchikade,...","categories": ["newspaper","gazette"],
+        "tags": [],
+        "url": "/newspaper/anthony_joseph_ferandopulle",
+        "teaser": null
+      },{
         "title": "Testamentary of Dominga Casie Chetty",
         "excerpt":"In the District Court of Colombo. In the Matter of the Estate of the late Dominga Casie Chetty, deceased, of Colombo. This matter came on for disposal before Felix Reginald Dias, Esq., Additional District Judge of Colombo, on the 15th day of November, 1906, in the presence of Messrs. Julius...","categories": ["newspaper","gazette"],
         "tags": [],
@@ -1137,5 +1143,11 @@ var store = [{
         "excerpt":"Welcome back to our Photo of the Week - the third in the series. If you missed previous posts, check them out below: 25th Wedding Anniversary of Ubaldus Adaman and Bridget Rodrigo Sathianathan Wedding of Benson Anandappa and Rajie Casie Chetty It’s time to dive into this week’s photo… Wedding...","categories": [],
         "tags": [],
         "url": "/members/2023/07/18/photo-of-the-week",
+        "teaser": null
+      },{
+        "title": "Photo of the Week #4: Casie Chetty - Fernandopulle Wedding",
+        "excerpt":"I hope you’re excited for this Photo of the Week! If you missed previous posts, you can view them below: Wedding of Anna Anandappa and Ben Anandappa 25th Wedding Anniversary of Ubaldus Adaman and Bridget Rodrigo Sathianathan Wedding of Benson Anandappa and Rajie Casie Chetty It’s time to check out...","categories": [],
+        "tags": [],
+        "url": "/members/2023/08/07/photo-of-the-week",
         "teaser": null
       },]
