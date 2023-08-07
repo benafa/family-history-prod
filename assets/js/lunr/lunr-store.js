@@ -1148,6 +1148,6 @@ var store = [{
         "title": "Photo of the Week #4: Casie Chetty - Fernandopulle Wedding",
         "excerpt":"I hope you’re excited for this Photo of the Week! If you missed previous posts, you can view them below: Wedding of Anna Anandappa and Ben Anandappa 25th Wedding Anniversary of Ubaldus Adaman and Bridget Rodrigo Sathianathan Wedding of Benson Anandappa and Rajie Casie Chetty It’s time to check out...","categories": [],
         "tags": [],
-        "url": "/members/2023/08/07/photo-of-the-week",
+        "url": "/members/2023/08/06/photo-of-the-week",
         "teaser": null
       },]
