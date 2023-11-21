@@ -103,8 +103,9 @@ function runTreeCode() {
   // adjusgt height on load 
   var root = document.getElementsByClassName("root")[0];
   var level_0 = document.getElementsByClassName("level-0")[0];
-  adjustHeight(level_0.previousElementSibling, level_0, false)
-
+  if (level_0) {
+    adjustHeight(level_0.previousElementSibling, level_0, false)
+  }
 
   var collapseButtons = document.getElementsByClassName("collapsible");
   var i;

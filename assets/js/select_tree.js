@@ -1,16 +1,17 @@
-
 document.addEventListener('DOMContentLoaded', async function() {
     const searchInput = document.getElementById('search-input');
     const dropdown = document.getElementById('dropdown');
     const selectedIdInput = document.getElementById('selected-id');
 
-    // init view
-    await setTreeData(loginUrl, refreshUrl, restUrlBase, "I0001");
-
-    const people = await loadAndSortPeople();
-
-    searchInput.addEventListener('input', () => handleInput(searchInput, dropdown, selectedIdInput, people));
-    searchInput.addEventListener('blur', () => handleBlur(dropdown));
+    try {
+        // init view
+        await setTreeData(loginUrl, refreshUrl, restUrlBase, "I0001");
+        const people = await loadAndSortPeople();
+        searchInput.addEventListener('input', () => handleInput(searchInput, dropdown, selectedIdInput, people));
+        searchInput.addEventListener('blur', () => handleBlur(dropdown));
+    } catch(error) {
+        //throw error
+    } 
 });
 
 async function loadAndSortPeople() {

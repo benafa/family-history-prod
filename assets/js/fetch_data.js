@@ -1,7 +1,6 @@
 const urlBase = 'https://api.colombochetty.com/'
 //const urlBase = 'http://localhost:5000/'
 
-
 const loginUrl = urlBase + 'api/authenticate';
 const refreshUrl = urlBase + 'auth/refresh_token';
 const graphQLUrl = urlBase + 'graphql';
@@ -63,17 +62,17 @@ async function getGraphQLData(graphqlUrl, query) {
     const csrfToken = getCookie('csrf_access_token'); 
 
     const response = await fetch(graphqlUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-CSRF-TOKEN-ACCESS': csrfToken
-      },
-      body: JSON.stringify({ query }),
-      credentials: 'include' 
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN-ACCESS': csrfToken
+        },
+        body: JSON.stringify({ query }),
+        credentials: 'include' 
     });
 
     if (!response.ok) {
-      throw response;
+        throw response;
     }
 
     const data = await response.json();
