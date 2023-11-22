@@ -1,5 +1,5 @@
-const urlBase = 'https://api.colombochetty.com/'
-//const urlBase = 'http://localhost:5000/'
+//const urlBase = 'https://api.colombochetty.com/'
+const urlBase = 'http://localhost:5000/'
 const loginUrl = urlBase + 'api/authenticate';
 const logoutUrl = urlBase + 'auth/logout';
 const refreshUrl = urlBase + 'auth/refresh_token';
@@ -7,7 +7,10 @@ const graphQLUrl = urlBase + 'graphql';
 const restUrlBase = urlBase + 'api/tree/';
 
 const MEMBERSPACE_TOKEN = "MemberSpaceWidget.token"
-const ACCOUNT_PAGE = "/family-history/account"
+const ACCOUNT_PAGE = "/account"
+
+DEFAULT_EMAIL = ''
+DEFAULT_ID =''
 
 
 const apiClient = new ApiClient();

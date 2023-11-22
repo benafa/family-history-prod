@@ -47,8 +47,8 @@ async function getMemberSpaceCredentials() {
     //console.log("getMemberSpaceCredentials");
     var isLoggedIn = false;
     var credential_data = {
-        email: '',
-        user_id: ''
+        email: DEFAULT_EMAIL,
+        user_id: DEFAULT_ID
     };
 
     try {
