@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', async function() {
     await initDynamicTree();
 });
 
+document.addEventListener('MemberSpace.member.info', initDynamicTree);
+
 async function initDynamicTree() {
     const searchInput = document.getElementById('search-input');
     const dropdown = document.getElementById('dropdown');
