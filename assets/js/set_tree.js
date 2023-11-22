@@ -1,9 +1,8 @@
 async function setTreeData(loginUrl, refreshUrl, restUrlBase, tree_id) {
     var restUrl = restUrlBase + tree_id;
-    var credential_data = await getMemberSpaceCredentials();
 
     try {
-        const treeData = await getRestDataWrapper(loginUrl, credential_data, refreshUrl, restUrl);
+        const treeData = await getRestDataWrapper(restUrl);
 
         // Find the container element
         const container = document.getElementById('tree-content');

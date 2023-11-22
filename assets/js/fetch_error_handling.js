@@ -2,72 +2,86 @@ const JWT_MISSING = "Missing cookie \"access_token_cookie\"";
 const JWT_EXPIRED = "Token has expired";
 const JWT_SIG_FAILURE = "Signature verification failed";
 
-async function handleGraphQLError(error, loginUrl, credential_data, refreshUrl, graphQLUrl, query) {
-    if (isUnauthorizedError(error)) {
-        await handleUnauthorizedError(error, loginUrl, credential_data, refreshUrl);
-        return await getGraphQLData(graphQLUrl, query);
-    } else if (isSigFailure(error)) {
-        await handleSigFailure(error, loginUrl, credential_data)
-        return await getGraphQLData(graphQLUrl, query);
-    } else {
-        console.error('Error fetching protected resource:', error);
-        throw error; 
+class FetchErrorHandler {
+    constructor(loginUrl, refreshUrl, logoutUrl, tokenName, redirectPage, apiClient) {
+        this.loginUrl = loginUrl;
+        this.logoutUrl = logoutUrl;
+        this.refreshUrl = refreshUrl;
+        this.memberspace_tokenName = tokenName;
+        this.redirectPage = redirectPage;
+        this.apiClient = apiClient;
     }
-}
 
-async function handleRestError(error, loginUrl, credential_data, refreshUrl, restUrl) {
-    if (isUnauthorizedError(error)) {
-        await handleUnauthorizedError(error, loginUrl, credential_data, refreshUrl);
-        return await getRestData(restUrl);
-    } else if (isSigFailure(error)) {
-        await handleSigFailure(error, loginUrl, credential_data)
-        return await getRestData(restUrl);
-    } else {
-        console.error('Error fetching protected resource:', error);
-        throw error; 
+    async handleGraphQLError(error, graphQLUrl, query) {
+        try {
+            if (this.isUnauthorizedError(error)) {
+                //console.log("handleGraphQLError");
+                await this.handleUnauthorizedError(error);
+                return await this.apiClient.getGraphQLData(graphQLUrl, query);
+            } else {
+                if (this.isSigFailure(error)) {
+                    console.log("Signature failure error");
+                }
+                await this.handleLogout();
+                throw error;
+            }
+        } catch(error) {
+            //console.log(error);
+            throw error;
+        }
     }
-}
 
-async function handleUnauthorizedError(error, loginUrl, credential_data, refreshUrl) {
-    const errorBody = await error.json();
-    if (errorBody.msg === JWT_EXPIRED) {
-        await handleRefresh(refreshUrl,  loginUrl, credential_data);
-    } else if (errorBody.msg === JWT_MISSING) {
-        await login(loginUrl, credential_data);
-    } else {
-        throw error; 
+    async handleRestError(error, restUrl) {
+        try {
+            if (this.isUnauthorizedError(error)) {
+                //console.log("handleRestError");
+                await this.handleUnauthorizedError(error);
+                return await this.apiClient.getRestData(restUrl);
+            } else {
+                if (this.isSigFailure(error)) {
+                    console.log("Signature failure error");
+                }
+                await this.handleLogout();
+                throw error;
+            }
+        } catch(error) {
+            //console.log(error);
+            throw error;
+        }
     }
-}
 
-async function handleRefresh(refreshUrl, loginUrl, credential_data) {
-    try {
-        await refreshToken(refreshUrl);
-    } catch(error) {
-        // NOTE
-        // Ideally we logout the user if refresh token expired
-        // Unfortunately, memberspace doesn't have an API to log out user
-        // So for user experience, we will re-authenticate the user for now
-        await login(loginUrl, credential_data);
+    async handleUnauthorizedError(error) {
+        const errorBody = await error.json();
+        if (errorBody.msg === JWT_EXPIRED) {
+            await this.handleRefresh();
+        } else if (errorBody.msg === JWT_MISSING) {
+            const credentialData = await getMemberSpaceCredentials();
+            await this.apiClient.login(this.loginUrl, credentialData);
+        } else {
+            throw error;
+        }
     }
-}
 
-async function handleSigFailure(error, loginUrl, credential_data) {
-    // NOTE
-    // Ideally log out user if sig failure
-    // Similar to above, memberspace doesn't have an API to log out user
-    // So for user experience, we will re-authenticate the user for now
-    const errorBody = await error.json();
-    if (errorBody.msg === JWT_SIG_FAILURE) {
-        await login(loginUrl, credential_data);
-    } else {
-        throw error; 
+    async handleRefresh() {
+        try {
+            await this.apiClient.refreshToken(this.refreshUrl);
+        } catch(error) {
+            this.handleLogout();
+            throw error;
+        }
     }
-}
 
-function isUnauthorizedError(error) {
-    return error instanceof Response && error.status === 401;
-}
+    async handleLogout() {
+        localStorage.removeItem(this.memberspace_tokenName);
+        await this.apiClient.logout(this.logoutUrl);
+        window.location.href = this.redirectPage;
+    }
 
-function isSigFailure(error) {
-    return error instanceof Response && error.status === 422;
+    isUnauthorizedError(error) {
+        return error instanceof Response && error.status === 401;
+    }
+
+    isSigFailure(error) {
+        return error instanceof Response && error.status === 422;
+    }
 }

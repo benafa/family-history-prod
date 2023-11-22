@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Dynamic Descendant View - Colombo Chetty Genealogy</title>
-<meta name="description" content="Dynamic Descendant View">
+<!-- begin _includes/seo.html --><title>Tree - Colombo Chetty Genealogy</title>
+<meta name="description" content="Tree">
 
 
   <meta name="author" content="Ben Anandappa">
@@ -20,11 +20,11 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Colombo Chetty Genealogy">
-<meta property="og:title" content="Dynamic Descendant View">
-<meta property="og:url" content="https://colombochetty.com//dynamic">
+<meta property="og:title" content="Tree">
+<meta property="og:url" content="https://colombochetty.com//mytree">
 
 
-  <meta property="og:description" content="Dynamic Descendant View">
+  <meta property="og:description" content="Tree">
 
 
 
@@ -39,7 +39,7 @@
 
 
 
-<link rel="canonical" href="https://colombochetty.com//dynamic">
+<link rel="canonical" href="https://colombochetty.com//mytree">
 
 
 
@@ -124,7 +124,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   </head>
 
-  <body class="layout--dynamictree">
+  <body class="layout--tree">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -192,7 +192,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Dynamic Descendant View">
+    <meta itemprop="headline" content="Tree">
     
     
     
@@ -200,7 +200,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Dynamic Descendant View
+          <h1 id="page-title" class="page__title" itemprop="headline">Tree
 </h1>
           
 
@@ -232,22 +232,8 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
     margin-top: 5px;
   }
 
-  #search-button {
-    background-color: #868F7B;
-  }
-
-  #dropdown div:hover {
-    background-color: #f1f1f1; /* Light grey background on hover */
-    cursor: pointer; /* Change cursor to indicate clickable */
-  }
-
 </style>
 
-<div id="search-box">
-    <input type="text" id="search-input" placeholder="Search...">
-    <input type="hidden" id="selected-id">
-    <div id="dropdown" class="dropdown-content"></div>
-</div>
 
 <div class="master">
 	<button onclick="activateAll()" class="btn btn--primary">Expand/Collapse All</button>  <br />
@@ -287,13 +273,11 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-<script id="fetch_data" src="/assets/js/memberspace_info.js"></script>
-
-<script id="fetch_data" src="/assets/js/fetch_api_client.js"></script>
+<script id="fetch_data" src="/assets/js/fetch_data.js"></script>
 
 <script id="fetch_data" src="/assets/js/fetch_error_handling.js"></script>
 
-<script id="fetch_data" src="/assets/js/fetch_data.js"></script>
+<script id="fetch_data" src="/assets/js/memberspace_info.js"></script>
 
 <script id="dynamic-tree-script" src="/assets/js/set_tree.js"></script>
 
@@ -301,8 +285,990 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
 <script id="people" src="/assets/js/select_tree.js"></script>
 
+<script>
+	document.addEventListener("DOMContentLoaded", async function() {
+	    // Function to parse the URL and get the ID
+	    function getIdFromUrl() {
+	        const path = window.location.pathname;
+	        const pathParts = path.split('/');
+	        // Assuming URL is like /person/id
+	        return pathParts[pathParts.length - 1];
+	    }
+
+	    const personId = getIdFromUrl();
+	    console.log("person id")
+	    console.log(personId)
+	    await setTreeData(loginUrl, refreshUrl, restUrlBase, personId);
+	});
+</script>
+
 
 </div>
+
+  <p class="children"><b> Relevant Documents </b></p>
+  <ul class="children">
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+    
+  </ul>
 
  <script>function setText(elementId, textContent) {
 		document.getElementById(elementId).textContent = textContent;
@@ -373,7 +1339,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 			};var interval = setInterval(checkJQuery, 250);
 		};};
 
-	var thisPageUrl = "/dynamic";
+	var thisPageUrl = "/mytree";
 	const EXTRA_INFO_START = "chunkedCommentInfoStart";
 	const EXTRA_INFO_END = "chunkedCommentInfoEnd";var visibleComments = [];
 	var hiddenComments = [];
@@ -708,6 +1674,8 @@ input[readonly].default-cursor {
     color: black;
     opacity: 1;
 }</style>
+
+ <a href="/trees" class="btn btn--primary"> View all trees </a>
 
 
 <script id="tree-script" src="/assets/js/tree.js"></script>

@@ -1,6 +1,4 @@
 async function getPeopleList(loginUrl, refreshUrl, graphQLUrl) {
-    var credential_data = await getMemberSpaceCredentials();
-
     const query = `
       {
       individuals {
@@ -12,7 +10,7 @@ async function getPeopleList(loginUrl, refreshUrl, graphQLUrl) {
     `;
 
     try {
-        const peopleData = await getGraphQLDataWrapper(loginUrl, credential_data, refreshUrl, graphQLUrl, query);
+        const peopleData = await getGraphQLDataWrapper(graphQLUrl, query);
         return peopleData;
     } catch (error) {
         // console.error('Error:', error);

@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', async function() {
+    await initDynamicTree();
+});
+
+async function initDynamicTree() {
     const searchInput = document.getElementById('search-input');
     const dropdown = document.getElementById('dropdown');
     const selectedIdInput = document.getElementById('selected-id');
@@ -12,7 +16,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     } catch(error) {
         //throw error
     } 
-});
+}
 
 async function loadAndSortPeople() {
     const people_res = await getPeopleList(loginUrl, refreshUrl, graphQLUrl);

@@ -101,6 +101,7 @@ function activateAll() {
 
 function runTreeCode() {
   // adjusgt height on load 
+  isExpanded = false;  
   var root = document.getElementsByClassName("root")[0];
   var level_0 = document.getElementsByClassName("level-0")[0];
   if (level_0) {
