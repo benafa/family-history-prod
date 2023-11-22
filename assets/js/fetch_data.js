@@ -1,5 +1,5 @@
-//const urlBase = 'https://api.colombochetty.com/'
-const urlBase = 'http://localhost:5000/'
+const urlBase = 'https://api.colombochetty.com/'
+//const urlBase = 'http://localhost:5000/'
 const loginUrl = urlBase + 'api/authenticate';
 const logoutUrl = urlBase + 'auth/logout';
 const refreshUrl = urlBase + 'auth/refresh_token';
