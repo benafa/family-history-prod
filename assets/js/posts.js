@@ -1,0 +1,1 @@
+document.addEventListener("MemberSpace.ready",(({detail:e})=>{const{memberInfo:t}=e;if(t)for(var l=document.getElementsByClassName("login_prompt"),n=0;n<l.length;n++)l[n].style.display="none";else for(l=document.getElementsByClassName("login_prompt"),n=0;n<l.length;n++)l[n].style.display="block"}));

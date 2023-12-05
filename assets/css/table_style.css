@@ -1,0 +1,1 @@
+.sorted-asc:after{color:green;content:" ▲"}.sorted-desc:after{color:red;content:" ▼"}.sorted-none:after{color:grey;content:" ▲▼"}

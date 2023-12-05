@@ -212,22 +212,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
         
         <head>
   <script src="/assets/js/table.js"></script>
-  <style type="text/css">
-    .sorted-asc::after {
-      content: " ▲";
-      color: green;
-    }
-
-    .sorted-desc::after {
-      content: " ▼";
-      color: red;
-    }
-
-    .sorted-none::after {
-      content: " ▲▼";
-      color: grey;
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/css/table_style.css" type="text/css">
 </head>
 
 <br>
@@ -1202,16 +1187,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </table>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      // Add the 'sorted-none' class to all column headers
-      var headers = document.getElementsByTagName("th");
-      for (var i = 0; i < headers.length; i++) {
-        headers[i].classList.add("sorted-none");
-      }
-    });
-
   sortTable(2);
-
 </script>
 
 

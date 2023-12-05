@@ -1,10 +1,1 @@
-  .link {
-    color: #0077CC;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .link:hover {
-    color: #004466;
-    text-decoration: underline;
-  }
+.link{color:#07c;font-weight:700;text-decoration:none}.link:hover{color:#046;text-decoration:underline}

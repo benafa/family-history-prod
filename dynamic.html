@@ -214,24 +214,12 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <meta name="robots" content="noindex, nofollow"><style>#__memberspace_modal_protected_page { position:fixed; top:0; left:0; width:100%; height:100%; background:#fff; z-index:2147483646; }</style><div id="__memberspace_modal_protected_page"></div>
 
 
-<link rel="stylesheet" href="/assets/css/tree.css" type="text/css">
-<link rel="stylesheet" href="/assets/css/pagination-hidden.css" type="text/css">
+<link rel="stylesheet" href="/assets/css/tree_style.css" type="text/css">
+<link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
+<link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
 
 <style>
-
-  div.back {
-    margin-top: 30px;
-  }
-
-  p.children {
-    margin-bottom: 0px
-  }
-
-  ul.children {
-    margin-top: 5px;
-  }
-
   #search-button {
     background-color: #868F7B;
   }
@@ -240,7 +228,6 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
     background-color: #f1f1f1; /* Light grey background on hover */
     cursor: pointer; /* Change cursor to indicate clickable */
   }
-
 </style>
 
 <div id="search-box">
@@ -250,7 +237,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div class="master">
-	<button onclick="activateAll()" class="btn btn--primary">Expand/Collapse All</button>  <br />
+	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
 </div>
 
 <div class="sticky-bar bar-hidden">
@@ -287,24 +274,12 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-<script id="fetch_data" src="/assets/js/memberspace_info.js"></script>
-
-<script id="fetch_data" src="/assets/js/fetch_api_client.js"></script>
-
-<script id="fetch_data" src="/assets/js/fetch_error_handling.js"></script>
-
-<script id="fetch_data" src="/assets/js/fetch_data.js"></script>
-
-<script id="dynamic-tree-script" src="/assets/js/set_tree.js"></script>
-
-<script id="people" src="/assets/js/list_of_people.js"></script>
-
-<script id="people" src="/assets/js/select_tree.js"></script>
+  <script id="fetch_data" src="/assets/js/dynamic_tree.js"></script>
 
 
 </div>
 
- <script>function setText(elementId, textContent) {
+<script>function setText(elementId, textContent) {
 		document.getElementById(elementId).textContent = textContent;
 	};
 
@@ -708,10 +683,6 @@ input[readonly].default-cursor {
     color: black;
     opacity: 1;
 }</style>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
