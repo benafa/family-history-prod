@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Colombo Chetty Genealogy</title>
-<meta name="description" content="This website contains genealogical research of the Colombo Chetty people conducted by Ben Anandappa. ">
+<!-- begin _includes/seo.html --><title>Profile - Colombo Chetty Genealogy</title>
+<meta name="description" content="Profile">
 
 
   <meta name="author" content="Ben Anandappa">
@@ -20,11 +20,11 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Colombo Chetty Genealogy">
-<meta property="og:title" content="Colombo Chetty Genealogy">
+<meta property="og:title" content="Profile">
 <meta property="og:url" content="https://colombochetty.com//404.html">
 
 
-  <meta property="og:description" content="This website contains genealogical research of the Colombo Chetty people conducted by Ben Anandappa. ">
+  <meta property="og:description" content="Profile">
 
 
 
@@ -125,7 +125,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   </head>
 
-  <body class="layout--default">
+  <body class="layout--single">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -184,51 +184,90 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
 
     <div class="initial-content">
-      <style type="text/css" media="screen">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Profile">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Profile
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
+
+<script id="fetch_data" src="/assets/js/routing_404.js"></script>
+
+
+<style type="text/css" media="screen">
   .container {
     margin: 10px auto;
     max-width: 600px;
     text-align: center;
   }
-  h1 {
+  h1.error {
     margin: 30px 0;
     font-size: 4em;
     line-height: 1;
     letter-spacing: -1px;
   }
+
+  #page-title {
+    display: none;
+  }
 </style>
 
 <div class="container" id="error-container">
-  <h1>404</h1>
+  <h1 class="error">404</h1>
 
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var path = window.location.pathname;
+<div id="dynamic-content">
+</div>
 
-    // Check if the URL path starts with '/person'
-    if (path.startsWith('/person')) {
-      /// Create and append the div for person content
-      var personDiv = document.createElement('div');
-      personDiv.id = 'person-content';
-      document.body.appendChild(personDiv);
+        
+      </section>
 
-      // Hide the default 404 content
-      var errorContainer = document.getElementById('error-container');
-      if (errorContainer) {
-        errorContainer.style.display = 'none';
-      }
+      <footer class="page__meta">
+        
+        
 
-      // Include the person_routing.js
-      var script = document.createElement('script');
-      script.src = '/assets/js/person_routing.js';
-      document.body.appendChild(script);
-    }
-  });
-</script>
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
 
     </div>
 
