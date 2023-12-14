@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Francis Dionysius Alles">
-    <meta itemprop="description" content="						Francis Dionysius Alles &#128141; Unknown													Gertrude Josephine Alles &#128141; Cecil Joseph Anandappa (son of Anthony Francis Anandappa &amp; Unknown Rodrigo Muniarem)				  																			Clarence Joseph Anandappa &#128141; Celeste Anandappa (daughter of Andrew Gabriel Anandappa &amp; Mary Magdalene Anandappa)					  																									Ranjan Anandappa																								Nihal Anandappa																								Jayantha Anandappa																								Marinee Anandappa																								Rukmani Anandappa																								Bernadine Anandappa																								Eric Anandappa																								Lasantha Anandappa																								Nirmala Anandappa																								Marianne Anandappa &#128141; Andrew Anandappa (son of Andrew Gerard Anandappa &amp; Irene Elizabeth Homer)																								Bede Anandappa																								Merl Joseph Anandappa &#128141; Yoland Laity Ramenaden					  																									Rabindra Anandappa																								Mafelda Anandappa																								Mahendra Anandappa																								Ivan Anandappa &#128141; Marie Quinne					  																									Sean Anandappa																								Lenox Anandappa																								Jackey Anandappa																								Melody Anandappa																								Remigius Angelo Cecil Joseph &quot;Remy&quot; Anandappa &#128141; Marienne Rita Leonie De Silva Wijeyeratne					  																									Angela Anandappa &#128141; Nish Abeysiriwardena						  																															Anish Abeysiriwardena																													Niam Abeysiriwardena																														Marita Anandappa																							Mary Mount Carmel Alles &#128141; Philip Marian Muttukumaru (son of Simon Muttukumaru &amp; Unknown)														Emmanuel Caetan Alles &#128141; 1. Julie Frances Massillamany (daughter of Anthony Francis Salis Massillamany &amp; Unknown) 2. Mary Massillamany (daughter of Anthony Francis Salis Massillamany &amp; Unknown)				  																			Julie Iris Joan Alles &#128141; Anthony Mervyn Remington Casie Chetty (son of Abraham Peter &quot;A.P.&quot; Casie Chetty &amp; Mary Clara Anandappa)					  																									Andrea Shiromi Joan Casie Chetty &#128141; Herman Xavier																								Roshan Helene Marie Casie Chetty &#128141; Anthony Selva Ayam Perumal (son of Chevalier L. Ayam Perumal &amp; Rose Ayam Perumal)						  																															Anthony Shehan Ayam Perumal																													Julian Trehan Ayam Perumal																														Cheryl Laurette Dinali Casie Chetty &#128141; Ravi Joseph Fernandopulle (son of Titus Pius Ramanathan Fernandopulle &amp; Lakshmani Ayam Perumal)						  																															Tashika Liesel Fernandopulle																													Trishan Jospeh Fernandopulle																														Maryse Rita Sanchia Casie Chetty &#128141; Benildus Tissera						  																															Jilska Melita Tissera																													Jannic Gerard Tissera																														Eric Alles &#128141; Pathma Unknown					  																									Kanthi Alles																								Hemesh Alles																								Herman Alles																			Felicia Alles &#128141; Augustus Casie Chetty																			Emelda Alles																			Terry Alles																			Trixie Alles																			Clare Alles																			Cuthbert Alles																			Margie Alles										 Fun facts! 	  Number of unique descendents: 51	  Top 5 male names: Joseph (3 times), Eric (2 times), Francis (1 times), Dionysius (1 times), Clarence (1 times)	  Top 5 female names: Joan (2 times), Gertrude (1 times), Josephine (1 times), Marinee (1 times), Rukmani (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0736");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0736");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,313 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0736" class="link">Francis Dionysius Alles</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I500050" class="link">Gertrude Josephine Alles</a> &#128141; <a href="/person/I500049" class="link">Cecil Joseph Anandappa</a> (son of <a href="/person/I500087" class="link">Anthony Francis Anandappa</a> & <a href="/person/I500088" class="link">Unknown Rodrigo Muniarem</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500047" class="link">Clarence Joseph Anandappa</a> &#128141; <a href="/person/I500037" class="link">Celeste Anandappa</a> (daughter of <a href="/person/I500034" class="link">Andrew Gabriel Anandappa</a> & <a href="/person/I500036" class="link">Mary Magdalene Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0061" class="link">Ranjan Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0266" class="link">Nihal Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0511" class="link">Jayantha Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0522" class="link">Marinee Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0523" class="link">Rukmani Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0524" class="link">Bernadine Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0525" class="link">Eric Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0526" class="link">Lasantha Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0527" class="link">Nirmala Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0528" class="link">Marianne Anandappa</a> &#128141; <a href="/person/I0545" class="link">Andrew Anandappa</a> (son of <a href="/person/I500045" class="link">Andrew Gerard Anandappa</a> & <a href="/person/I0542" class="link">Irene Elizabeth Homer</a>)</span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0529" class="link">Bede Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500051" class="link">Merl Joseph Anandappa</a> &#128141; <a href="/person/I0599" class="link">Yoland Laity Ramenaden</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0600" class="link">Rabindra Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0601" class="link">Mafelda Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0602" class="link">Mahendra Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500052" class="link">Ivan Anandappa</a> &#128141; <a href="/person/I0594" class="link">Marie Quinne</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0595" class="link">Sean Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0596" class="link">Lenox Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0597" class="link">Jackey Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0598" class="link">Melody Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500053" class="link">Remigius Angelo Cecil Joseph "Remy" Anandappa</a> &#128141; <a href="/person/I0591" class="link">Marienne Rita Leonie De Silva Wijeyeratne</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0592" class="link">Angela Anandappa</a> &#128141; <a href="/person/I0917" class="link">Nish Abeysiriwardena</a></span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0918" class="link">Anish Abeysiriwardena</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0919" class="link">Niam Abeysiriwardena</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0593" class="link">Marita Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0737" class="link">Mary Mount Carmel Alles</a> &#128141; <a href="/person/I0738" class="link">Philip Marian Muttukumaru</a> (son of <a href="/person/I0739" class="link">Simon Muttukumaru</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0786" class="link">Emmanuel Caetan Alles</a> &#128141; 1. <a href="/person/I0787" class="link">Julie Frances Massillamany</a> (daughter of <a href="/person/I0748" class="link">Anthony Francis Salis Massillamany</a> & Unknown) 2. <a href="/person/I0788" class="link">Mary Massillamany</a> (daughter of <a href="/person/I0748" class="link">Anthony Francis Salis Massillamany</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0141" class="link">Julie Iris Joan Alles</a> &#128141; <a href="/person/I0003" class="link">Anthony Mervyn Remington Casie Chetty</a> (son of <a href="/person/I0001" class="link">Abraham Peter "A.P." Casie Chetty</a> & <a href="/person/I0002" class="link">Mary Clara Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0142" class="link">Andrea Shiromi Joan Casie Chetty</a> &#128141; <a href="/person/I0422" class="link">Herman Xavier</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0143" class="link">Roshan Helene Marie Casie Chetty</a> &#128141; <a href="/person/I0423" class="link">Anthony Selva Ayam Perumal</a> (son of <a href="/person/I1197" class="link">Chevalier L. Ayam Perumal</a> & <a href="/person/I1194" class="link">Rose Ayam Perumal</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0430" class="link">Anthony Shehan Ayam Perumal</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0431" class="link">Julian Trehan Ayam Perumal</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0144" class="link">Cheryl Laurette Dinali Casie Chetty</a> &#128141; <a href="/person/I0424" class="link">Ravi Joseph Fernandopulle</a> (son of <a href="/person/I1201" class="link">Titus Pius Ramanathan Fernandopulle</a> & <a href="/person/I1198" class="link">Lakshmani Ayam Perumal</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0428" class="link">Tashika Liesel Fernandopulle</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0429" class="link">Trishan Jospeh Fernandopulle</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0145" class="link">Maryse Rita Sanchia Casie Chetty</a> &#128141; <a href="/person/I0425" class="link">Benildus Tissera</a></span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0426" class="link">Jilska Melita Tissera</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0427" class="link">Jannic Gerard Tissera</a></span>
-						</div>
-					</li>
-				</ul>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1051" class="link">Eric Alles</a> &#128141; <a href="/person/I1060" class="link">Pathma Unknown</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1061" class="link">Kanthi Alles</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1062" class="link">Hemesh Alles</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1052" class="link">Herman Alles</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1053" class="link">Felicia Alles</a> &#128141; <a href="/person/I1191" class="link">Augustus Casie Chetty</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1054" class="link">Emelda Alles</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1055" class="link">Terry Alles</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1056" class="link">Trixie Alles</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1057" class="link">Clare Alles</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1058" class="link">Cuthbert Alles</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1059" class="link">Margie Alles</a></span>
-				</div>
-			</li>
-		</ul>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 51</li>
-	<li> <b> Top 5 male names:</b> Joseph (3 times), Eric (2 times), Francis (1 times), Dionysius (1 times), Clarence (1 times)</li>
-	<li> <b> Top 5 female names:</b> Joan (2 times), Gertrude (1 times), Josephine (1 times), Marinee (1 times), Rukmani (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1954,10 +1672,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -2002,7 +1716,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0736" />
   <meta property="og:title" content="Descendants of Francis Dionysius Alles" />
-  <meta property="og:description" content="						Francis Dionysius Alles &#128141; Unknown													Gertrude Josephine Alles &#128141; Cecil Joseph Anandappa (son of Anthony Fra..." />
+  <meta property="og:description" content="" />
   
 
 

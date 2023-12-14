@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Roscius Solomon Mutukisna">
-    <meta itemprop="description" content="						Roscius Solomon Mutukisna &#128141; Unknown													Granville Oliver Mutukisna &#128141; Myrtle Enid Candappa (daughter of Philip Bastian Candappa &amp; Unknown)														Glevnville Edgar Mutukisna &#128141; Annie Rodrigo Pullenayagam (daughter of Daniel Rodrigo Pullenayagam &amp; Unknown)						 Fun facts! 	  Number of unique descendents: 2	  Top 5 male names: Roscius (1 times), Solomon (1 times), Granville (1 times), Oliver (1 times), Glevnville (1 times)	  Top 5 female names: ">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0779");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0779");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,32 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0779" class="link">Roscius Solomon Mutukisna</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0778" class="link">Granville Oliver Mutukisna</a> &#128141; <a href="/person/I0775" class="link">Myrtle Enid Candappa</a> (daughter of <a href="/person/I0773" class="link">Philip Bastian Candappa</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0896" class="link">Glevnville Edgar Mutukisna</a> &#128141; <a href="/person/I0897" class="link">Annie Rodrigo Pullenayagam</a> (daughter of <a href="/person/I0898" class="link">Daniel Rodrigo Pullenayagam</a> & Unknown)</span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 2</li>
-	<li> <b> Top 5 male names:</b> Roscius (1 times), Solomon (1 times), Granville (1 times), Oliver (1 times), Glevnville (1 times)</li>
-	<li> <b> Top 5 female names:</b> </li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1657,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1705,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0779" />
   <meta property="og:title" content="Descendants of Roscius Solomon Mutukisna" />
-  <meta property="og:description" content="						Roscius Solomon Mutukisna &#128141; Unknown													Granville Oliver Mutukisna &#128141; Myrtle Enid Candappa (daughter of Phil..." />
+  <meta property="og:description" content="" />
   
 
 

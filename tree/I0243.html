@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Domingo Rodrigo Babapulle">
-    <meta itemprop="description" content="						Domingo Rodrigo Babapulle &#128141; Unknown													Lucia Rodrigo Babapulle &#128141; Phillip Joseph Casie Chetty (son of Casper Casie Chetty &amp; Mary Theresa Unknown)				  																			Mary Theresa Casie Chetty &#128141; Charles Nahvel &quot;Charlie&quot; Fernandopulle (son of Caitan Nahvel Fernandopulle &amp; Unknown)					  																									Terry Fernandopulle &#128141; Marlene Caderamanpulle (daughter of Michael Caderamanpulle &amp; Regina Laity Ramenaden)						  																															Travis Fernandopulle																													Navin Fernandopulle																														Philomena &quot;Bubby&quot; Fernandopulle &#128141; Patrick Casie Chetty (son of Walter Patrick Casie Chetty &amp; Jane Francisca Rodrigo Babapulle)						  																															Padmini Casie Chetty																													Tyronne Casie Chetty																													Savitry Casie Chetty																														Rita Fernandopulle																								Gladys Fernandopulle &#128141; Nicholas Rodrigo (son of Peter Rodrigo &amp; Therese Rodrigo Muniaram Perumal)																								Cicilia &quot;Sissa&quot; Casie Chetty &#128141; Unknown Sathianathan					  																									Jerry Sathianathan																								Clarice Sathianathan																								Bernice Sathianathan &#128141; J. Felix A. Anandappa (son of Dominic Philip Anandappa &amp; Unknown)						  																															Hillary Anandappa																													Allan Anandappa																														Ranjie Sathianathan																								Josephine Sathianathan &#128141; Benjamin Anandappa (son of Andrew Gabriel Anandappa &amp; Mary Magdalene Anandappa)						  																															Natascha Anandappa																														Joseph &quot;Jossa&quot; Casie Chetty &#128141; Barbara &quot;Bella&quot; Fernandopulle					  																									Dennis Casie Chetty																								Marie Casie Chetty																								Nellie Casie Chetty																								Augusta Casie Chetty																								Merl Casie Chetty																								Rose Casie Chetty &#128141; Philip Benedict Anandappa (son of Peter Braze Anandappa &amp; Unknown)					  																									Philip Anandappa &#128141; Unknown																								Dominic Casie Chetty &#128141; Milred Muthu-pulle					  																									Russel Casie Chetty																								Ridley Casie Chetty																								Luella Casie Chetty																								Clement &quot;Clemmie&quot; Casie Chetty																		Jane Francisca Rodrigo Babapulle &#128141; Walter Patrick Casie Chetty (son of Casper Casie Chetty &amp; Mary Theresa Unknown)				  																			Gertrude Casie Chetty &#128141; Joseph &quot;Josie&quot; Fernandopulle					  																									Selvaranee Fernandopulle																								Justin Casie Chetty &#128141; Henrietta Anandappa (daughter of Francis Xavier Anandappa &amp; Juliana Rodrigo Candappa)					  																									Renee Casie Chetty																								Delrene Casie Chetty																								Langsford Casie Chetty																								Shiranee Casie Chetty																								Rohan Casie Chetty &#128141; Eunice Rodrigo Muniaram Perumal (daughter of Prosper Rodrigo Muniaram Perumal &amp; Helen Juliana Fernandopulle)																								Worrel Casie Chetty																								Arlene Casie Chetty																								Anthony Casie Chetty &#128141; Clair Corea																			Patrick Casie Chetty &#128141; Philomena &quot;Bubby&quot; Fernandopulle (daughter of Charles Nahvel &quot;Charlie&quot; Fernandopulle &amp; Mary Theresa Casie Chetty)					  																									Padmini Casie Chetty																								Tyronne Casie Chetty																								Savitry Casie Chetty																								Daisy Casie Chetty &#128141; Anthony Silva Candappa (son of Xavier Silva Candappa &amp; Mary Helen Rodrigo)					  																									Muthrani Silva Candappa																								Nihal Silva Candappa																								Fatima Silva Candappa																								Mysthree Silva Candappa																								Walter Silva Candappa																								Romauld Casie Chetty																			Isidore Casie Chetty																			Philomena Casie Chetty																		John Francis Rodrigo Babapulle &#128141; Maria Martha Corsa (daughter of Emmanuel Corsa &amp; Unknown)						 Fun facts! 	  Number of unique descendents: 56	  Top 5 male names: Tyronne (2 times), Savitry (2 times), Domingo (1 times), Terry (1 times), Travis (1 times)	  Top 5 female names: Philomena (2 times), Padmini (2 times), Lucia (1 times), Mary (1 times), Theresa (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0243");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0243");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,362 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0243" class="link">Domingo Rodrigo Babapulle</a> &#128141; <a href="/person/I0244" class="link">Unknown</a></span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0242" class="link">Lucia Rodrigo Babapulle</a> &#128141; <a href="/person/I0176" class="link">Phillip Joseph Casie Chetty</a> (son of <a href="/person/I500097" class="link">Casper Casie Chetty</a> & <a href="/person/I500019" class="link">Mary Theresa Unknown</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0245" class="link">Mary Theresa Casie Chetty</a> &#128141; <a href="/person/I0251" class="link">Charles Nahvel "Charlie" Fernandopulle</a> (son of <a href="/person/I0840" class="link">Caitan Nahvel Fernandopulle</a> & Unknown)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0252" class="link">Terry Fernandopulle</a> &#128141; <a href="/person/I1185" class="link">Marlene Caderamanpulle</a> (daughter of <a href="/person/I1182" class="link">Michael Caderamanpulle</a> & <a href="/person/I1183" class="link">Regina Laity Ramenaden</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1209" class="link">Travis Fernandopulle</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1210" class="link">Navin Fernandopulle</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0253" class="link">Philomena "Bubby" Fernandopulle</a> &#128141; <a href="/person/I0271" class="link">Patrick Casie Chetty</a> (son of <a href="/person/I0179" class="link">Walter Patrick Casie Chetty</a> & <a href="/person/I0267" class="link">Jane Francisca Rodrigo Babapulle</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0276" class="link">Padmini Casie Chetty</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0277" class="link">Tyronne Casie Chetty</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0278" class="link">Savitry Casie Chetty</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1208" class="link">Rita Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1004" class="link">Gladys Fernandopulle</a> &#128141; <a href="/person/I0303" class="link">Nicholas Rodrigo</a> (son of <a href="/person/I0301" class="link">Peter Rodrigo</a> & <a href="/person/I0302" class="link">Therese Rodrigo Muniaram Perumal</a>)</span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0246" class="link">Cicilia "Sissa" Casie Chetty</a> &#128141; <a href="/person/I0279" class="link">Unknown Sathianathan</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0280" class="link">Jerry Sathianathan</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0281" class="link">Clarice Sathianathan</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0282" class="link">Bernice Sathianathan</a> &#128141; <a href="/person/I0184" class="link">J. Felix A. Anandappa</a> (son of <a href="/person/I500096" class="link">Dominic Philip Anandappa</a> & Unknown)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0285" class="link">Hillary Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0286" class="link">Allan Anandappa</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0283" class="link">Ranjie Sathianathan</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0284" class="link">Josephine Sathianathan</a> &#128141; <a href="/person/I500041" class="link">Benjamin Anandappa</a> (son of <a href="/person/I500034" class="link">Andrew Gabriel Anandappa</a> & <a href="/person/I500036" class="link">Mary Magdalene Anandappa</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0287" class="link">Natascha Anandappa</a></span>
-						</div>
-					</li>
-				</ul>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0247" class="link">Joseph "Jossa" Casie Chetty</a> &#128141; <a href="/person/I0288" class="link">Barbara "Bella" Fernandopulle</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0289" class="link">Dennis Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0290" class="link">Marie Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0291" class="link">Nellie Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0292" class="link">Augusta Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0293" class="link">Merl Casie Chetty</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0248" class="link">Rose Casie Chetty</a> &#128141; <a href="/person/I0043" class="link">Philip Benedict Anandappa</a> (son of <a href="/person/I500086" class="link">Peter Braze Anandappa</a> & Unknown)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0294" class="link">Philip Anandappa</a> &#128141; <a href="/person/I0295" class="link">Unknown</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0249" class="link">Dominic Casie Chetty</a> &#128141; <a href="/person/I0296" class="link">Milred Muthu-pulle</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0297" class="link">Russel Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0298" class="link">Ridley Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0299" class="link">Luella Casie Chetty</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0250" class="link">Clement "Clemmie" Casie Chetty</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0267" class="link">Jane Francisca Rodrigo Babapulle</a> &#128141; <a href="/person/I0179" class="link">Walter Patrick Casie Chetty</a> (son of <a href="/person/I500097" class="link">Casper Casie Chetty</a> & <a href="/person/I500019" class="link">Mary Theresa Unknown</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0268" class="link">Gertrude Casie Chetty</a> &#128141; <a href="/person/I0342" class="link">Joseph "Josie" Fernandopulle</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0343" class="link">Selvaranee Fernandopulle</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0269" class="link">Justin Casie Chetty</a> &#128141; <a href="/person/I0345" class="link">Henrietta Anandappa</a> (daughter of <a href="/person/I0019" class="link">Francis Xavier Anandappa</a> & <a href="/person/I0344" class="link">Juliana Rodrigo Candappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0350" class="link">Renee Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0351" class="link">Delrene Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0352" class="link">Langsford Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0353" class="link">Shiranee Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0354" class="link">Rohan Casie Chetty</a> &#128141; <a href="/person/I0237" class="link">Eunice Rodrigo Muniaram Perumal</a> (daughter of <a href="/person/I0230" class="link">Prosper Rodrigo Muniaram Perumal</a> & <a href="/person/I0225" class="link">Helen Juliana Fernandopulle</a>)</span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0355" class="link">Worrel Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0356" class="link">Arlene Casie Chetty</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0270" class="link">Anthony Casie Chetty</a> &#128141; <a href="/person/I0357" class="link">Clair Corea</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0271" class="link">Patrick Casie Chetty</a> &#128141; <a href="/person/I0253" class="link">Philomena "Bubby" Fernandopulle</a> (daughter of <a href="/person/I0251" class="link">Charles Nahvel "Charlie" Fernandopulle</a> & <a href="/person/I0245" class="link">Mary Theresa Casie Chetty</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0276" class="link">Padmini Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0277" class="link">Tyronne Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0278" class="link">Savitry Casie Chetty</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0272" class="link">Daisy Casie Chetty</a> &#128141; <a href="/person/I0358" class="link">Anthony Silva Candappa</a> (son of <a href="/person/I0382" class="link">Xavier Silva Candappa</a> & <a href="/person/I0383" class="link">Mary Helen Rodrigo</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0359" class="link">Muthrani Silva Candappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0360" class="link">Nihal Silva Candappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0361" class="link">Fatima Silva Candappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0362" class="link">Mysthree Silva Candappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0363" class="link">Walter Silva Candappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0273" class="link">Romauld Casie Chetty</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0274" class="link">Isidore Casie Chetty</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0275" class="link">Philomena Casie Chetty</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0845" class="link">John Francis Rodrigo Babapulle</a> &#128141; <a href="/person/I0846" class="link">Maria Martha Corsa</a> (daughter of <a href="/person/I0847" class="link">Emmanuel Corsa</a> & Unknown)</span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 56</li>
-	<li> <b> Top 5 male names:</b> Tyronne (2 times), Savitry (2 times), Domingo (1 times), Terry (1 times), Travis (1 times)</li>
-	<li> <b> Top 5 female names:</b> Philomena (2 times), Padmini (2 times), Lucia (1 times), Mary (1 times), Theresa (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -2003,10 +1672,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -2051,7 +1716,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0243" />
   <meta property="og:title" content="Descendants of Domingo Rodrigo Babapulle" />
-  <meta property="og:description" content="						Domingo Rodrigo Babapulle &#128141; Unknown													Lucia Rodrigo Babapulle &#128141; Phillip Joseph Casie Chetty (son of Caspe..." />
+  <meta property="og:description" content="" />
   
 
 

@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Philip Bastian Candappa">
-    <meta itemprop="description" content="						Philip Bastian Candappa &#128141; Unknown													Fredrick Purinayagam Candappa &#128141; Mary Canjemanaden (daughter of Andrew Benedict Canjemanaden &amp; Unknown)														Lilian Ethel Candappa &#128141; Christopher Ayam Perumal (son of Anthony Ayam Perumal &amp; Unknown)														Myrtle Enid Candappa &#128141; Granville Oliver Mutukisna (son of Roscius Solomon Mutukisna &amp; Unknown)						 Fun facts! 	  Number of unique descendents: 3	  Top 5 male names: Philip (1 times), Bastian (1 times), Fredrick (1 times), Purinayagam (1 times)	  Top 5 female names: Lilian (1 times), Ethel (1 times), Myrtle (1 times), Enid (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0773");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0773");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,37 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0773" class="link">Philip Bastian Candappa</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0772" class="link">Fredrick Purinayagam Candappa</a> &#128141; <a href="/person/I0771" class="link">Mary Canjemanaden</a> (daughter of <a href="/person/I0719" class="link">Andrew Benedict Canjemanaden</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0774" class="link">Lilian Ethel Candappa</a> &#128141; <a href="/person/I0776" class="link">Christopher Ayam Perumal</a> (son of <a href="/person/I0777" class="link">Anthony Ayam Perumal</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0775" class="link">Myrtle Enid Candappa</a> &#128141; <a href="/person/I0778" class="link">Granville Oliver Mutukisna</a> (son of <a href="/person/I0779" class="link">Roscius Solomon Mutukisna</a> & Unknown)</span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 3</li>
-	<li> <b> Top 5 male names:</b> Philip (1 times), Bastian (1 times), Fredrick (1 times), Purinayagam (1 times)</li>
-	<li> <b> Top 5 female names:</b> Lilian (1 times), Ethel (1 times), Myrtle (1 times), Enid (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1670,10 +1664,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1718,7 +1708,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0773" />
   <meta property="og:title" content="Descendants of Philip Bastian Candappa" />
-  <meta property="og:description" content="						Philip Bastian Candappa &#128141; Unknown													Fredrick Purinayagam Candappa &#128141; Mary Canjemanaden (daughter of Andrew..." />
+  <meta property="og:description" content="" />
   
 
 

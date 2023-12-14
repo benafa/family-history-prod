@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of J.C. Rodrigo Muniaram Perumal">
-    <meta itemprop="description" content="						J.C. Rodrigo Muniaram Perumal &#128141; Maria Johanna Anandappa													Anthony Dominic Rodrigo Muniaram Perumal &#128141; Cecilia Johanna Josephine Anandappa (daughter of Anthony Xavier Anandappa &amp; Anna Pieris Tavarayan)				  																			John Neville Rodrigo Muniaram Perumal &#128141; Barbara Johnson																			Maria Dooreen Rodrigo Muniaram Perumal &#128141; Philip Cajetan Anthony Anandappa (son of John Edmund Anandappa &amp; Agnes Lucy Laity Ramenaden)					  																									Mariette Anandappa &#128141; Edgar Pieris Tavarayan (son of Joseph Pieris Tavarayan &amp; Merica Rodrigo)																								Marion Clarence Eymard Anandappa																							Prosper Rodrigo Muniaram Perumal &#128141; Helen Juliana Fernandopulle (daughter of Louis Fernandopulle &amp; Alice Dominga Casie Chetty)				  																			Godwin Rodrigo Muniaram Perumal &#128141; Dawn Casie Chetty (daughter of Victor Casie Chetty &amp; Patricia Rodrigo)																			Granville Rodrigo Muniaram Perumal																			Eunice Rodrigo Muniaram Perumal &#128141; Rohan Casie Chetty (son of Justin Casie Chetty &amp; Henrietta Anandappa)																		Anna Rodrigo Muniaram Perumal &#128141; Unknown Wijeratnam				  																			Maurice Wijeratnam &#128141; Jacinta Maria Antonita Casie Chetty (daughter of Anthony Joseph Faustin &quot;Joe&quot; Casie Chetty &amp; Mary Rose Anandappa)																			Marie Wijeratnam																			Noeline Wijeratnam																			Jerry Wijeratnam																			Neville Wijeratnam																		Roche Rodrigo Muniaram Perumal &#128141; Therese Casie Chetty (daughter of Charles Borromeo &quot;Bromie&quot; Casie Chetty &amp; Philippa Pieris Juan Pulle)				  																			Malcom Rodrigo Muniaram Perumal																			Rienze Rodrigo Muniaram Perumal																		Francis Rodrigo Muniaram Perumal &#128141; Philly Anandappa (daughter of Dominic Marian Anandappa &amp; Theodora Laity Ramenaden)														Kitty Rodrigo Muniaram Perumal						 Fun facts! 	  Number of unique descendents: 20	  Top 5 male names: Neville (2 times), J.C. (1 times), Anthony (1 times), Dominic (1 times), John (1 times)	  Top 5 female names: Maria (1 times), Dooreen (1 times), Mariette (1 times), Eunice (1 times), Anna (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I500110");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I500110");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,137 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I500110" class="link">J.C. Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I500108" class="link">Maria Johanna Anandappa</a></span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I500076" class="link">Anthony Dominic Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I500075" class="link">Cecilia Johanna Josephine Anandappa</a> (daughter of <a href="/person/I500014" class="link">Anthony Xavier Anandappa</a> & <a href="/person/I500016" class="link">Anna Pieris Tavarayan</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500126" class="link">John Neville Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I0486" class="link">Barbara Johnson</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500124" class="link">Maria Dooreen Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I500125" class="link">Philip Cajetan Anthony Anandappa</a> (son of <a href="/person/I500138" class="link">John Edmund Anandappa</a> & <a href="/person/I500137" class="link">Agnes Lucy Laity Ramenaden</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0484" class="link">Mariette Anandappa</a> &#128141; <a href="/person/I0485" class="link">Edgar Pieris Tavarayan</a> (son of <a href="/person/I0947" class="link">Joseph Pieris Tavarayan</a> & <a href="/person/I0304" class="link">Merica Rodrigo</a>)</span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1181" class="link">Marion Clarence Eymard Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0230" class="link">Prosper Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I0225" class="link">Helen Juliana Fernandopulle</a> (daughter of <a href="/person/I0224" class="link">Louis Fernandopulle</a> & <a href="/person/I0196" class="link">Alice Dominga Casie Chetty</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0235" class="link">Godwin Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I0313" class="link">Dawn Casie Chetty</a> (daughter of <a href="/person/I0256" class="link">Victor Casie Chetty</a> & <a href="/person/I0300" class="link">Patricia Rodrigo</a>)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0236" class="link">Granville Rodrigo Muniaram Perumal</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0237" class="link">Eunice Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I0354" class="link">Rohan Casie Chetty</a> (son of <a href="/person/I0269" class="link">Justin Casie Chetty</a> & <a href="/person/I0345" class="link">Henrietta Anandappa</a>)</span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0231" class="link">Anna Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I0336" class="link">Unknown Wijeratnam</a></span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0337" class="link">Maurice Wijeratnam</a> &#128141; <a href="/person/I500129" class="link">Jacinta Maria Antonita Casie Chetty</a> (daughter of <a href="/person/I500078" class="link">Anthony Joseph Faustin "Joe" Casie Chetty</a> & <a href="/person/I500077" class="link">Mary Rose Anandappa</a>)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0338" class="link">Marie Wijeratnam</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0339" class="link">Noeline Wijeratnam</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0340" class="link">Jerry Wijeratnam</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0341" class="link">Neville Wijeratnam</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0232" class="link">Roche Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I0257" class="link">Therese Casie Chetty</a> (daughter of <a href="/person/I0177" class="link">Charles Borromeo "Bromie" Casie Chetty</a> & <a href="/person/I0254" class="link">Philippa Pieris Juan Pulle</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0316" class="link">Malcom Rodrigo Muniaram Perumal</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0317" class="link">Rienze Rodrigo Muniaram Perumal</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0233" class="link">Francis Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I0447" class="link">Philly Anandappa</a> (daughter of <a href="/person/I500107" class="link">Dominic Marian Anandappa</a> & <a href="/person/I0446" class="link">Theodora Laity Ramenaden</a>)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0234" class="link">Kitty Rodrigo Muniaram Perumal</a></span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 20</li>
-	<li> <b> Top 5 male names:</b> Neville (2 times), J.C. (1 times), Anthony (1 times), Dominic (1 times), John (1 times)</li>
-	<li> <b> Top 5 female names:</b> Maria (1 times), Dooreen (1 times), Mariette (1 times), Eunice (1 times), Anna (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1762,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1810,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I500110" />
   <meta property="og:title" content="Descendants of J.C. Rodrigo Muniaram Perumal" />
-  <meta property="og:description" content="						J.C. Rodrigo Muniaram Perumal &#128141; Maria Johanna Anandappa													Anthony Dominic Rodrigo Muniaram Perumal &#128141; Ceci..." />
+  <meta property="og:description" content="" />
   
 
 

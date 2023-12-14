@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Paul Pieris Tavarayan">
-    <meta itemprop="description" content="						Paul Pieris Tavarayan &#128141; Unknown													Josephine Pieris Tavarayan &#128141; Roche Pieris Tavarayan (son of Caitan Pieris Tavarayan &amp; Lucia Canjemanaden)														Joseph Pieris Tavarayan &#128141; Merica Rodrigo (daughter of Peter Rodrigo &amp; Therese Rodrigo Muniaram Perumal)				  																			Edgar Pieris Tavarayan &#128141; Mariette Anandappa (daughter of Philip Cajetan Anthony Anandappa &amp; Maria Dooreen Rodrigo Muniaram Perumal)																			Merle Pieris Tavarayan																			Maurice Pieris Tavarayan																			Claude Pieris Tavarayan																			Irwin Pieris Tavarayan																			Vernon Pieris Tavarayan																		Michael Pieris Tavarayan &#128141; Lilian Ayam Perumal (daughter of F.X. Ayam Perumal &amp; Unknown)				  																			Alscase Pieris Tavarayan &#128141; Clement Marianu Perera (son of Joseph William Marcelline Perera &amp; Mary Lourdes &quot;Laura&quot; Anandappa)					  																									Sharon Perera																								Dileeni Perera																								Aurille Pieris Tavarayan																			Hermione Pieris Tavarayan																			Tyrell Pieris Tavarayan																			Brian Pieris Tavarayan																		Emmanuel Pieris Tavarayan														Wenceslaus Pieris Tavarayan														Mary Pieris Tavarayan														Margaret Pieris Tavarayan														Lucy Pieris Tavarayan														Cecelia Pieris Tavarayan														Christy Pieris Tavarayan						 Fun facts! 	  Number of unique descendents: 23	  Top 5 male names: Paul (1 times), Joseph (1 times), Edgar (1 times), Maurice (1 times), Claude (1 times)	  Top 5 female names: Josephine (1 times), Merle (1 times), Alscase (1 times), Sharon (1 times), Dileeni (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I1026");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I1026");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,146 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I1026" class="link">Paul Pieris Tavarayan</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1025" class="link">Josephine Pieris Tavarayan</a> &#128141; <a href="/person/I0416" class="link">Roche Pieris Tavarayan</a> (son of <a href="/person/I500081" class="link">Caitan Pieris Tavarayan</a> & <a href="/person/I0815" class="link">Lucia Canjemanaden</a>)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0947" class="link">Joseph Pieris Tavarayan</a> &#128141; <a href="/person/I0304" class="link">Merica Rodrigo</a> (daughter of <a href="/person/I0301" class="link">Peter Rodrigo</a> & <a href="/person/I0302" class="link">Therese Rodrigo Muniaram Perumal</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0485" class="link">Edgar Pieris Tavarayan</a> &#128141; <a href="/person/I0484" class="link">Mariette Anandappa</a> (daughter of <a href="/person/I500125" class="link">Philip Cajetan Anthony Anandappa</a> & <a href="/person/I500124" class="link">Maria Dooreen Rodrigo Muniaram Perumal</a>)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1007" class="link">Merle Pieris Tavarayan</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1008" class="link">Maurice Pieris Tavarayan</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1009" class="link">Claude Pieris Tavarayan</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1010" class="link">Irwin Pieris Tavarayan</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1011" class="link">Vernon Pieris Tavarayan</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0624" class="link">Michael Pieris Tavarayan</a> &#128141; <a href="/person/I0578" class="link">Lilian Ayam Perumal</a> (daughter of <a href="/person/I0576" class="link">F.X. Ayam Perumal</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0623" class="link">Alscase Pieris Tavarayan</a> &#128141; <a href="/person/I0619" class="link">Clement Marianu Perera</a> (son of <a href="/person/I0615" class="link">Joseph William Marcelline Perera</a> & <a href="/person/I0000" class="link">Mary Lourdes "Laura" Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0629" class="link">Sharon Perera</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0630" class="link">Dileeni Perera</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0625" class="link">Aurille Pieris Tavarayan</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0626" class="link">Hermione Pieris Tavarayan</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0627" class="link">Tyrell Pieris Tavarayan</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0628" class="link">Brian Pieris Tavarayan</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1027" class="link">Emmanuel Pieris Tavarayan</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1028" class="link">Wenceslaus Pieris Tavarayan</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1029" class="link">Mary Pieris Tavarayan</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1030" class="link">Margaret Pieris Tavarayan</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1031" class="link">Lucy Pieris Tavarayan</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1032" class="link">Cecelia Pieris Tavarayan</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1033" class="link">Christy Pieris Tavarayan</a></span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 23</li>
-	<li> <b> Top 5 male names:</b> Paul (1 times), Joseph (1 times), Edgar (1 times), Maurice (1 times), Claude (1 times)</li>
-	<li> <b> Top 5 female names:</b> Josephine (1 times), Merle (1 times), Alscase (1 times), Sharon (1 times), Dileeni (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1771,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1819,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I1026" />
   <meta property="og:title" content="Descendants of Paul Pieris Tavarayan" />
-  <meta property="og:description" content="						Paul Pieris Tavarayan &#128141; Unknown													Josephine Pieris Tavarayan &#128141; Roche Pieris Tavarayan (son of Caitan Pier..." />
+  <meta property="og:description" content="" />
   
 
 

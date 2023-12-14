@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Michael Rodrigo Muttupulle">
-    <meta itemprop="description" content="						Michael Rodrigo Muttupulle &#128141; Unknown													Caitan Lawrence Rodrigo Muttupulle &#128141; Maria Theresa Emerentian Laity Ramenaden (daughter of Caitan Laity Ramenaden &amp; Unknown)														Sabina Rodrigo Muttupulle &#128141; Henry Theobold Mutukisna (son of Philip James Mutukisna &amp; Unknown)				  																			Gallican Mutukisna &#128141; Nesta Christie David					  																									Garrick Mutukisna																								Christobel Mutukisna																								Bianca Mutukisna																								Anthony Henry Mutukisna																								Marianne Mutukisna															 Fun facts! 	  Number of unique descendents: 8	  Top 5 male names: Michael (1 times), Caitan (1 times), Lawrence (1 times), Gallican (1 times), Garrick (1 times)	  Top 5 female names: Sabina (1 times), Christobel (1 times), Bianca (1 times), Marianne (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0879");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0879");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,68 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0879" class="link">Michael Rodrigo Muttupulle</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0878" class="link">Caitan Lawrence Rodrigo Muttupulle</a> &#128141; <a href="/person/I0877" class="link">Maria Theresa Emerentian Laity Ramenaden</a> (daughter of <a href="/person/I0453" class="link">Caitan Laity Ramenaden</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0901" class="link">Sabina Rodrigo Muttupulle</a> &#128141; <a href="/person/I0364" class="link">Henry Theobold Mutukisna</a> (son of <a href="/person/I0841" class="link">Philip James Mutukisna</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1174" class="link">Gallican Mutukisna</a> &#128141; <a href="/person/I1175" class="link">Nesta Christie David</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1176" class="link">Garrick Mutukisna</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1177" class="link">Christobel Mutukisna</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1178" class="link">Bianca Mutukisna</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1179" class="link">Anthony Henry Mutukisna</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1180" class="link">Marianne Mutukisna</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 8</li>
-	<li> <b> Top 5 male names:</b> Michael (1 times), Caitan (1 times), Lawrence (1 times), Gallican (1 times), Garrick (1 times)</li>
-	<li> <b> Top 5 female names:</b> Sabina (1 times), Christobel (1 times), Bianca (1 times), Marianne (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1697,10 +1660,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1745,7 +1704,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0879" />
   <meta property="og:title" content="Descendants of Michael Rodrigo Muttupulle" />
-  <meta property="og:description" content="						Michael Rodrigo Muttupulle &#128141; Unknown													Caitan Lawrence Rodrigo Muttupulle &#128141; Maria Theresa Emerentian Lait..." />
+  <meta property="og:description" content="" />
   
 
 

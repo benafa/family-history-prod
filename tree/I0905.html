@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Jacob Vethanayagam">
-    <meta itemprop="description" content="						Jacob Vethanayagam &#128141; Unknown													Gabriel Vethanayagam &#128141; 1. Clara Rodrigo Candappa (daughter of Dominic Nicholas Rodrigo Candappa &amp; Agida Pieris Tavarayan) 2. Rose Rodrigo Candappa (daughter of Dominic Nicholas Rodrigo Candappa &amp; Agida Pieris Tavarayan)				  																			Rita Vethanayagam &#128141; Ben Anandappa (son of Anthony Claudius Anandappa &amp; Mary Angelina Rodrigo)					  																									Brian Anandappa																								Reynold Anandappa																								Shiranee Anandappa																								Therese Vethanayagam																			Lourdes Vethanayagam																			Nicholas Vethanayagam																			Phila Vethanayagam &#128141; Camillus Fernandopulle (son of Christopher Fernandopulle &amp; Rosaline Adaman)					  																									Patrick Fernandopulle																								Christopher Fernandopulle																								Carmen Fernandopulle																								Sarojini Fernandopulle																								Sharma Fernandopulle																								Francis Vethanayagam																			Rosemary Vethanayagam &#128141; Cyril Fernandopulle (son of Christopher Fernandopulle &amp; Rosaline Adaman)					  																									Cloud Fernandopulle																								Lucky Fernandopulle																								Judie Fernandopulle																								Celine Fernandopulle															 Fun facts! 	  Number of unique descendents: 20	  Top 5 male names: Jacob (1 times), Gabriel (1 times), Brian (1 times), Reynold (1 times), Nicholas (1 times)	  Top 5 female names: Rita (1 times), Shiranee (1 times), Therese (1 times), Lourdes (1 times), Phila (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0905");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0905");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,134 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0905" class="link">Jacob Vethanayagam</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0904" class="link">Gabriel Vethanayagam</a> &#128141; 1. <a href="/person/I0902" class="link">Clara Rodrigo Candappa</a> (daughter of <a href="/person/I0634" class="link">Dominic Nicholas Rodrigo Candappa</a> & <a href="/person/I0635" class="link">Agida Pieris Tavarayan</a>) 2. <a href="/person/I0903" class="link">Rose Rodrigo Candappa</a> (daughter of <a href="/person/I0634" class="link">Dominic Nicholas Rodrigo Candappa</a> & <a href="/person/I0635" class="link">Agida Pieris Tavarayan</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500145" class="link">Rita Vethanayagam</a> &#128141; <a href="/person/I500143" class="link">Ben Anandappa</a> (son of <a href="/person/I500069" class="link">Anthony Claudius Anandappa</a> & <a href="/person/I500102" class="link">Mary Angelina Rodrigo</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I500146" class="link">Brian Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I500147" class="link">Reynold Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I500148" class="link">Shiranee Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0906" class="link">Therese Vethanayagam</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0907" class="link">Lourdes Vethanayagam</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0908" class="link">Nicholas Vethanayagam</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0909" class="link">Phila Vethanayagam</a> &#128141; <a href="/person/I0945" class="link">Camillus Fernandopulle</a> (son of <a href="/person/I0722" class="link">Christopher Fernandopulle</a> & <a href="/person/I0721" class="link">Rosaline Adaman</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0980" class="link">Patrick Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0981" class="link">Christopher Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0982" class="link">Carmen Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0983" class="link">Sarojini Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0984" class="link">Sharma Fernandopulle</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0910" class="link">Francis Vethanayagam</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0911" class="link">Rosemary Vethanayagam</a> &#128141; <a href="/person/I0940" class="link">Cyril Fernandopulle</a> (son of <a href="/person/I0722" class="link">Christopher Fernandopulle</a> & <a href="/person/I0721" class="link">Rosaline Adaman</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0954" class="link">Cloud Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0955" class="link">Lucky Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0956" class="link">Judie Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0957" class="link">Celine Fernandopulle</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 20</li>
-	<li> <b> Top 5 male names:</b> Jacob (1 times), Gabriel (1 times), Brian (1 times), Reynold (1 times), Nicholas (1 times)</li>
-	<li> <b> Top 5 female names:</b> Rita (1 times), Shiranee (1 times), Therese (1 times), Lourdes (1 times), Phila (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1759,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1807,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0905" />
   <meta property="og:title" content="Descendants of Jacob Vethanayagam" />
-  <meta property="og:description" content="						Jacob Vethanayagam &#128141; Unknown													Gabriel Vethanayagam &#128141; 1. Clara Rodrigo Candappa (daughter of Dominic Nich..." />
+  <meta property="og:description" content="" />
   
 
 

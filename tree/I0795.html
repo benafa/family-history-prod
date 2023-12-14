@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Simon Rodrigo Candappa">
-    <meta itemprop="description" content="						Simon Rodrigo Candappa &#128141; Unknown													Juliana Rodrigo Candappa &#128141; Francis Xavier Anandappa (son of Peter Braze Anandappa &amp; Unknown)				  																			Henrietta Anandappa &#128141; Justin Casie Chetty (son of Walter Patrick Casie Chetty &amp; Jane Francisca Rodrigo Babapulle)					  																									Renee Casie Chetty																								Delrene Casie Chetty																								Langsford Casie Chetty																								Shiranee Casie Chetty																								Rohan Casie Chetty &#128141; Eunice Rodrigo Muniaram Perumal (daughter of Prosper Rodrigo Muniaram Perumal &amp; Helen Juliana Fernandopulle)																								Worrel Casie Chetty																								Arlene Casie Chetty																								Joseph Anandappa																			Mary Antoinette Anastasia &quot;Annette&quot; Anandappa &#128141; Reginald Albert Fernandopulle (son of Christopher Fernandopulle &amp; Rosaline Adaman)					  																									Mohan Fernandopulle																								Maryse Fernandopulle																								Denver Fernandopulle																								Sandra Fernandopulle																								Francis Anandappa &#128141; Winifred Rodrigo (daughter of Xavier Rodrigo &amp; Lucia Lawranca Silvapulle)					  																									Astrid Anandappa																								Aubrey Anandappa																								Roy Anandappa																								Michaelle Anandappa																								Dayle Anandappa																								Cicily Anandappa &#128141; Christie Pathinathar					  																									Yvonne Pathinathar																							Caitan Rodrigo Candappa &#128141; Arenica Fernando Bastianpulle (daughter of Bastian Fernando Thormupulle &amp; Unknown)						 Fun facts! 	  Number of unique descendents: 24	  Top 5 male names: Simon (1 times), Langsford (1 times), Rohan (1 times), Worrel (1 times), Joseph (1 times)	  Top 5 female names: Juliana (1 times), Henrietta (1 times), Renee (1 times), Delrene (1 times), Shiranee (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0795");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0795");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,157 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0795" class="link">Simon Rodrigo Candappa</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0344" class="link">Juliana Rodrigo Candappa</a> &#128141; <a href="/person/I0019" class="link">Francis Xavier Anandappa</a> (son of <a href="/person/I500086" class="link">Peter Braze Anandappa</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0345" class="link">Henrietta Anandappa</a> &#128141; <a href="/person/I0269" class="link">Justin Casie Chetty</a> (son of <a href="/person/I0179" class="link">Walter Patrick Casie Chetty</a> & <a href="/person/I0267" class="link">Jane Francisca Rodrigo Babapulle</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0350" class="link">Renee Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0351" class="link">Delrene Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0352" class="link">Langsford Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0353" class="link">Shiranee Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0354" class="link">Rohan Casie Chetty</a> &#128141; <a href="/person/I0237" class="link">Eunice Rodrigo Muniaram Perumal</a> (daughter of <a href="/person/I0230" class="link">Prosper Rodrigo Muniaram Perumal</a> & <a href="/person/I0225" class="link">Helen Juliana Fernandopulle</a>)</span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0355" class="link">Worrel Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0356" class="link">Arlene Casie Chetty</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0346" class="link">Joseph Anandappa</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0347" class="link">Mary Antoinette Anastasia "Annette" Anandappa</a> &#128141; <a href="/person/I0655" class="link">Reginald Albert Fernandopulle</a> (son of <a href="/person/I0722" class="link">Christopher Fernandopulle</a> & <a href="/person/I0721" class="link">Rosaline Adaman</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0656" class="link">Mohan Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0657" class="link">Maryse Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0658" class="link">Denver Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0659" class="link">Sandra Fernandopulle</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0348" class="link">Francis Anandappa</a> &#128141; <a href="/person/I0660" class="link">Winifred Rodrigo</a> (daughter of <a href="/person/I0875" class="link">Xavier Rodrigo</a> & <a href="/person/I0876" class="link">Lucia Lawranca Silvapulle</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0661" class="link">Astrid Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0662" class="link">Aubrey Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0663" class="link">Roy Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0664" class="link">Michaelle Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0665" class="link">Dayle Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0349" class="link">Cicily Anandappa</a> &#128141; <a href="/person/I0666" class="link">Christie Pathinathar</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0667" class="link">Yvonne Pathinathar</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0849" class="link">Caitan Rodrigo Candappa</a> &#128141; <a href="/person/I0850" class="link">Arenica Fernando Bastianpulle</a> (daughter of <a href="/person/I0851" class="link">Bastian Fernando Thormupulle</a> & Unknown)</span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 24</li>
-	<li> <b> Top 5 male names:</b> Simon (1 times), Langsford (1 times), Rohan (1 times), Worrel (1 times), Joseph (1 times)</li>
-	<li> <b> Top 5 female names:</b> Juliana (1 times), Henrietta (1 times), Renee (1 times), Delrene (1 times), Shiranee (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1786,10 +1660,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1834,7 +1704,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0795" />
   <meta property="og:title" content="Descendants of Simon Rodrigo Candappa" />
-  <meta property="og:description" content="						Simon Rodrigo Candappa &#128141; Unknown													Juliana Rodrigo Candappa &#128141; Francis Xavier Anandappa (son of Peter Braz..." />
+  <meta property="og:description" content="" />
   
 
 

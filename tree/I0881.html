@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Caitan Dominic Rodrigo Sathianathan">
-    <meta itemprop="description" content="						Caitan Dominic Rodrigo Sathianathan &#128141; Theresa Laity Ramenaden													Mary Bridget Rodrigo Sathianathan &#128141; Ubaldus Stanislaus Adaman				  																			Yvonne Adaman &#128141; Neville Casie Chetty (son of Caspar Joseph Casie Chetty &amp; Mary Ceclia Anandappa)					  																									Clyde Casie Chetty &#128141; Radini Adaman (daughter of Ronald Adaman &amp; Jaya Lakshmi)																								Mary Iphegenia Adaman &#128141; Didacus Caderamanpulle (son of Michael Caderamanpulle &amp; Regina Laity Ramenaden)					  																									Delano Caderamanpulle &#128141; Rochelle Ayam Perumal (daughter of Fermin Ayam Perumal &amp; Romany Patricia Monica Anandappa)																								Callista Adaman &#128141; Chelva Rajaratnam					  																									Nroshan Rajaratnam &#128141; Suboni Adaman (daughter of Ronald Adaman &amp; Jaya Lakshmi)																								Praxede Venetia Adaman																			Cheryl Bridget Adaman &#128141; Joseph Sinniah					  																									Sanjay Sinniah																								Sajie Sinniah																								Canute Solomon Adaman &#128141; Olu Unknown					  																									Allison Adaman																								Colin Adaman																								Carmel Adaman																		Josephine Rodrigo Sathianathan &#128141; Ubald Laity Ramenaden				  																			Michael Laity Ramenaden &#128141; Sandra Anandappa (daughter of Anthony Eubaldus &quot;Tony&quot; Anandappa &amp; Justina Marina Therese &quot;Marnie&quot; Anandappa)					  																									Sonella Laity Ramenaden																								Joel Laity Ramenaden																								Noeline Rosemarie Laity Ramenaden &#128141; Michael Fernandopulle (son of Felix Fernandopulle &amp; Christobel Therese &quot;Dolly&quot; Laity Ramenaden)																			Dennis Laity Ramenaden																			Gladwyn Laity Ramenaden																			Doyne Laity Ramenaden																		Annette Rodrigo Sathianathan &#128141; Unknown Adaman				  																			Ronald Adaman &#128141; Jaya Lakshmi					  																									Suboni Adaman &#128141; Nroshan Rajaratnam (son of Chelva Rajaratnam &amp; Callista Adaman)																								Radini Adaman &#128141; Clyde Casie Chetty (son of Neville Casie Chetty &amp; Yvonne Adaman)																								Donald Adaman																			Dawn Adaman										 Fun facts! 	  Number of unique descendents: 29	  Top 5 male names: Caitan (1 times), Dominic (1 times), Clyde (1 times), Delano (1 times), Nroshan (1 times)	  Top 5 female names: Mary (2 times), Bridget (2 times), Yvonne (1 times), Iphegenia (1 times), Callista (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0881");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0881");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,197 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0881" class="link">Caitan Dominic Rodrigo Sathianathan</a> &#128141; <a href="/person/I0880" class="link">Theresa Laity Ramenaden</a></span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0725" class="link">Mary Bridget Rodrigo Sathianathan</a> &#128141; <a href="/person/I0724" class="link">Ubaldus Stanislaus Adaman</a></span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0210" class="link">Yvonne Adaman</a> &#128141; <a href="/person/I0204" class="link">Neville Casie Chetty</a> (son of <a href="/person/I0194" class="link">Caspar Joseph Casie Chetty</a> & <a href="/person/I0183" class="link">Mary Ceclia Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0211" class="link">Clyde Casie Chetty</a> &#128141; <a href="/person/I0997" class="link">Radini Adaman</a> (daughter of <a href="/person/I0995" class="link">Ronald Adaman</a> & <a href="/person/I0996" class="link">Jaya Lakshmi</a>)</span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0985" class="link">Mary Iphegenia Adaman</a> &#128141; <a href="/person/I0991" class="link">Didacus Caderamanpulle</a> (son of <a href="/person/I1182" class="link">Michael Caderamanpulle</a> & <a href="/person/I1183" class="link">Regina Laity Ramenaden</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I500006" class="link">Delano Caderamanpulle</a> &#128141; <a href="/person/I500003" class="link">Rochelle Ayam Perumal</a> (daughter of <a href="/person/I0506" class="link">Fermin Ayam Perumal</a> & <a href="/person/I0131" class="link">Romany Patricia Monica Anandappa</a>)</span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0986" class="link">Callista Adaman</a> &#128141; <a href="/person/I0992" class="link">Chelva Rajaratnam</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0993" class="link">Nroshan Rajaratnam</a> &#128141; <a href="/person/I0994" class="link">Suboni Adaman</a> (daughter of <a href="/person/I0995" class="link">Ronald Adaman</a> & <a href="/person/I0996" class="link">Jaya Lakshmi</a>)</span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0987" class="link">Praxede Venetia Adaman</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0988" class="link">Cheryl Bridget Adaman</a> &#128141; <a href="/person/I0998" class="link">Joseph Sinniah</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0999" class="link">Sanjay Sinniah</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1000" class="link">Sajie Sinniah</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0989" class="link">Canute Solomon Adaman</a> &#128141; <a href="/person/I1001" class="link">Olu Unknown</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1002" class="link">Allison Adaman</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1003" class="link">Colin Adaman</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0990" class="link">Carmel Adaman</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1092" class="link">Josephine Rodrigo Sathianathan</a> &#128141; <a href="/person/I1123" class="link">Ubald Laity Ramenaden</a></span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0151" class="link">Michael Laity Ramenaden</a> &#128141; <a href="/person/I0088" class="link">Sandra Anandappa</a> (daughter of <a href="/person/I0023" class="link">Anthony Eubaldus "Tony" Anandappa</a> & <a href="/person/I0115" class="link">Justina Marina Therese "Marnie" Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0153" class="link">Sonella Laity Ramenaden</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0152" class="link">Joel Laity Ramenaden</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1124" class="link">Noeline Rosemarie Laity Ramenaden</a> &#128141; <a href="/person/I1128" class="link">Michael Fernandopulle</a> (son of <a href="/person/I1129" class="link">Felix Fernandopulle</a> & <a href="/person/I1130" class="link">Christobel Therese "Dolly" Laity Ramenaden</a>)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1125" class="link">Dennis Laity Ramenaden</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1126" class="link">Gladwyn Laity Ramenaden</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1127" class="link">Doyne Laity Ramenaden</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1093" class="link">Annette Rodrigo Sathianathan</a> &#128141; <a href="/person/I1094" class="link">Unknown Adaman</a></span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0995" class="link">Ronald Adaman</a> &#128141; <a href="/person/I0996" class="link">Jaya Lakshmi</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0994" class="link">Suboni Adaman</a> &#128141; <a href="/person/I0993" class="link">Nroshan Rajaratnam</a> (son of <a href="/person/I0992" class="link">Chelva Rajaratnam</a> & <a href="/person/I0986" class="link">Callista Adaman</a>)</span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0997" class="link">Radini Adaman</a> &#128141; <a href="/person/I0211" class="link">Clyde Casie Chetty</a> (son of <a href="/person/I0204" class="link">Neville Casie Chetty</a> & <a href="/person/I0210" class="link">Yvonne Adaman</a>)</span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1095" class="link">Donald Adaman</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1096" class="link">Dawn Adaman</a></span>
-				</div>
-			</li>
-		</ul>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 29</li>
-	<li> <b> Top 5 male names:</b> Caitan (1 times), Dominic (1 times), Clyde (1 times), Delano (1 times), Nroshan (1 times)</li>
-	<li> <b> Top 5 female names:</b> Mary (2 times), Bridget (2 times), Yvonne (1 times), Iphegenia (1 times), Callista (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1822,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1870,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0881" />
   <meta property="og:title" content="Descendants of Caitan Dominic Rodrigo Sathianathan" />
-  <meta property="og:description" content="						Caitan Dominic Rodrigo Sathianathan &#128141; Theresa Laity Ramenaden													Mary Bridget Rodrigo Sathianathan &#128141; Ubald..." />
+  <meta property="og:description" content="" />
   
 
 

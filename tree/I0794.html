@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Anthony Michael Fernandopulle">
-    <meta itemprop="description" content="						Anthony Michael Fernandopulle &#128141; Unknown													Juliana Fernandopulle &#128141; Joseph Kaitan Anandappa (son of Emmanuel Anandappa &amp; Christina Rodrigo)														Louis Fernandopulle &#128141; Alice Dominga Casie Chetty (daughter of Francis Xavier Casie Chetty &amp; Lucy Mary Silva Candappa)				  																			Helen Juliana Fernandopulle &#128141; Prosper Rodrigo Muniaram Perumal (son of J.C. Rodrigo Muniaram Perumal &amp; Maria Johanna Anandappa)					  																									Godwin Rodrigo Muniaram Perumal &#128141; Dawn Casie Chetty (daughter of Victor Casie Chetty &amp; Patricia Rodrigo)																								Granville Rodrigo Muniaram Perumal																								Eunice Rodrigo Muniaram Perumal &#128141; Rohan Casie Chetty (son of Justin Casie Chetty &amp; Henrietta Anandappa)																								Elizabeth Fernandopulle &#128141; Anthony Clarence Anandappa (son of Joseph Jerome Theodore Anandappa &amp; Mary Magdalene Anandappa)																			Josephine Fernandopulle &#128141; J. Camillus A. Anandappa (son of Dominic Philip Anandappa &amp; Unknown)					  																									Maureen Anandappa																								Yvonne Anandappa																								Conrad Anandappa																								Jeremy Anandappa																								Linus Fernandopulle																			Felix Fernandopulle																		Mary Martha Fernandopulle &#128141; Christopher Vidurampulle (son of Peter Vidurampulle &amp; Unknown)				  																			John Berkman Vidurampulle																		Pasqual Fernandopulle						 Fun facts! 	  Number of unique descendents: 17	  Top 5 male names: Anthony (1 times), Michael (1 times), Louis (1 times), Godwin (1 times), Granville (1 times)	  Top 5 female names: Juliana (2 times), Helen (1 times), Eunice (1 times), Elizabeth (1 times), Josephine (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0794");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0794");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,119 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0794" class="link">Anthony Michael Fernandopulle</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0793" class="link">Juliana Fernandopulle</a> &#128141; <a href="/person/I0408" class="link">Joseph Kaitan Anandappa</a> (son of <a href="/person/I0406" class="link">Emmanuel Anandappa</a> & <a href="/person/I0407" class="link">Christina Rodrigo</a>)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0224" class="link">Louis Fernandopulle</a> &#128141; <a href="/person/I0196" class="link">Alice Dominga Casie Chetty</a> (daughter of <a href="/person/I0175" class="link">Francis Xavier Casie Chetty</a> & <a href="/person/I0193" class="link">Lucy Mary Silva Candappa</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0225" class="link">Helen Juliana Fernandopulle</a> &#128141; <a href="/person/I0230" class="link">Prosper Rodrigo Muniaram Perumal</a> (son of <a href="/person/I500110" class="link">J.C. Rodrigo Muniaram Perumal</a> & <a href="/person/I500108" class="link">Maria Johanna Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0235" class="link">Godwin Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I0313" class="link">Dawn Casie Chetty</a> (daughter of <a href="/person/I0256" class="link">Victor Casie Chetty</a> & <a href="/person/I0300" class="link">Patricia Rodrigo</a>)</span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0236" class="link">Granville Rodrigo Muniaram Perumal</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0237" class="link">Eunice Rodrigo Muniaram Perumal</a> &#128141; <a href="/person/I0354" class="link">Rohan Casie Chetty</a> (son of <a href="/person/I0269" class="link">Justin Casie Chetty</a> & <a href="/person/I0345" class="link">Henrietta Anandappa</a>)</span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0226" class="link">Elizabeth Fernandopulle</a> &#128141; <a href="/person/I500094" class="link">Anthony Clarence Anandappa</a> (son of <a href="/person/I500092" class="link">Joseph Jerome Theodore Anandappa</a> & <a href="/person/I500090" class="link">Mary Magdalene Anandappa</a>)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0227" class="link">Josephine Fernandopulle</a> &#128141; <a href="/person/I0185" class="link">J. Camillus A. Anandappa</a> (son of <a href="/person/I500096" class="link">Dominic Philip Anandappa</a> & Unknown)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0238" class="link">Maureen Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0239" class="link">Yvonne Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0240" class="link">Conrad Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0241" class="link">Jeremy Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0228" class="link">Linus Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0229" class="link">Felix Fernandopulle</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0852" class="link">Mary Martha Fernandopulle</a> &#128141; <a href="/person/I0853" class="link">Christopher Vidurampulle</a> (son of <a href="/person/I0854" class="link">Peter Vidurampulle</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0855" class="link">John Berkman Vidurampulle</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0856" class="link">Pasqual Fernandopulle</a></span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 17</li>
-	<li> <b> Top 5 male names:</b> Anthony (1 times), Michael (1 times), Louis (1 times), Godwin (1 times), Granville (1 times)</li>
-	<li> <b> Top 5 female names:</b> Juliana (2 times), Helen (1 times), Eunice (1 times), Elizabeth (1 times), Josephine (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1752,10 +1664,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1800,7 +1708,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0794" />
   <meta property="og:title" content="Descendants of Anthony Michael Fernandopulle" />
-  <meta property="og:description" content="						Anthony Michael Fernandopulle &#128141; Unknown													Juliana Fernandopulle &#128141; Joseph Kaitan Anandappa (son of Emmanue..." />
+  <meta property="og:description" content="" />
   
 
 

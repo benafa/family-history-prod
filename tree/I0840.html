@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Caitan Nahvel Fernandopulle">
-    <meta itemprop="description" content="						Caitan Nahvel Fernandopulle &#128141; Unknown													Charles Nahvel &quot;Charlie&quot; Fernandopulle &#128141; Mary Theresa Casie Chetty (daughter of Phillip Joseph Casie Chetty &amp; Lucia Rodrigo Babapulle)				  																			Terry Fernandopulle &#128141; Marlene Caderamanpulle (daughter of Michael Caderamanpulle &amp; Regina Laity Ramenaden)					  																									Travis Fernandopulle																								Navin Fernandopulle																								Philomena &quot;Bubby&quot; Fernandopulle &#128141; Patrick Casie Chetty (son of Walter Patrick Casie Chetty &amp; Jane Francisca Rodrigo Babapulle)					  																									Padmini Casie Chetty																								Tyronne Casie Chetty																								Savitry Casie Chetty																								Rita Fernandopulle																			Gladys Fernandopulle &#128141; Nicholas Rodrigo (son of Peter Rodrigo &amp; Therese Rodrigo Muniaram Perumal)										 Fun facts! 	  Number of unique descendents: 10	  Top 5 male names: Nahvel (2 times), Caitan (1 times), Charles (1 times), Terry (1 times), Travis (1 times)	  Top 5 female names: Philomena (1 times), Padmini (1 times), Rita (1 times), Gladys (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0840");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0840");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,81 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0840" class="link">Caitan Nahvel Fernandopulle</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0251" class="link">Charles Nahvel "Charlie" Fernandopulle</a> &#128141; <a href="/person/I0245" class="link">Mary Theresa Casie Chetty</a> (daughter of <a href="/person/I0176" class="link">Phillip Joseph Casie Chetty</a> & <a href="/person/I0242" class="link">Lucia Rodrigo Babapulle</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0252" class="link">Terry Fernandopulle</a> &#128141; <a href="/person/I1185" class="link">Marlene Caderamanpulle</a> (daughter of <a href="/person/I1182" class="link">Michael Caderamanpulle</a> & <a href="/person/I1183" class="link">Regina Laity Ramenaden</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1209" class="link">Travis Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1210" class="link">Navin Fernandopulle</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0253" class="link">Philomena "Bubby" Fernandopulle</a> &#128141; <a href="/person/I0271" class="link">Patrick Casie Chetty</a> (son of <a href="/person/I0179" class="link">Walter Patrick Casie Chetty</a> & <a href="/person/I0267" class="link">Jane Francisca Rodrigo Babapulle</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0276" class="link">Padmini Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0277" class="link">Tyronne Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0278" class="link">Savitry Casie Chetty</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1208" class="link">Rita Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1004" class="link">Gladys Fernandopulle</a> &#128141; <a href="/person/I0303" class="link">Nicholas Rodrigo</a> (son of <a href="/person/I0301" class="link">Peter Rodrigo</a> & <a href="/person/I0302" class="link">Therese Rodrigo Muniaram Perumal</a>)</span>
-				</div>
-			</li>
-		</ul>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 10</li>
-	<li> <b> Top 5 male names:</b> Nahvel (2 times), Caitan (1 times), Charles (1 times), Terry (1 times), Travis (1 times)</li>
-	<li> <b> Top 5 female names:</b> Philomena (1 times), Padmini (1 times), Rita (1 times), Gladys (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1706,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1754,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0840" />
   <meta property="og:title" content="Descendants of Caitan Nahvel Fernandopulle" />
-  <meta property="og:description" content="						Caitan Nahvel Fernandopulle &#128141; Unknown													Charles Nahvel "Charlie" Fernandopulle &#128141; Mary Theresa Casie Chett..." />
+  <meta property="og:description" content="" />
   
 
 

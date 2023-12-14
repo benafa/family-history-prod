@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Michael Caderamanpulle">
-    <meta itemprop="description" content="						Michael Caderamanpulle &#128141; Regina Laity Ramenaden													Didacus Caderamanpulle &#128141; Mary Iphegenia Adaman (daughter of Ubaldus Stanislaus Adaman &amp; Mary Bridget Rodrigo Sathianathan)				  																			Delano Caderamanpulle &#128141; Rochelle Ayam Perumal (daughter of Fermin Ayam Perumal &amp; Romany Patricia Monica Anandappa)																		Anton Caderamanpulle &#128141; Rukmani Manikavasagar				  																			Mano Caderamanpulle																			Ranjan Caderamanpulle																			Vishni Caderamanpulle																		Joseph Caderamanpulle &#128141; Shantha Unknown				  																			Sherhan Caderamanpulle																			Rajiv Caderamanpulle																		Marlene Caderamanpulle &#128141; Terry Fernandopulle (son of Charles Nahvel &quot;Charlie&quot; Fernandopulle &amp; Mary Theresa Casie Chetty)				  																			Travis Fernandopulle																			Navin Fernandopulle																		Michael Caderamanpulle &#128141; Manohari Paiva				  																			Anushka Caderamanpulle																			Gitendra Caderamanpulle																		Charmaine Caderamanpulle &#128141; Trinet Candappa						 Fun facts! 	  Number of unique descendents: 16	  Top 5 male names: Michael (2 times), Didacus (1 times), Delano (1 times), Anton (1 times), Mano (1 times)	  Top 5 female names: Vishni (1 times), Marlene (1 times), Gitendra (1 times), Charmaine (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I1182");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I1182");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,117 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I1182" class="link">Michael Caderamanpulle</a> &#128141; <a href="/person/I1183" class="link">Regina Laity Ramenaden</a></span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0991" class="link">Didacus Caderamanpulle</a> &#128141; <a href="/person/I0985" class="link">Mary Iphegenia Adaman</a> (daughter of <a href="/person/I0724" class="link">Ubaldus Stanislaus Adaman</a> & <a href="/person/I0725" class="link">Mary Bridget Rodrigo Sathianathan</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500006" class="link">Delano Caderamanpulle</a> &#128141; <a href="/person/I500003" class="link">Rochelle Ayam Perumal</a> (daughter of <a href="/person/I0506" class="link">Fermin Ayam Perumal</a> & <a href="/person/I0131" class="link">Romany Patricia Monica Anandappa</a>)</span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1184" class="link">Anton Caderamanpulle</a> &#128141; <a href="/person/I1206" class="link">Rukmani Manikavasagar</a></span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1211" class="link">Mano Caderamanpulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1212" class="link">Ranjan Caderamanpulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1213" class="link">Vishni Caderamanpulle</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1187" class="link">Joseph Caderamanpulle</a> &#128141; <a href="/person/I1214" class="link">Shantha Unknown</a></span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1215" class="link">Sherhan Caderamanpulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1216" class="link">Rajiv Caderamanpulle</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1185" class="link">Marlene Caderamanpulle</a> &#128141; <a href="/person/I0252" class="link">Terry Fernandopulle</a> (son of <a href="/person/I0251" class="link">Charles Nahvel "Charlie" Fernandopulle</a> & <a href="/person/I0245" class="link">Mary Theresa Casie Chetty</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1209" class="link">Travis Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1210" class="link">Navin Fernandopulle</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1186" class="link">Michael Caderamanpulle</a> &#128141; <a href="/person/I1217" class="link">Manohari Paiva</a></span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1218" class="link">Anushka Caderamanpulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1219" class="link">Gitendra Caderamanpulle</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1188" class="link">Charmaine Caderamanpulle</a> &#128141; <a href="/person/I1220" class="link">Trinet Candappa</a></span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 16</li>
-	<li> <b> Top 5 male names:</b> Michael (2 times), Didacus (1 times), Delano (1 times), Anton (1 times), Mano (1 times)</li>
-	<li> <b> Top 5 female names:</b> Vishni (1 times), Marlene (1 times), Gitendra (1 times), Charmaine (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1742,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1790,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I1182" />
   <meta property="og:title" content="Descendants of Michael Caderamanpulle" />
-  <meta property="og:description" content="						Michael Caderamanpulle &#128141; Regina Laity Ramenaden													Didacus Caderamanpulle &#128141; Mary Iphegenia Adaman (daughte..." />
+  <meta property="og:description" content="" />
   
 
 

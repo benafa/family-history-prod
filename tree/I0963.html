@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Irene Mutukisna">
-    <meta itemprop="description" content="						Irene Mutukisna &#128141; Xavier Rodrigo Candappa													Padmani Rodrigo Candappa &#128141; Teles Boniface Fernandopulle (son of Christopher Fernandopulle &amp; Rosaline Adaman)				  																			Manindra Fernandopulle																			Chrishantee Fernandopulle																			Delcanta Fernandopulle																		Grace Rodrigo Candappa &#128141; Joseph Bernard Nicholas Fernandopulle (son of Christopher Fernandopulle &amp; Rosaline Adaman)				  																			Nihal Fernandopulle																			Neville Fernandopulle																			Prakash Fernandopulle																			Bernard Sri Rajan Fernandopulle																			Mahen Fernandopulle																		Rita Jessie Rodrigo Candappa														Doreen Rodrigo Candappa														J.E. Rodrigo Candappa						 Fun facts! 	  Number of unique descendents: 13	  Top 5 male names: Manindra (1 times), Nihal (1 times), Neville (1 times), Prakash (1 times), Bernard (1 times)	  Top 5 female names: Irene (1 times), Padmani (1 times), Chrishantee (1 times), Delcanta (1 times), Grace (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0963");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0963");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,93 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0963" class="link">Irene Mutukisna</a> &#128141; <a href="/person/I0962" class="link">Xavier Rodrigo Candappa</a></span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0958" class="link">Padmani Rodrigo Candappa</a> &#128141; <a href="/person/I0941" class="link">Teles Boniface Fernandopulle</a> (son of <a href="/person/I0722" class="link">Christopher Fernandopulle</a> & <a href="/person/I0721" class="link">Rosaline Adaman</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0959" class="link">Manindra Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0960" class="link">Chrishantee Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0961" class="link">Delcanta Fernandopulle</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0948" class="link">Grace Rodrigo Candappa</a> &#128141; <a href="/person/I0939" class="link">Joseph Bernard Nicholas Fernandopulle</a> (son of <a href="/person/I0722" class="link">Christopher Fernandopulle</a> & <a href="/person/I0721" class="link">Rosaline Adaman</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0949" class="link">Nihal Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0950" class="link">Neville Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0952" class="link">Prakash Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0953" class="link">Bernard Sri Rajan Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1143" class="link">Mahen Fernandopulle</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1083" class="link">Rita Jessie Rodrigo Candappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1085" class="link">Doreen Rodrigo Candappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1086" class="link">J.E. Rodrigo Candappa</a></span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 13</li>
-	<li> <b> Top 5 male names:</b> Manindra (1 times), Nihal (1 times), Neville (1 times), Prakash (1 times), Bernard (1 times)</li>
-	<li> <b> Top 5 female names:</b> Irene (1 times), Padmani (1 times), Chrishantee (1 times), Delcanta (1 times), Grace (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1718,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1766,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0963" />
   <meta property="og:title" content="Descendants of Irene Mutukisna" />
-  <meta property="og:description" content="						Irene Mutukisna &#128141; Xavier Rodrigo Candappa													Padmani Rodrigo Candappa &#128141; Teles Boniface Fernandopulle (son ..." />
+  <meta property="og:description" content="" />
   
 
 

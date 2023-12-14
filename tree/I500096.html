@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Dominic Philip Anandappa">
-    <meta itemprop="description" content="						Dominic Philip Anandappa &#128141; Unknown													Joseph Jerome Theodore Anandappa &#128141; Mary Magdalene Anandappa (daughter of Peter Benedict Anandappa &amp;  Ramenaden)				  																			Emmanuel Theodore Peter Anandappa																			Anthony Clarence Anandappa &#128141; Elizabeth Fernandopulle (daughter of Louis Fernandopulle &amp; Alice Dominga Casie Chetty)																			Mary Josephine Anandappa &#128141; Joy Mickem-Perumal (son of Anthony Mickem-Perumal &amp; Salome Anandappa)					  																									Jennie Mickem-Perumal																								Errol Mickem-Perumal &#128141; Padma Jinadari																								Cheryll Mickem-Perumal &#128141; Daya Ranasinghe																								Deidre Mickem-Perumal																							Mary Ceclia Anandappa &#128141; Caspar Joseph Casie Chetty (son of Francis Xavier Casie Chetty &amp; Lucy Mary Silva Candappa)				  																			Francis Casie Chetty &#128141; Norah Unknown																			Freddy Casie Chetty &#128141; Unknown																			Neville Casie Chetty &#128141; Yvonne Adaman (daughter of Ubaldus Stanislaus Adaman &amp; Mary Bridget Rodrigo Sathianathan)					  																									Clyde Casie Chetty &#128141; Radini Adaman (daughter of Ronald Adaman &amp; Jaya Lakshmi)																								Constance Casie Chetty																			Patricia Casie Chetty																			Eileen Casie Chetty &#128141; Neil Anandappa (son of Anthony Joseph Nicholas &quot;Joe&quot; Anandappa &amp; Joyce Perumal)					  																									Ralston Anandappa																								Shervin Anandappa																								Gavin Anandappa																							J. Felix A. Anandappa &#128141; Bernice Sathianathan (daughter of Unknown Sathianathan &amp; Cicilia &quot;Sissa&quot; Casie Chetty)				  																			Hillary Anandappa																			Allan Anandappa																		J. Camillus A. Anandappa &#128141; Josephine Fernandopulle (daughter of Louis Fernandopulle &amp; Alice Dominga Casie Chetty)				  																			Maureen Anandappa																			Yvonne Anandappa																			Conrad Anandappa																			Jeremy Anandappa																		Michael Joseph Clement Anandappa &#128141; Anna Theresa Casie Chetty (daughter of Francis Xavier Casie Chetty &amp; Lucy Mary Silva Candappa)				  																			Giles Anandappa																			Mani Anandappa &#128141; Eileen Unknown					  																									Ian Anandappa																								Priscilla Anandappa																								Tania Anandappa																								Niraj Anandappa																								Mary Josephine Christobelle Anandappa &#128141; Marcelline Rodrigopulle					  																									Sandra Rodrigopulle &#128141; Roshan Jude Anandappa (son of Ignatius Boniface &quot;Bonnie&quot; Anandappa &amp; Victoria &quot;Vivi&quot; Rodrigo Candappa)						  																															Ignatius Anandappa																													Theresa Anandappa																														Euphy Anandappa																			Stephanie Anandappa																		J. Dominic P. Anandappa														John Anthony Anandappa														Emmanuel Theodore Paschal Anandappa														Aloysius J.B. Anandappa														J.B. Anandappa														J.A.R Anandappa						 Fun facts! 	  Number of unique descendents: 46	  Top 5 male names: Theodore (3 times), J. (3 times), Dominic (2 times), Joseph (2 times), Emmanuel (2 times)	  Top 5 female names: Mary (3 times), Josephine (2 times), Jennie (1 times), Cheryll (1 times), Deidre (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I500096");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I500096");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,285 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I500096" class="link">Dominic Philip Anandappa</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I500092" class="link">Joseph Jerome Theodore Anandappa</a> &#128141; <a href="/person/I500090" class="link">Mary Magdalene Anandappa</a> (daughter of <a href="/person/I500031" class="link">Peter Benedict Anandappa</a> & <a href="/person/I500033" class="link"> Ramenaden</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500093" class="link">Emmanuel Theodore Peter Anandappa</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500094" class="link">Anthony Clarence Anandappa</a> &#128141; <a href="/person/I0226" class="link">Elizabeth Fernandopulle</a> (daughter of <a href="/person/I0224" class="link">Louis Fernandopulle</a> & <a href="/person/I0196" class="link">Alice Dominga Casie Chetty</a>)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500095" class="link">Mary Josephine Anandappa</a> &#128141; <a href="/person/I0580" class="link">Joy Mickem-Perumal</a> (son of <a href="/person/I0579" class="link">Anthony Mickem-Perumal</a> & <a href="/person/I0020" class="link">Salome Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0603" class="link">Jennie Mickem-Perumal</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0604" class="link">Errol Mickem-Perumal</a> &#128141; <a href="/person/I0674" class="link">Padma Jinadari</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0605" class="link">Cheryll Mickem-Perumal</a> &#128141; <a href="/person/I0675" class="link">Daya Ranasinghe</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0606" class="link">Deidre Mickem-Perumal</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0183" class="link">Mary Ceclia Anandappa</a> &#128141; <a href="/person/I0194" class="link">Caspar Joseph Casie Chetty</a> (son of <a href="/person/I0175" class="link">Francis Xavier Casie Chetty</a> & <a href="/person/I0193" class="link">Lucy Mary Silva Candappa</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0202" class="link">Francis Casie Chetty</a> &#128141; <a href="/person/I0208" class="link">Norah Unknown</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0203" class="link">Freddy Casie Chetty</a> &#128141; <a href="/person/I0209" class="link">Unknown</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0204" class="link">Neville Casie Chetty</a> &#128141; <a href="/person/I0210" class="link">Yvonne Adaman</a> (daughter of <a href="/person/I0724" class="link">Ubaldus Stanislaus Adaman</a> & <a href="/person/I0725" class="link">Mary Bridget Rodrigo Sathianathan</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0211" class="link">Clyde Casie Chetty</a> &#128141; <a href="/person/I0997" class="link">Radini Adaman</a> (daughter of <a href="/person/I0995" class="link">Ronald Adaman</a> & <a href="/person/I0996" class="link">Jaya Lakshmi</a>)</span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0205" class="link">Constance Casie Chetty</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0206" class="link">Patricia Casie Chetty</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0207" class="link">Eileen Casie Chetty</a> &#128141; <a href="/person/I500116" class="link">Neil Anandappa</a> (son of <a href="/person/I500070" class="link">Anthony Joseph Nicholas "Joe" Anandappa</a> & <a href="/person/I500071" class="link">Joyce Perumal</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0461" class="link">Ralston Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0462" class="link">Shervin Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0463" class="link">Gavin Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0184" class="link">J. Felix A. Anandappa</a> &#128141; <a href="/person/I0282" class="link">Bernice Sathianathan</a> (daughter of <a href="/person/I0279" class="link">Unknown Sathianathan</a> & <a href="/person/I0246" class="link">Cicilia "Sissa" Casie Chetty</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0285" class="link">Hillary Anandappa</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0286" class="link">Allan Anandappa</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0185" class="link">J. Camillus A. Anandappa</a> &#128141; <a href="/person/I0227" class="link">Josephine Fernandopulle</a> (daughter of <a href="/person/I0224" class="link">Louis Fernandopulle</a> & <a href="/person/I0196" class="link">Alice Dominga Casie Chetty</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0238" class="link">Maureen Anandappa</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0239" class="link">Yvonne Anandappa</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0240" class="link">Conrad Anandappa</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0241" class="link">Jeremy Anandappa</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0186" class="link">Michael Joseph Clement Anandappa</a> &#128141; <a href="/person/I0195" class="link">Anna Theresa Casie Chetty</a> (daughter of <a href="/person/I0175" class="link">Francis Xavier Casie Chetty</a> & <a href="/person/I0193" class="link">Lucy Mary Silva Candappa</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0212" class="link">Giles Anandappa</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0213" class="link">Mani Anandappa</a> &#128141; <a href="/person/I0217" class="link">Eileen Unknown</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0218" class="link">Ian Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0219" class="link">Priscilla Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0220" class="link">Tania Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0221" class="link">Niraj Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0214" class="link">Mary Josephine Christobelle Anandappa</a> &#128141; <a href="/person/I0222" class="link">Marcelline Rodrigopulle</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0223" class="link">Sandra Rodrigopulle</a> &#128141; <a href="/person/I500122" class="link">Roshan Jude Anandappa</a> (son of <a href="/person/I500073" class="link">Ignatius Boniface "Bonnie" Anandappa</a> & <a href="/person/I500074" class="link">Victoria "Vivi" Rodrigo Candappa</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0474" class="link">Ignatius Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0475" class="link">Theresa Anandappa</a></span>
-						</div>
-					</li>
-				</ul>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0215" class="link">Euphy Anandappa</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0216" class="link">Stephanie Anandappa</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0187" class="link">J. Dominic P. Anandappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0188" class="link">John Anthony Anandappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0189" class="link">Emmanuel Theodore Paschal Anandappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0190" class="link">Aloysius J.B. Anandappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0191" class="link">J.B. Anandappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0192" class="link">J.A.R Anandappa</a></span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 46</li>
-	<li> <b> Top 5 male names:</b> Theodore (3 times), J. (3 times), Dominic (2 times), Joseph (2 times), Emmanuel (2 times)</li>
-	<li> <b> Top 5 female names:</b> Mary (3 times), Josephine (2 times), Jennie (1 times), Cheryll (1 times), Deidre (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1918,10 +1664,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1966,7 +1708,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I500096" />
   <meta property="og:title" content="Descendants of Dominic Philip Anandappa" />
-  <meta property="og:description" content="						Dominic Philip Anandappa &#128141; Unknown													Joseph Jerome Theodore Anandappa &#128141; Mary Magdalene Anandappa (daughte..." />
+  <meta property="og:description" content="" />
   
 
 

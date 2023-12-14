@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Peter Anandappa">
-    <meta itemprop="description" content="						Peter Anandappa &#128141; Unknown													Anna Maria Anandappa &#128141; Philip Silvapulle (son of Domingo Silvapulle &amp; Unknown)				  																			Gabriel Silvapulle &#128141; Josephine Sabina Victoria Anandappa (daughter of Joseph Marian Anandappa &amp; Maria Theresa Josephina Casie Chetty)					  																									Elmo Eusebius Christopher Silvapulle																								Ivor Joseph Silvapulle &#128141; Unknown						  																															Stephen Silvapulle																													Christopher Silvapulle																														Rosemarie Sabina Silvapulle																								Florence Mary Marlene Silvapulle																								Victor Caspar Lazarus Silvapulle																								Marietta Anne Philomena Genevieve Silvapulle																								Irangani Marie Perpetua Silvapulle																								Lorraine Mary Josephine Silvapulle																								Lucia Lawranca Silvapulle &#128141; Xavier Rodrigo (son of Caitan Rodrigo &amp; Philippa Nonis)					  																									Winifred Rodrigo &#128141; Francis Anandappa (son of Francis Xavier Anandappa &amp; Juliana Rodrigo Candappa)						  																															Astrid Anandappa																													Aubrey Anandappa																													Roy Anandappa																													Michaelle Anandappa																													Dayle Anandappa																														Wrenslaus Rodrigo																								Lucien Rodrigo																								Josephine Rodrigo																								Christopher Silvapulle										 Fun facts! 	  Number of unique descendents: 23	  Top 5 male names: Christopher (3 times), Peter (1 times), Gabriel (1 times), Elmo (1 times), Eusebius (1 times)	  Top 5 female names: Mary (2 times), Josephine (2 times), Anna (1 times), Maria (1 times), Rosemarie (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0769");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0769");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,152 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0769" class="link">Peter Anandappa</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0076" class="link">Anna Maria Anandappa</a> &#128141; <a href="/person/I0075" class="link">Philip Silvapulle</a> (son of <a href="/person/I0770" class="link">Domingo Silvapulle</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0062" class="link">Gabriel Silvapulle</a> &#128141; <a href="/person/I500114" class="link">Josephine Sabina Victoria Anandappa</a> (daughter of <a href="/person/I500027" class="link">Joseph Marian Anandappa</a> & <a href="/person/I500028" class="link">Maria Theresa Josephina Casie Chetty</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0065" class="link">Elmo Eusebius Christopher Silvapulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0066" class="link">Ivor Joseph Silvapulle</a> &#128141; Unknown</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0077" class="link">Stephen Silvapulle</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0078" class="link">Christopher Silvapulle</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0067" class="link">Rosemarie Sabina Silvapulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0068" class="link">Florence Mary Marlene Silvapulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0069" class="link">Victor Caspar Lazarus Silvapulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0072" class="link">Marietta Anne Philomena Genevieve Silvapulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0073" class="link">Irangani Marie Perpetua Silvapulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0074" class="link">Lorraine Mary Josephine Silvapulle</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0876" class="link">Lucia Lawranca Silvapulle</a> &#128141; <a href="/person/I0875" class="link">Xavier Rodrigo</a> (son of <a href="/person/I0308" class="link">Caitan Rodrigo</a> & <a href="/person/I0309" class="link">Philippa Nonis</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0660" class="link">Winifred Rodrigo</a> &#128141; <a href="/person/I0348" class="link">Francis Anandappa</a> (son of <a href="/person/I0019" class="link">Francis Xavier Anandappa</a> & <a href="/person/I0344" class="link">Juliana Rodrigo Candappa</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0661" class="link">Astrid Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0662" class="link">Aubrey Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0663" class="link">Roy Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0664" class="link">Michaelle Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0665" class="link">Dayle Anandappa</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1012" class="link">Wrenslaus Rodrigo</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1013" class="link">Lucien Rodrigo</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1014" class="link">Josephine Rodrigo</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1015" class="link">Christopher Silvapulle</a></span>
-				</div>
-			</li>
-		</ul>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 23</li>
-	<li> <b> Top 5 male names:</b> Christopher (3 times), Peter (1 times), Gabriel (1 times), Elmo (1 times), Eusebius (1 times)</li>
-	<li> <b> Top 5 female names:</b> Mary (2 times), Josephine (2 times), Anna (1 times), Maria (1 times), Rosemarie (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1781,10 +1660,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1829,7 +1704,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0769" />
   <meta property="og:title" content="Descendants of Peter Anandappa" />
-  <meta property="og:description" content="						Peter Anandappa &#128141; Unknown													Anna Maria Anandappa &#128141; Philip Silvapulle (son of Domingo Silvapulle & Unknown..." />
+  <meta property="og:description" content="" />
   
 
 

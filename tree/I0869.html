@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Anthony Laity Ramenaden">
-    <meta itemprop="description" content="						Anthony Laity Ramenaden &#128141; Unknown													Joseph Laity Ramenaden &#128141; Theresa Pieris Tavarayan (daughter of Saviel Pieris Tavarayan &amp; Cecilia Rodrigo)				  																			Joseph James Roche Laity Ramenaden &#128141; Margaret Perera (daughter of Sinnatamby Joachim Perera &amp; Unknown)																		Mariano Laity Ramenaden &#128141; Philippa Adaman (daughter of Andrew Adaman &amp; Unknown)				  																			Anthony Joseph Laity Ramenaden &#128141; Sophia Matilda Perera																			Josephine Laity Ramenaden &#128141; Austin Norbert Rodrigo (son of Emmanuel Aloysius William Rodrigo &amp; Unknown)										 Fun facts! 	  Number of unique descendents: 5	  Top 5 male names: Joseph (3 times), Anthony (2 times), James (1 times), Roche (1 times), Mariano (1 times)	  Top 5 female names: Josephine (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0869");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0869");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,53 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0869" class="link">Anthony Laity Ramenaden</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0862" class="link">Joseph Laity Ramenaden</a> &#128141; <a href="/person/I500085" class="link">Theresa Pieris Tavarayan</a> (daughter of <a href="/person/I500017" class="link">Saviel Pieris Tavarayan</a> & <a href="/person/I500018" class="link">Cecilia Rodrigo</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0870" class="link">Joseph James Roche Laity Ramenaden</a> &#128141; <a href="/person/I0871" class="link">Margaret Perera</a> (daughter of <a href="/person/I0872" class="link">Sinnatamby Joachim Perera</a> & Unknown)</span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0735" class="link">Mariano Laity Ramenaden</a> &#128141; <a href="/person/I0732" class="link">Philippa Adaman</a> (daughter of <a href="/person/I0727" class="link">Andrew Adaman</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0873" class="link">Anthony Joseph Laity Ramenaden</a> &#128141; <a href="/person/I0874" class="link">Sophia Matilda Perera</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0934" class="link">Josephine Laity Ramenaden</a> &#128141; <a href="/person/I0935" class="link">Austin Norbert Rodrigo</a> (son of <a href="/person/I0936" class="link">Emmanuel Aloysius William Rodrigo</a> & Unknown)</span>
-				</div>
-			</li>
-		</ul>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 5</li>
-	<li> <b> Top 5 male names:</b> Joseph (3 times), Anthony (2 times), James (1 times), Roche (1 times), Mariano (1 times)</li>
-	<li> <b> Top 5 female names:</b> Josephine (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1678,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1726,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0869" />
   <meta property="og:title" content="Descendants of Anthony Laity Ramenaden" />
-  <meta property="og:description" content="						Anthony Laity Ramenaden &#128141; Unknown													Joseph Laity Ramenaden &#128141; Theresa Pieris Tavarayan (daughter of Saviel..." />
+  <meta property="og:description" content="" />
   
 
 

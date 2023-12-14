@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Philip Caitan Anandappa">
-    <meta itemprop="description" content="						Philip Caitan Anandappa &#128141; Unknown													John Edmund Anandappa &#128141; Agnes Lucy Laity Ramenaden (daughter of Paul Laity Ramenaden &amp; Unknown)				  																			Desidus Anandappa &#128141; Rajesh Saverimuttu (daughter of Joseph Saverimuttu &amp; Julia Anthonia Anandappa)					  																									Niranjen Anandappa																								Roshan Anandappa																								Ravi Anandappa																								Miriam Anandappa &#128141; Desmond Anandappa (son of Aloysius Gonzaga Anandappa &amp; Rita Anandappa)																								Marianne Anandappa																								Romesh Anandappa																								Philip Cajetan Anthony Anandappa &#128141; Maria Dooreen Rodrigo Muniaram Perumal (daughter of Anthony Dominic Rodrigo Muniaram Perumal &amp; Cecilia Johanna Josephine Anandappa)					  																									Mariette Anandappa &#128141; Edgar Pieris Tavarayan (son of Joseph Pieris Tavarayan &amp; Merica Rodrigo)																								Marion Clarence Eymard Anandappa																								Clinton Anandappa																			Gladys Anandappa																			Philippa Anandappa																		Magdalene Dorothea Anandappa &#128141; Philip Joseph Canjemanaden (son of Anthony Canjemanaden &amp; Unknown)														Mary Anandappa &#128141; Emmanuel Rasappa (son of Philip Rasappa &amp; Unknown)														Ellen Catherine Anandappa &#128141; Manuel Rodrigo Candappa (son of Francis Rodrigo Candappa &amp; Unknown)						 Fun facts! 	  Number of unique descendents: 17	  Top 5 male names: Philip (2 times), Caitan (1 times), John (1 times), Edmund (1 times), Desidus (1 times)	  Top 5 female names: Miriam (1 times), Marianne (1 times), Mariette (1 times), Gladys (1 times), Philippa (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0749");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0749");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,116 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0749" class="link">Philip Caitan Anandappa</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I500138" class="link">John Edmund Anandappa</a> &#128141; <a href="/person/I500137" class="link">Agnes Lucy Laity Ramenaden</a> (daughter of <a href="/person/I0754" class="link">Paul Laity Ramenaden</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500064" class="link">Desidus Anandappa</a> &#128141; <a href="/person/I500063" class="link">Rajesh Saverimuttu</a> (daughter of <a href="/person/I500055" class="link">Joseph Saverimuttu</a> & <a href="/person/I500011" class="link">Julia Anthonia Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0500" class="link">Niranjen Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0501" class="link">Roshan Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0502" class="link">Ravi Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0503" class="link">Miriam Anandappa</a> &#128141; <a href="/person/I500136" class="link">Desmond Anandappa</a> (son of <a href="/person/I500079" class="link">Aloysius Gonzaga Anandappa</a> & <a href="/person/I500080" class="link">Rita Anandappa</a>)</span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0504" class="link">Marianne Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0505" class="link">Romesh Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500125" class="link">Philip Cajetan Anthony Anandappa</a> &#128141; <a href="/person/I500124" class="link">Maria Dooreen Rodrigo Muniaram Perumal</a> (daughter of <a href="/person/I500076" class="link">Anthony Dominic Rodrigo Muniaram Perumal</a> & <a href="/person/I500075" class="link">Cecilia Johanna Josephine Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0484" class="link">Mariette Anandappa</a> &#128141; <a href="/person/I0485" class="link">Edgar Pieris Tavarayan</a> (son of <a href="/person/I0947" class="link">Joseph Pieris Tavarayan</a> & <a href="/person/I0304" class="link">Merica Rodrigo</a>)</span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1181" class="link">Marion Clarence Eymard Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1066" class="link">Clinton Anandappa</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1067" class="link">Gladys Anandappa</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1068" class="link">Philippa Anandappa</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0750" class="link">Magdalene Dorothea Anandappa</a> &#128141; <a href="/person/I0751" class="link">Philip Joseph Canjemanaden</a> (son of <a href="/person/I0752" class="link">Anthony Canjemanaden</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0762" class="link">Mary Anandappa</a> &#128141; <a href="/person/I0763" class="link">Emmanuel Rasappa</a> (son of <a href="/person/I0765" class="link">Philip Rasappa</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0766" class="link">Ellen Catherine Anandappa</a> &#128141; <a href="/person/I0767" class="link">Manuel Rodrigo Candappa</a> (son of <a href="/person/I0768" class="link">Francis Rodrigo Candappa</a> & Unknown)</span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 17</li>
-	<li> <b> Top 5 male names:</b> Philip (2 times), Caitan (1 times), John (1 times), Edmund (1 times), Desidus (1 times)</li>
-	<li> <b> Top 5 female names:</b> Miriam (1 times), Marianne (1 times), Mariette (1 times), Gladys (1 times), Philippa (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1757,10 +1672,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1805,7 +1716,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0749" />
   <meta property="og:title" content="Descendants of Philip Caitan Anandappa" />
-  <meta property="og:description" content="						Philip Caitan Anandappa &#128141; Unknown													John Edmund Anandappa &#128141; Agnes Lucy Laity Ramenaden (daughter of Paul ..." />
+  <meta property="og:description" content="" />
   
 
 

@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Anthony Joseph Fernandopulle">
-    <meta itemprop="description" content="						Anthony Joseph Fernandopulle &#128141; Mary Anna Rasamma Juris Chitty													Alice Ethelrida &quot;Ethel&quot; Fernandopulle &#128141; Edward Emmanuel Gabriel &quot;Eddie&quot; Casie Chetty (son of John Caitan Anthony Casie Chetty &amp; Unknown Canjemanaden)														Daisy Margaret Poomani Fernandopulle &#128141; Emmanuel Joseph Gasper &quot;Joy&quot; Casie Chetty (son of Abraham Peter &quot;A.P.&quot; Casie Chetty &amp; Mary Clara Anandappa)				  																			Mano Casie Chetty &#128141; Noel Anandappa (son of Theodore Ignatius Anthony &quot;Tiddy&quot; Anandappa &amp; Enid Augusta Anandappa)																			Sharma Casie Chetty &#128141; Lucien De Silva					  																									Nouresh De Silva																								Dinesh De Silva																								Onesh De Silva																								Imesh De Silva																								Esha Casie Chetty &#128141; Jith Wijeyesekera					  																									Romesh Wijeyesekera																								Ronali Wijeyesekera																								Nirmalie Casie Chetty &#128141; Sarath Mirando					  																									Sanjay Mirando																								Anushka Mirando																							Othelia Pragasi Fernandopulle														Maurice Rene Fernandopulle														Cecil Fernandopulle														Mary Amy Rukmani Fernandopulle &#128141; Leo Wanigaratnam						 Fun facts! 	  Number of unique descendents: 18	  Top 5 male names: Anthony (1 times), Joseph (1 times), Nouresh (1 times), Dinesh (1 times), Onesh (1 times)	  Top 5 female names: Alice (1 times), Ethelrida (1 times), Daisy (1 times), Margaret (1 times), Poomani (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I1087");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I1087");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,124 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I1087" class="link">Anthony Joseph Fernandopulle</a> &#128141; <a href="/person/I1207" class="link">Mary Anna Rasamma Juris Chitty</a></span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0083" class="link">Alice Ethelrida "Ethel" Fernandopulle</a> &#128141; <a href="/person/I0048" class="link">Edward Emmanuel Gabriel "Eddie" Casie Chetty</a> (son of <a href="/person/I500029" class="link">John Caitan Anthony Casie Chetty</a> & <a href="/person/I500030" class="link">Unknown Canjemanaden</a>)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0027" class="link">Daisy Margaret Poomani Fernandopulle</a> &#128141; <a href="/person/I0004" class="link">Emmanuel Joseph Gasper "Joy" Casie Chetty</a> (son of <a href="/person/I0001" class="link">Abraham Peter "A.P." Casie Chetty</a> & <a href="/person/I0002" class="link">Mary Clara Anandappa</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0028" class="link">Mano Casie Chetty</a> &#128141; <a href="/person/I0038" class="link">Noel Anandappa</a> (son of <a href="/person/I500065" class="link">Theodore Ignatius Anthony "Tiddy" Anandappa</a> & <a href="/person/I500012" class="link">Enid Augusta Anandappa</a>)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0029" class="link">Sharma Casie Chetty</a> &#128141; <a href="/person/I0032" class="link">Lucien De Silva</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0033" class="link">Nouresh De Silva</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0034" class="link">Dinesh De Silva</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0035" class="link">Onesh De Silva</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0036" class="link">Imesh De Silva</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0030" class="link">Esha Casie Chetty</a> &#128141; <a href="/person/I0039" class="link">Jith Wijeyesekera</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0040" class="link">Romesh Wijeyesekera</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0041" class="link">Ronali Wijeyesekera</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0031" class="link">Nirmalie Casie Chetty</a> &#128141; <a href="/person/I0126" class="link">Sarath Mirando</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0127" class="link">Sanjay Mirando</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0128" class="link">Anushka Mirando</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1088" class="link">Othelia Pragasi Fernandopulle</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1089" class="link">Maurice Rene Fernandopulle</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1090" class="link">Cecil Fernandopulle</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1091" class="link">Mary Amy Rukmani Fernandopulle</a> &#128141; <a href="/person/I1286" class="link">Leo Wanigaratnam</a></span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 18</li>
-	<li> <b> Top 5 male names:</b> Anthony (1 times), Joseph (1 times), Nouresh (1 times), Dinesh (1 times), Onesh (1 times)</li>
-	<li> <b> Top 5 female names:</b> Alice (1 times), Ethelrida (1 times), Daisy (1 times), Margaret (1 times), Poomani (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1749,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1797,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I1087" />
   <meta property="og:title" content="Descendants of Anthony Joseph Fernandopulle" />
-  <meta property="og:description" content="						Anthony Joseph Fernandopulle &#128141; Mary Anna Rasamma Juris Chitty													Alice Ethelrida "Ethel" Fernandopulle &#128141; E..." />
+  <meta property="og:description" content="" />
   
 
 

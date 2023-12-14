@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Andrew Benedict Canjemanaden">
-    <meta itemprop="description" content="						Andrew Benedict Canjemanaden &#128141; Unknown													Maria Julia Canjemanaden &#128141; Joseph Caitan Adaman (son of Joseph Adaman &amp; Unknown)														Mary Canjemanaden &#128141; Fredrick Purinayagam Candappa (son of Philip Bastian Candappa &amp; Unknown)														Maria Nathalia Canjemanaden &#128141; Francis Philip Fernandopulle (son of Caitan Fernandopulle &amp; Unknown)				  																			Sebastian Aloysius Fernandopulle &#128141; Ruth Casie Chetty					  																									Romesh Fernandopulle																								Suresh Fernandopulle																								Vilosh Fernandopulle																								Dinesh Fernandopulle																								Winifred Fernandopulle																			John Anthony &quot;Johnny&quot; Fernandopulle &#128141; Mary Philippa Laity Ramenaden					  																									Ronald Fernandopulle &#128141; Marie Bernadette Anandappa (daughter of Christopher Ernest Anthony John Anandappa &amp; Mary Estelle Christina &quot;Estelle&quot; Anandappa)						  																															Michael Fernandopulle																													Christine Fernandopulle																														Gene Fernandopulle																								Annette Fernandopulle																								Clarence Fernandopulle																								Gwendoline Fernandopulle																								Adrian Fernandopulle																								Elizabeth Fernandopulle																								Felix Fernandopulle &#128141; Christobel Therese &quot;Dolly&quot; Laity Ramenaden (daughter of Emmanuel Marian Laity Ramenaden &amp; Annie Nonis Candappa)					  																									Michael Fernandopulle &#128141; Noeline Rosemarie Laity Ramenaden (daughter of Ubald Laity Ramenaden &amp; Josephine Rodrigo Sathianathan)																								Ruth Fernandopulle																								Marlene Fernandopulle																								Margie Fernandopulle																								Monica Fernandopulle																								Therese Fernandopulle																			Philomena Fernandopulle																			Anastasia Fernandopulle																			Patrick Fernandopulle																			Mary Fernandopulle																			Anto Fernandopulle																		Anthony Joseph Marion Canjemanaden &#128141; Mary Sybil Theodora Casie Chetty (daughter of William Pantaleon Casie Chetty &amp; Lourdes Maria Laity Ramenaden)														Caitan Marian Canjemanaden &#128141; Rosaline Jurie (daughter of Anthony Jurie &amp; Unknown)														Gabriel Canjemanaden &#128141; Nathalia Pieris Tavarayan (daughter of Christopher Pieris Tavarayan &amp; Unknown)						 Fun facts! 	  Number of unique descendents: 34	  Top 5 male names: Anthony (2 times), Michael (2 times), Andrew (1 times), Benedict (1 times), Sebastian (1 times)	  Top 5 female names: Maria (2 times), Mary (2 times), Julia (1 times), Nathalia (1 times), Vilosh (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0719");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0719");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,207 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0719" class="link">Andrew Benedict Canjemanaden</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0718" class="link">Maria Julia Canjemanaden</a> &#128141; <a href="/person/I0717" class="link">Joseph Caitan Adaman</a> (son of <a href="/person/I0712" class="link">Joseph Adaman</a> & <a href="/person/I0713" class="link">Unknown</a>)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0771" class="link">Mary Canjemanaden</a> &#128141; <a href="/person/I0772" class="link">Fredrick Purinayagam Candappa</a> (son of <a href="/person/I0773" class="link">Philip Bastian Candappa</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0813" class="link">Maria Nathalia Canjemanaden</a> &#128141; <a href="/person/I0814" class="link">Francis Philip Fernandopulle</a> (son of <a href="/person/I0753" class="link">Caitan Fernandopulle</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1153" class="link">Sebastian Aloysius Fernandopulle</a> &#128141; <a href="/person/I1162" class="link">Ruth Casie Chetty</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1164" class="link">Romesh Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1165" class="link">Suresh Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1166" class="link">Vilosh Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1167" class="link">Dinesh Fernandopulle</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1154" class="link">Winifred Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1155" class="link">John Anthony "Johnny" Fernandopulle</a> &#128141; <a href="/person/I1161" class="link">Mary Philippa Laity Ramenaden</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1108" class="link">Ronald Fernandopulle</a> &#128141; <a href="/person/I500156" class="link">Marie Bernadette Anandappa</a> (daughter of <a href="/person/I500022" class="link">Christopher Ernest Anthony John Anandappa</a> & <a href="/person/I500026" class="link">Mary Estelle Christina "Estelle" Anandappa</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1109" class="link">Michael Fernandopulle</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1110" class="link">Christine Fernandopulle</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1168" class="link">Gene Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1169" class="link">Annette Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1170" class="link">Clarence Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1171" class="link">Gwendoline Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1172" class="link">Adrian Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1173" class="link">Elizabeth Fernandopulle</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1129" class="link">Felix Fernandopulle</a> &#128141; <a href="/person/I1130" class="link">Christobel Therese "Dolly" Laity Ramenaden</a> (daughter of <a href="/person/I0859" class="link">Emmanuel Marian Laity Ramenaden</a> & <a href="/person/I0857" class="link">Annie Nonis Candappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1128" class="link">Michael Fernandopulle</a> &#128141; <a href="/person/I1124" class="link">Noeline Rosemarie Laity Ramenaden</a> (daughter of <a href="/person/I1123" class="link">Ubald Laity Ramenaden</a> & <a href="/person/I1092" class="link">Josephine Rodrigo Sathianathan</a>)</span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1131" class="link">Ruth Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1132" class="link">Marlene Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1133" class="link">Margie Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1134" class="link">Monica Fernandopulle</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1156" class="link">Therese Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1157" class="link">Philomena Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1158" class="link">Anastasia Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1159" class="link">Patrick Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1160" class="link">Mary Fernandopulle</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1163" class="link">Anto Fernandopulle</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0820" class="link">Anthony Joseph Marion Canjemanaden</a> &#128141; <a href="/person/I0823" class="link">Mary Sybil Theodora Casie Chetty</a> (daughter of <a href="/person/I0931" class="link">William Pantaleon Casie Chetty</a> & <a href="/person/I0932" class="link">Lourdes Maria Laity Ramenaden</a>)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0821" class="link">Caitan Marian Canjemanaden</a> &#128141; <a href="/person/I0825" class="link">Rosaline Jurie</a> (daughter of <a href="/person/I0826" class="link">Anthony Jurie</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0822" class="link">Gabriel Canjemanaden</a> &#128141; <a href="/person/I0827" class="link">Nathalia Pieris Tavarayan</a> (daughter of <a href="/person/I0761" class="link">Christopher Pieris Tavarayan</a> & Unknown)</span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 34</li>
-	<li> <b> Top 5 male names:</b> Anthony (2 times), Michael (2 times), Andrew (1 times), Benedict (1 times), Sebastian (1 times)</li>
-	<li> <b> Top 5 female names:</b> Maria (2 times), Mary (2 times), Julia (1 times), Nathalia (1 times), Vilosh (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1844,10 +1668,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1892,7 +1712,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0719" />
   <meta property="og:title" content="Descendants of Andrew Benedict Canjemanaden" />
-  <meta property="og:description" content="						Andrew Benedict Canjemanaden &#128141; Unknown													Maria Julia Canjemanaden &#128141; Joseph Caitan Adaman (son of Joseph A..." />
+  <meta property="og:description" content="" />
   
 
 

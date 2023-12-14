@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Philip Laity Ramenaden">
-    <meta itemprop="description" content="						Philip Laity Ramenaden &#128141; Unknown													Christopher Laity Ramenaden &#128141; Francesa Anandappa (daughter of Anthony Anandappa &amp; Anthonia Wijeratnam)				  																			Marie Laity Ramenaden																			Vivian Laity Ramenaden																		Unknown Laity Ramenaden &#128141; Philip Silva Juan Pulle (son of Unknown Silva Juan Pulle &amp; Unknown)				  																			Anna Silva &#128141; Michael Ayam Perumal (son of Francis Ayam Perumal &amp; Unknown)																			Cecilia Silva &#128141; Anthony Pieris Tavarayan (son of Gabriel Pieris Tavarayan &amp; Unknown)																			Rosa Silva										 Fun facts! 	  Number of unique descendents: 7	  Top 5 male names: Philip (1 times), Christopher (1 times), Vivian (1 times)	  Top 5 female names: Marie (1 times), Unknown (1 times), Anna (1 times), Cecilia (1 times), Rosa (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I500109");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I500109");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,63 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I500109" class="link">Philip Laity Ramenaden</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I500104" class="link">Christopher Laity Ramenaden</a> &#128141; <a href="/person/I500103" class="link">Francesa Anandappa</a> (daughter of <a href="/person/I500013" class="link">Anthony Anandappa</a> & <a href="/person/I500100" class="link">Anthonia Wijeratnam</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0432" class="link">Marie Laity Ramenaden</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0433" class="link">Vivian Laity Ramenaden</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1277" class="link">Unknown Laity Ramenaden</a> &#128141; <a href="/person/I0804" class="link">Philip Silva Juan Pulle</a> (son of <a href="/person/I1271" class="link">Unknown Silva Juan Pulle</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0803" class="link">Anna Silva</a> &#128141; <a href="/person/I0801" class="link">Michael Ayam Perumal</a> (son of <a href="/person/I0802" class="link">Francis Ayam Perumal</a> & Unknown)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0891" class="link">Cecilia Silva</a> &#128141; <a href="/person/I0892" class="link">Anthony Pieris Tavarayan</a> (son of <a href="/person/I0893" class="link">Gabriel Pieris Tavarayan</a> & Unknown)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1276" class="link">Rosa Silva</a></span>
-				</div>
-			</li>
-		</ul>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 7</li>
-	<li> <b> Top 5 male names:</b> Philip (1 times), Christopher (1 times), Vivian (1 times)</li>
-	<li> <b> Top 5 female names:</b> Marie (1 times), Unknown (1 times), Anna (1 times), Cecilia (1 times), Rosa (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1688,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1736,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I500109" />
   <meta property="og:title" content="Descendants of Philip Laity Ramenaden" />
-  <meta property="og:description" content="						Philip Laity Ramenaden &#128141; Unknown													Christopher Laity Ramenaden &#128141; Francesa Anandappa (daughter of Anthony ..." />
+  <meta property="og:description" content="" />
   
 
 

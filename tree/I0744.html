@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Francis Joseph Alles">
-    <meta itemprop="description" content="						Francis Joseph Alles &#128141; Theresa Nonis													Mary Christina Alles &#128141; Christopher Rodrigo Muniaram Perumal (son of Peter Rodrigo Muniaram Perumal &amp; Unknown)														Mary Lucy Florence Alles &#128141; John Philip Rodrigo Muniaram Perumal (son of Peter Rodrigo Muniaram Perumal &amp; Unknown)														Anna Vernonica Alles &#128141; Cyril Louis Massillamany (son of Anthony Francis Salis Massillamany &amp; Unknown)														Joseph Nonis Alles &#128141; Christina Gnanamuttu Pulle (daughter of Joseph Lewis Gnanamuttu Pulle &amp; Unknown)														Dennis Anthony Alles &#128141; 1. Annie Laity Ramenaden (daughter of Gabriel Laity Ramenaden &amp; Unknown) 2. Madelena Rodrigo Muniaram Perumal (daughter of Peter Rodrigo Muniaram Perumal &amp; Unknown)						 Fun facts! 	  Number of unique descendents: 5	  Top 5 male names: Joseph (2 times), Francis (1 times), Nonis (1 times), Dennis (1 times), Anthony (1 times)	  Top 5 female names: Mary (2 times), Christina (1 times), Lucy (1 times), Florence (1 times), Anna (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0744");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0744");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,47 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0744" class="link">Francis Joseph Alles</a> &#128141; <a href="/person/I1288" class="link">Theresa Nonis</a></span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0743" class="link">Mary Christina Alles</a> &#128141; <a href="/person/I0741" class="link">Christopher Rodrigo Muniaram Perumal</a> (son of <a href="/person/I0740" class="link">Peter Rodrigo Muniaram Perumal</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0745" class="link">Mary Lucy Florence Alles</a> &#128141; <a href="/person/I0742" class="link">John Philip Rodrigo Muniaram Perumal</a> (son of <a href="/person/I0740" class="link">Peter Rodrigo Muniaram Perumal</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0746" class="link">Anna Vernonica Alles</a> &#128141; <a href="/person/I0747" class="link">Cyril Louis Massillamany</a> (son of <a href="/person/I0748" class="link">Anthony Francis Salis Massillamany</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0780" class="link">Joseph Nonis Alles</a> &#128141; <a href="/person/I0781" class="link">Christina Gnanamuttu Pulle</a> (daughter of <a href="/person/I0782" class="link">Joseph Lewis Gnanamuttu Pulle</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0783" class="link">Dennis Anthony Alles</a> &#128141; 1. <a href="/person/I0784" class="link">Annie Laity Ramenaden</a> (daughter of <a href="/person/I0785" class="link">Gabriel Laity Ramenaden</a> & Unknown) 2. <a href="/person/I0789" class="link">Madelena Rodrigo Muniaram Perumal</a> (daughter of <a href="/person/I0740" class="link">Peter Rodrigo Muniaram Perumal</a> & Unknown)</span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 5</li>
-	<li> <b> Top 5 male names:</b> Joseph (2 times), Francis (1 times), Nonis (1 times), Dennis (1 times), Anthony (1 times)</li>
-	<li> <b> Top 5 female names:</b> Mary (2 times), Christina (1 times), Lucy (1 times), Florence (1 times), Anna (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1696,10 +1680,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1744,7 +1724,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0744" />
   <meta property="og:title" content="Descendants of Francis Joseph Alles" />
-  <meta property="og:description" content="						Francis Joseph Alles &#128141; Theresa Nonis													Mary Christina Alles &#128141; Christopher Rodrigo Muniaram Perumal (son o..." />
+  <meta property="og:description" content="" />
   
 
 

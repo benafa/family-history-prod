@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Joseph Nicklaus Candappa">
-    <meta itemprop="description" content="						Joseph Nicklaus Candappa &#128141; Mary Margaret Rodrigo													Grace Vivien Pearl Candappa &#128141; Joseph Nicholas Anthony Emmanuel &quot;Joe&quot; Anandappa (son of Emmanuel Anandappa &amp; Maria Nathalia Canjemanaden)				  																			Justina Marina Therese &quot;Marnie&quot; Anandappa &#128141; Anthony Eubaldus &quot;Tony&quot; Anandappa (son of Philip Raphael Anandappa &amp; Mary Louise Anandappa)					  																									Sandra Anandappa &#128141; Michael Laity Ramenaden (son of Ubald Laity Ramenaden &amp; Josephine Rodrigo Sathianathan)						  																															Sonella Laity Ramenaden																													Joel Laity Ramenaden																														Adrian Anandappa																								Deidre Anandappa																								Pearl Anandappa &#128141; Stanley Fernando					  																									Nadine Fernando &#128141; Cyril Fernando						  																															Warren Fernando																														Ronald Emmanual Gregory &quot;Ronnie&quot; Anandappa &#128141; Jennifer Srikanthi Ambanpola					  																									Rachel Anandappa																								Sharon Anandappa																							Matilda Dhoraty Candappa &#128141; James Nicholas Michael Chellavanayagam (son of Simon Chellavanayagam &amp; Unknown)														Gertrude Candappa														Justin Candappa														Tangracious Candappa														Edward Candappa														Christopher Candappa														Herman Candappa														Lawrie Candappa &#128141; Mary Laity Ramenaden				  																			Laurine Candappa &#128141; Kingsley De Soyza					  																									Tamara De Soyza																							Vincent Candappa						 Fun facts! 	  Number of unique descendents: 24	  Top 5 male names: Joseph (1 times), Nicklaus (1 times), Joel (1 times), Adrian (1 times), Warren (1 times)	  Top 5 female names: Pearl (2 times), Grace (1 times), Vivien (1 times), Justina (1 times), Marina (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0509");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0509");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,166 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0509" class="link">Joseph Nicklaus Candappa</a> &#128141; <a href="/person/I0510" class="link">Mary Margaret Rodrigo</a></span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0114" class="link">Grace Vivien Pearl Candappa</a> &#128141; <a href="/person/I0113" class="link">Joseph Nicholas Anthony Emmanuel "Joe" Anandappa</a> (son of <a href="/person/I0111" class="link">Emmanuel Anandappa</a> & <a href="/person/I0112" class="link">Maria Nathalia Canjemanaden</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0115" class="link">Justina Marina Therese "Marnie" Anandappa</a> &#128141; <a href="/person/I0023" class="link">Anthony Eubaldus "Tony" Anandappa</a> (son of <a href="/person/I0016" class="link">Philip Raphael Anandappa</a> & <a href="/person/I0017" class="link">Mary Louise Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0088" class="link">Sandra Anandappa</a> &#128141; <a href="/person/I0151" class="link">Michael Laity Ramenaden</a> (son of <a href="/person/I1123" class="link">Ubald Laity Ramenaden</a> & <a href="/person/I1092" class="link">Josephine Rodrigo Sathianathan</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0153" class="link">Sonella Laity Ramenaden</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0152" class="link">Joel Laity Ramenaden</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0089" class="link">Adrian Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0087" class="link">Deidre Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0116" class="link">Pearl Anandappa</a> &#128141; <a href="/person/I0122" class="link">Stanley Fernando</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0123" class="link">Nadine Fernando</a> &#128141; <a href="/person/I0124" class="link">Cyril Fernando</a></span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0125" class="link">Warren Fernando</a></span>
-						</div>
-					</li>
-				</ul>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0117" class="link">Ronald Emmanual Gregory "Ronnie" Anandappa</a> &#128141; <a href="/person/I0118" class="link">Jennifer Srikanthi Ambanpola</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0120" class="link">Rachel Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0121" class="link">Sharon Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0809" class="link">Matilda Dhoraty Candappa</a> &#128141; <a href="/person/I0810" class="link">James Nicholas Michael Chellavanayagam</a> (son of <a href="/person/I0811" class="link">Simon Chellavanayagam</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1017" class="link">Gertrude Candappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1018" class="link">Justin Candappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1019" class="link">Tangracious Candappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1020" class="link">Edward Candappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1021" class="link">Christopher Candappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1022" class="link">Herman Candappa</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1023" class="link">Lawrie Candappa</a> &#128141; <a href="/person/I1139" class="link">Mary Laity Ramenaden</a></span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1140" class="link">Laurine Candappa</a> &#128141; <a href="/person/I1141" class="link">Kingsley De Soyza</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1142" class="link">Tamara De Soyza</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1024" class="link">Vincent Candappa</a></span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 24</li>
-	<li> <b> Top 5 male names:</b> Joseph (1 times), Nicklaus (1 times), Joel (1 times), Adrian (1 times), Warren (1 times)</li>
-	<li> <b> Top 5 female names:</b> Pearl (2 times), Grace (1 times), Vivien (1 times), Justina (1 times), Marina (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1791,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1839,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0509" />
   <meta property="og:title" content="Descendants of Joseph Nicklaus Candappa" />
-  <meta property="og:description" content="						Joseph Nicklaus Candappa &#128141; Mary Margaret Rodrigo													Grace Vivien Pearl Candappa &#128141; Joseph Nicholas Anthony ..." />
+  <meta property="og:description" content="" />
   
 
 

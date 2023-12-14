@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Christopher Pieris Tavarayan">
-    <meta itemprop="description" content="						Christopher Pieris Tavarayan &#128141; Unknown													Emmanuel Pieris Tavarayan &#128141; Maria Theresa Anandappa (daughter of Emmanuel Anandappa &amp; Christina Rodrigo)														Nathalia Pieris Tavarayan &#128141; Gabriel Canjemanaden (son of Andrew Benedict Canjemanaden &amp; Unknown)						 Fun facts! 	  Number of unique descendents: 2	  Top 5 male names: Christopher (1 times), Emmanuel (1 times)	  Top 5 female names: Nathalia (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0761");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0761");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,32 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0761" class="link">Christopher Pieris Tavarayan</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0760" class="link">Emmanuel Pieris Tavarayan</a> &#128141; <a href="/person/I0409" class="link">Maria Theresa Anandappa</a> (daughter of <a href="/person/I0406" class="link">Emmanuel Anandappa</a> & <a href="/person/I0407" class="link">Christina Rodrigo</a>)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0827" class="link">Nathalia Pieris Tavarayan</a> &#128141; <a href="/person/I0822" class="link">Gabriel Canjemanaden</a> (son of <a href="/person/I0719" class="link">Andrew Benedict Canjemanaden</a> & Unknown)</span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 2</li>
-	<li> <b> Top 5 male names:</b> Christopher (1 times), Emmanuel (1 times)</li>
-	<li> <b> Top 5 female names:</b> Nathalia (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1661,10 +1660,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1709,7 +1704,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0761" />
   <meta property="og:title" content="Descendants of Christopher Pieris Tavarayan" />
-  <meta property="og:description" content="						Christopher Pieris Tavarayan &#128141; Unknown													Emmanuel Pieris Tavarayan &#128141; Maria Theresa Anandappa (daughter of..." />
+  <meta property="og:description" content="" />
   
 
 

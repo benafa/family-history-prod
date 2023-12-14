@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Xavier Rodrigo Muniarem">
-    <meta itemprop="description" content="						Xavier Rodrigo Muniarem &#128141; Unknown													Unknown Rodrigo Muniarem &#128141; Anthony Francis Anandappa (son of Unknown Anandappa &amp; Unknown)				  																			Cecil Joseph Anandappa &#128141; Gertrude Josephine Alles (daughter of Francis Dionysius Alles &amp; Unknown)					  																									Clarence Joseph Anandappa &#128141; Celeste Anandappa (daughter of Andrew Gabriel Anandappa &amp; Mary Magdalene Anandappa)						  																															Ranjan Anandappa																													Nihal Anandappa																													Jayantha Anandappa																													Marinee Anandappa																													Rukmani Anandappa																													Bernadine Anandappa																													Eric Anandappa																													Lasantha Anandappa																													Nirmala Anandappa																													Marianne Anandappa &#128141; Andrew Anandappa (son of Andrew Gerard Anandappa &amp; Irene Elizabeth Homer)																													Bede Anandappa																														Merl Joseph Anandappa &#128141; Yoland Laity Ramenaden						  																															Rabindra Anandappa																													Mafelda Anandappa																													Mahendra Anandappa																														Ivan Anandappa &#128141; Marie Quinne						  																															Sean Anandappa																													Lenox Anandappa																													Jackey Anandappa																													Melody Anandappa																														Remigius Angelo Cecil Joseph &quot;Remy&quot; Anandappa &#128141; Marienne Rita Leonie De Silva Wijeyeratne						  																															Angela Anandappa &#128141; Nish Abeysiriwardena							  																																					Anish Abeysiriwardena																																		Niam Abeysiriwardena																																				Marita Anandappa																														Jane Francis Anandappa &#128141; Anthony Laity Ramenaden (son of Paul Laity Ramenaden &amp; Unknown)																			Bridget Isabella Anandappa &#128141; Anthony Rodrigo Candappa (son of Domingo Rodrigo Candappa &amp; Unknown)																			Agnes Anandappa &#128141; Unknown Laity Ramenaden																			Catherine Mary Anandappa &#128141; Christopher Pasqual Fernandopulle (son of Caitan Fernandopulle &amp; Unknown)																			Maud Anandappa &#128141; Unknown Fernandopulle																		John Philip Rodrigo Muniarem &#128141; Maria Anthonia Casie Chetty (daughter of Casper Casie Chetty &amp; Mary Theresa Unknown)				  																			Stanislaus Joseph Rodrigo Muniarem &#128141; Maria Lucy Anandappa (daughter of Emmanuel Anandappa &amp; Christina Rodrigo)					  																									Johnnie Martin Joseph Rodrigo Muniarem &#128141; Mercy Philomena Josephine Pieris Tavarayan (daughter of Caitan Pieris Tavarayan &amp; Lucia Canjemanaden)						  																															Rienze Peter Joseph Rodrigo Muniarem																													Rani Marie Monica Rodrigo Muniarem																													Romany Lucy Rodrigo Muniarem																													Stanislaus John Rodrigo Muniarem																													Madona Bernadette Rodrigo Muniarem																														Sunny Rodrigo Muniarem																								Clotilda Rodrigo Muniarem																								Rita Rodrigo Muniarem																								Lu Rodrigo Muniarem &#128141; Anthony Pieris Tavarayan (son of Caitan Pieris Tavarayan &amp; Lucia Canjemanaden)						  																															Melville Pieris Tavarayan																													Elmo Pieris Tavarayan																													Malcom Pieris Tavarayan																													Maxvelle Pieris Tavarayan																													Carmen Pieris Tavarayan																													Milroy Pieris Tavarayan																													Chrishanthi Pieris Tavarayan																													Laily Pieris Tavarayan																													Joseph Pieris Tavarayan																														Austen Rodrigo Muniarem										 Fun facts! 	  Number of unique descendents: 55	  Top 5 male names: Joseph (8 times), Cecil (2 times), John (2 times), Stanislaus (2 times), Xavier (1 times)	  Top 5 female names: Unknown (1 times), Marinee (1 times), Rukmani (1 times), Bernadine (1 times), Nirmala (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I1278");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I1278");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,330 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I1278" class="link">Xavier Rodrigo Muniarem</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I500088" class="link">Unknown Rodrigo Muniarem</a> &#128141; <a href="/person/I500087" class="link">Anthony Francis Anandappa</a> (son of <a href="/person/I500089" class="link">Unknown Anandappa</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I500049" class="link">Cecil Joseph Anandappa</a> &#128141; <a href="/person/I500050" class="link">Gertrude Josephine Alles</a> (daughter of <a href="/person/I0736" class="link">Francis Dionysius Alles</a> & Unknown)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I500047" class="link">Clarence Joseph Anandappa</a> &#128141; <a href="/person/I500037" class="link">Celeste Anandappa</a> (daughter of <a href="/person/I500034" class="link">Andrew Gabriel Anandappa</a> & <a href="/person/I500036" class="link">Mary Magdalene Anandappa</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0061" class="link">Ranjan Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0266" class="link">Nihal Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0511" class="link">Jayantha Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0522" class="link">Marinee Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0523" class="link">Rukmani Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0524" class="link">Bernadine Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0525" class="link">Eric Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0526" class="link">Lasantha Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0527" class="link">Nirmala Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0528" class="link">Marianne Anandappa</a> &#128141; <a href="/person/I0545" class="link">Andrew Anandappa</a> (son of <a href="/person/I500045" class="link">Andrew Gerard Anandappa</a> & <a href="/person/I0542" class="link">Irene Elizabeth Homer</a>)</span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0529" class="link">Bede Anandappa</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I500051" class="link">Merl Joseph Anandappa</a> &#128141; <a href="/person/I0599" class="link">Yoland Laity Ramenaden</a></span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0600" class="link">Rabindra Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0601" class="link">Mafelda Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0602" class="link">Mahendra Anandappa</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I500052" class="link">Ivan Anandappa</a> &#128141; <a href="/person/I0594" class="link">Marie Quinne</a></span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0595" class="link">Sean Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0596" class="link">Lenox Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0597" class="link">Jackey Anandappa</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0598" class="link">Melody Anandappa</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I500053" class="link">Remigius Angelo Cecil Joseph "Remy" Anandappa</a> &#128141; <a href="/person/I0591" class="link">Marienne Rita Leonie De Silva Wijeyeratne</a></span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0592" class="link">Angela Anandappa</a> &#128141; <a href="/person/I0917" class="link">Nish Abeysiriwardena</a></span>
-							<div class="button-right"> <button class="collapsible"></button> </div>
-						</div>
-					</li>
-					<ul class="level-4 nested">
-						<li class="tree">
-							<div class="tree">
-								<span><a href="/person/I0918" class="link">Anish Abeysiriwardena</a></span>
-							</div>
-						</li>
-						<li class="tree">
-							<div class="tree">
-								<span><a href="/person/I0919" class="link">Niam Abeysiriwardena</a></span>
-							</div>
-						</li>
-					</ul>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0593" class="link">Marita Anandappa</a></span>
-						</div>
-					</li>
-				</ul>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0581" class="link">Jane Francis Anandappa</a> &#128141; <a href="/person/I0587" class="link">Anthony Laity Ramenaden</a> (son of <a href="/person/I0754" class="link">Paul Laity Ramenaden</a> & Unknown)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0582" class="link">Bridget Isabella Anandappa</a> &#128141; <a href="/person/I0586" class="link">Anthony Rodrigo Candappa</a> (son of <a href="/person/I0808" class="link">Domingo Rodrigo Candappa</a> & Unknown)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0583" class="link">Agnes Anandappa</a> &#128141; <a href="/person/I0588" class="link">Unknown Laity Ramenaden</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0584" class="link">Catherine Mary Anandappa</a> &#128141; <a href="/person/I0589" class="link">Christopher Pasqual Fernandopulle</a> (son of <a href="/person/I0753" class="link">Caitan Fernandopulle</a> & Unknown)</span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0585" class="link">Maud Anandappa</a> &#128141; <a href="/person/I0590" class="link">Unknown Fernandopulle</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0397" class="link">John Philip Rodrigo Muniarem</a> &#128141; <a href="/person/I0181" class="link">Maria Anthonia Casie Chetty</a> (daughter of <a href="/person/I500097" class="link">Casper Casie Chetty</a> & <a href="/person/I500019" class="link">Mary Theresa Unknown</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0398" class="link">Stanislaus Joseph Rodrigo Muniarem</a> &#128141; <a href="/person/I0400" class="link">Maria Lucy Anandappa</a> (daughter of <a href="/person/I0406" class="link">Emmanuel Anandappa</a> & <a href="/person/I0407" class="link">Christina Rodrigo</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0401" class="link">Johnnie Martin Joseph Rodrigo Muniarem</a> &#128141; <a href="/person/I0412" class="link">Mercy Philomena Josephine Pieris Tavarayan</a> (daughter of <a href="/person/I500081" class="link">Caitan Pieris Tavarayan</a> & <a href="/person/I0815" class="link">Lucia Canjemanaden</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0417" class="link">Rienze Peter Joseph Rodrigo Muniarem</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0418" class="link">Rani Marie Monica Rodrigo Muniarem</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0419" class="link">Romany Lucy Rodrigo Muniarem</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0420" class="link">Stanislaus John Rodrigo Muniarem</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0421" class="link">Madona Bernadette Rodrigo Muniarem</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0402" class="link">Sunny Rodrigo Muniarem</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0403" class="link">Clotilda Rodrigo Muniarem</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0404" class="link">Rita Rodrigo Muniarem</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0405" class="link">Lu Rodrigo Muniarem</a> &#128141; <a href="/person/I0413" class="link">Anthony Pieris Tavarayan</a> (son of <a href="/person/I500081" class="link">Caitan Pieris Tavarayan</a> & <a href="/person/I0815" class="link">Lucia Canjemanaden</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1034" class="link">Melville Pieris Tavarayan</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1035" class="link">Elmo Pieris Tavarayan</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1036" class="link">Malcom Pieris Tavarayan</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1037" class="link">Maxvelle Pieris Tavarayan</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1038" class="link">Carmen Pieris Tavarayan</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1039" class="link">Milroy Pieris Tavarayan</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1040" class="link">Chrishanthi Pieris Tavarayan</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1041" class="link">Laily Pieris Tavarayan</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1042" class="link">Joseph Pieris Tavarayan</a></span>
-						</div>
-					</li>
-				</ul>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0399" class="link">Austen Rodrigo Muniarem</a></span>
-				</div>
-			</li>
-		</ul>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 55</li>
-	<li> <b> Top 5 male names:</b> Joseph (8 times), Cecil (2 times), John (2 times), Stanislaus (2 times), Xavier (1 times)</li>
-	<li> <b> Top 5 female names:</b> Unknown (1 times), Marinee (1 times), Rukmani (1 times), Bernadine (1 times), Nirmala (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1955,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -2003,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I1278" />
   <meta property="og:title" content="Descendants of Xavier Rodrigo Muniarem" />
-  <meta property="og:description" content="						Xavier Rodrigo Muniarem &#128141; Unknown													Unknown Rodrigo Muniarem &#128141; Anthony Francis Anandappa (son of Unknown ..." />
+  <meta property="og:description" content="" />
   
 
 

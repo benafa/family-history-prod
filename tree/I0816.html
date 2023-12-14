@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Michael Canjemanaden">
-    <meta itemprop="description" content="						Michael Canjemanaden &#128141; Unknown													Lucia Canjemanaden &#128141; Caitan Pieris Tavarayan (son of Saviel Pieris Tavarayan &amp; Cecilia Rodrigo)				  																			Mercy Philomena Josephine Pieris Tavarayan &#128141; Johnnie Martin Joseph Rodrigo Muniarem (son of Stanislaus Joseph Rodrigo Muniarem &amp; Maria Lucy Anandappa)					  																									Rienze Peter Joseph Rodrigo Muniarem																								Rani Marie Monica Rodrigo Muniarem																								Romany Lucy Rodrigo Muniarem																								Stanislaus John Rodrigo Muniarem																								Madona Bernadette Rodrigo Muniarem																								Anthony Pieris Tavarayan &#128141; Lu Rodrigo Muniarem (daughter of Stanislaus Joseph Rodrigo Muniarem &amp; Maria Lucy Anandappa)					  																									Melville Pieris Tavarayan																								Elmo Pieris Tavarayan																								Malcom Pieris Tavarayan																								Maxvelle Pieris Tavarayan																								Carmen Pieris Tavarayan																								Milroy Pieris Tavarayan																								Chrishanthi Pieris Tavarayan																								Laily Pieris Tavarayan																								Joseph Pieris Tavarayan																								Anna Cecilia Pieris Tavarayan &#128141; Eustice Mickem-Perumal (son of Anthony Mickem-Perumal &amp; Salome Anandappa)					  																									Kent Mickem-Perumal &#128141; Maureen Leona Rodrigo Saverymuthapulle (daughter of Victor Francis Rodrigo Saverymuthapulle &amp; Mary Therese Clara Anandappa)																								Cecil Mickem-Perumal &#128141; Kamala Fonseka-Gunesekera																								Jovita Mickem-Perumal &#128141; Anton Rodrigo																								Peter Pieris Tavarayan																			Roche Pieris Tavarayan &#128141; Josephine Pieris Tavarayan (daughter of Paul Pieris Tavarayan &amp; Unknown)																		Rosa Maria Philippa Canjemanaden &#128141; Francis Nonis Candappa (son of Anthony Nonis Candappa &amp; Unknown)				  																			Annie Nonis Candappa &#128141; Emmanuel Marian Laity Ramenaden (son of Paul Laity Ramenaden &amp; Unknown)					  																									Christobel Therese &quot;Dolly&quot; Laity Ramenaden &#128141; Felix Fernandopulle (son of Francis Philip Fernandopulle &amp; Maria Nathalia Canjemanaden)						  																															Michael Fernandopulle &#128141; Noeline Rosemarie Laity Ramenaden (daughter of Ubald Laity Ramenaden &amp; Josephine Rodrigo Sathianathan)																													Ruth Fernandopulle																													Marlene Fernandopulle																													Margie Fernandopulle																													Monica Fernandopulle																														Laura Nonis Candappa &#128141; Joseph Rodrigo Muniaram Perumal (son of Peter Rodrigo Muniaram Perumal &amp; Unknown)																		Anna Canjemanaden &#128141; Stanislaus Laity Ramenaden (son of Paul Laity Ramenaden &amp; Unknown)						 Fun facts! 	  Number of unique descendents: 33	  Top 5 male names: Michael (2 times), Peter (2 times), Joseph (2 times), Rienze (1 times), Stanislaus (1 times)	  Top 5 female names: Monica (2 times), Anna (2 times), Lucia (1 times), Mercy (1 times), Philomena (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0816");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0816");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,208 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0816" class="link">Michael Canjemanaden</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0815" class="link">Lucia Canjemanaden</a> &#128141; <a href="/person/I500081" class="link">Caitan Pieris Tavarayan</a> (son of <a href="/person/I500017" class="link">Saviel Pieris Tavarayan</a> & <a href="/person/I500018" class="link">Cecilia Rodrigo</a>)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0412" class="link">Mercy Philomena Josephine Pieris Tavarayan</a> &#128141; <a href="/person/I0401" class="link">Johnnie Martin Joseph Rodrigo Muniarem</a> (son of <a href="/person/I0398" class="link">Stanislaus Joseph Rodrigo Muniarem</a> & <a href="/person/I0400" class="link">Maria Lucy Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0417" class="link">Rienze Peter Joseph Rodrigo Muniarem</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0418" class="link">Rani Marie Monica Rodrigo Muniarem</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0419" class="link">Romany Lucy Rodrigo Muniarem</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0420" class="link">Stanislaus John Rodrigo Muniarem</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0421" class="link">Madona Bernadette Rodrigo Muniarem</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0413" class="link">Anthony Pieris Tavarayan</a> &#128141; <a href="/person/I0405" class="link">Lu Rodrigo Muniarem</a> (daughter of <a href="/person/I0398" class="link">Stanislaus Joseph Rodrigo Muniarem</a> & <a href="/person/I0400" class="link">Maria Lucy Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1034" class="link">Melville Pieris Tavarayan</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1035" class="link">Elmo Pieris Tavarayan</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1036" class="link">Malcom Pieris Tavarayan</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1037" class="link">Maxvelle Pieris Tavarayan</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1038" class="link">Carmen Pieris Tavarayan</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1039" class="link">Milroy Pieris Tavarayan</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1040" class="link">Chrishanthi Pieris Tavarayan</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1041" class="link">Laily Pieris Tavarayan</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1042" class="link">Joseph Pieris Tavarayan</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0414" class="link">Anna Cecilia Pieris Tavarayan</a> &#128141; <a href="/person/I0668" class="link">Eustice Mickem-Perumal</a> (son of <a href="/person/I0579" class="link">Anthony Mickem-Perumal</a> & <a href="/person/I0020" class="link">Salome Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0669" class="link">Kent Mickem-Perumal</a> &#128141; <a href="/person/I500167" class="link">Maureen Leona Rodrigo Saverymuthapulle</a> (daughter of <a href="/person/I500025" class="link">Victor Francis Rodrigo Saverymuthapulle</a> & <a href="/person/I500024" class="link">Mary Therese Clara Anandappa</a>)</span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0670" class="link">Cecil Mickem-Perumal</a> &#128141; <a href="/person/I0673" class="link">Kamala Fonseka-Gunesekera</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0671" class="link">Jovita Mickem-Perumal</a> &#128141; <a href="/person/I0672" class="link">Anton Rodrigo</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0415" class="link">Peter Pieris Tavarayan</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0416" class="link">Roche Pieris Tavarayan</a> &#128141; <a href="/person/I1025" class="link">Josephine Pieris Tavarayan</a> (daughter of <a href="/person/I1026" class="link">Paul Pieris Tavarayan</a> & Unknown)</span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0817" class="link">Rosa Maria Philippa Canjemanaden</a> &#128141; <a href="/person/I0848" class="link">Francis Nonis Candappa</a> (son of <a href="/person/I0759" class="link">Anthony Nonis Candappa</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0857" class="link">Annie Nonis Candappa</a> &#128141; <a href="/person/I0859" class="link">Emmanuel Marian Laity Ramenaden</a> (son of <a href="/person/I0754" class="link">Paul Laity Ramenaden</a> & Unknown)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1130" class="link">Christobel Therese "Dolly" Laity Ramenaden</a> &#128141; <a href="/person/I1129" class="link">Felix Fernandopulle</a> (son of <a href="/person/I0814" class="link">Francis Philip Fernandopulle</a> & <a href="/person/I0813" class="link">Maria Nathalia Canjemanaden</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1128" class="link">Michael Fernandopulle</a> &#128141; <a href="/person/I1124" class="link">Noeline Rosemarie Laity Ramenaden</a> (daughter of <a href="/person/I1123" class="link">Ubald Laity Ramenaden</a> & <a href="/person/I1092" class="link">Josephine Rodrigo Sathianathan</a>)</span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1131" class="link">Ruth Fernandopulle</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1132" class="link">Marlene Fernandopulle</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1133" class="link">Margie Fernandopulle</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I1134" class="link">Monica Fernandopulle</a></span>
-						</div>
-					</li>
-				</ul>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0858" class="link">Laura Nonis Candappa</a> &#128141; <a href="/person/I0860" class="link">Joseph Rodrigo Muniaram Perumal</a> (son of <a href="/person/I0740" class="link">Peter Rodrigo Muniaram Perumal</a> & Unknown)</span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0818" class="link">Anna Canjemanaden</a> &#128141; <a href="/person/I0819" class="link">Stanislaus Laity Ramenaden</a> (son of <a href="/person/I0754" class="link">Paul Laity Ramenaden</a> & Unknown)</span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 33</li>
-	<li> <b> Top 5 male names:</b> Michael (2 times), Peter (2 times), Joseph (2 times), Rienze (1 times), Stanislaus (1 times)</li>
-	<li> <b> Top 5 female names:</b> Monica (2 times), Anna (2 times), Lucia (1 times), Mercy (1 times), Philomena (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1845,10 +1668,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1893,7 +1712,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0816" />
   <meta property="og:title" content="Descendants of Michael Canjemanaden" />
-  <meta property="og:description" content="						Michael Canjemanaden &#128141; Unknown													Lucia Canjemanaden &#128141; Caitan Pieris Tavarayan (son of Saviel Pieris Tavar..." />
+  <meta property="og:description" content="" />
   
 
 

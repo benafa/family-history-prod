@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Gabriel Ayam Perumal">
-    <meta itemprop="description" content="						Gabriel Ayam Perumal &#128141; 1. Unknown 2. Cecelia Fernandopulle													Therese Ayam Perumal &#128141; Vincent Ayam Perumal (son of F.X. Ayam Perumal &amp; Unknown)				  																			Fermin Ayam Perumal &#128141; Romany Patricia Monica Anandappa (daughter of Lawrence Benedict Roche &quot;Ben&quot; Anandappa &amp; Mary Anna Philomena Anandappa)					  																									Rochelle Ayam Perumal &#128141; Delano Caderamanpulle (son of Didacus Caderamanpulle &amp; Mary Iphegenia Adaman)																								Remy Ayam Perumal																			Max Ayam Perumal																		Rose Ayam Perumal &#128141; Chevalier L. Ayam Perumal				  																			Lakshmani Ayam Perumal &#128141; Titus Pius Ramanathan Fernandopulle					  																									Ravi Joseph Fernandopulle &#128141; Cheryl Laurette Dinali Casie Chetty (daughter of Anthony Mervyn Remington Casie Chetty &amp; Julie Iris Joan Alles)						  																															Tashika Liesel Fernandopulle																													Trishan Jospeh Fernandopulle																														Rukshan Fernandopulle																								Rinesh Fernandopulle																								Rohit Fernandopulle																								Ranjit Ayam Perumal																			Jeyam Ayam Perumal																			Anthony Selva Ayam Perumal &#128141; Roshan Helene Marie Casie Chetty (daughter of Anthony Mervyn Remington Casie Chetty &amp; Julie Iris Joan Alles)					  																									Anthony Shehan Ayam Perumal																								Julian Trehan Ayam Perumal																							Joseph Ayam Perumal &#128141; Renee Unknown														Mildred Ayam Perumal						 Fun facts! 	  Number of unique descendents: 20	  Top 5 male names: Joseph (2 times), Anthony (2 times), Gabriel (1 times), Fermin (1 times), Remy (1 times)	  Top 5 female names: Therese (1 times), Rochelle (1 times), Rose (1 times), Lakshmani (1 times), Tashika (1 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I1192");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I1192");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,140 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I1192" class="link">Gabriel Ayam Perumal</a> &#128141; 1. <a href="/person/I1233" class="link">Unknown</a> 2. <a href="/person/I1193" class="link">Cecelia Fernandopulle</a></span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0508" class="link">Therese Ayam Perumal</a> &#128141; <a href="/person/I0507" class="link">Vincent Ayam Perumal</a> (son of <a href="/person/I0576" class="link">F.X. Ayam Perumal</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0506" class="link">Fermin Ayam Perumal</a> &#128141; <a href="/person/I0131" class="link">Romany Patricia Monica Anandappa</a> (daughter of <a href="/person/I0129" class="link">Lawrence Benedict Roche "Ben" Anandappa</a> & <a href="/person/I0109" class="link">Mary Anna Philomena Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I500003" class="link">Rochelle Ayam Perumal</a> &#128141; <a href="/person/I500006" class="link">Delano Caderamanpulle</a> (son of <a href="/person/I0991" class="link">Didacus Caderamanpulle</a> & <a href="/person/I0985" class="link">Mary Iphegenia Adaman</a>)</span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1189" class="link">Remy Ayam Perumal</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1190" class="link">Max Ayam Perumal</a></span>
-				</div>
-			</li>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1194" class="link">Rose Ayam Perumal</a> &#128141; <a href="/person/I1197" class="link">Chevalier L. Ayam Perumal</a></span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1198" class="link">Lakshmani Ayam Perumal</a> &#128141; <a href="/person/I1201" class="link">Titus Pius Ramanathan Fernandopulle</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0424" class="link">Ravi Joseph Fernandopulle</a> &#128141; <a href="/person/I0144" class="link">Cheryl Laurette Dinali Casie Chetty</a> (daughter of <a href="/person/I0003" class="link">Anthony Mervyn Remington Casie Chetty</a> & <a href="/person/I0141" class="link">Julie Iris Joan Alles</a>)</span>
-						<div class="button-right"> <button class="collapsible"></button> </div>
-					</div>
-				</li>
-				<ul class="level-3 nested">
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0428" class="link">Tashika Liesel Fernandopulle</a></span>
-						</div>
-					</li>
-					<li class="tree">
-						<div class="tree">
-							<span><a href="/person/I0429" class="link">Trishan Jospeh Fernandopulle</a></span>
-						</div>
-					</li>
-				</ul>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1202" class="link">Rukshan Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1203" class="link">Rinesh Fernandopulle</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1204" class="link">Rohit Fernandopulle</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1199" class="link">Ranjit Ayam Perumal</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1200" class="link">Jeyam Ayam Perumal</a></span>
-				</div>
-			</li>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0423" class="link">Anthony Selva Ayam Perumal</a> &#128141; <a href="/person/I0143" class="link">Roshan Helene Marie Casie Chetty</a> (daughter of <a href="/person/I0003" class="link">Anthony Mervyn Remington Casie Chetty</a> & <a href="/person/I0141" class="link">Julie Iris Joan Alles</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0430" class="link">Anthony Shehan Ayam Perumal</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0431" class="link">Julian Trehan Ayam Perumal</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1195" class="link">Joseph Ayam Perumal</a> &#128141; <a href="/person/I1205" class="link">Renee Unknown</a></span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I1196" class="link">Mildred Ayam Perumal</a></span>
-			</div>
-		</li>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 20</li>
-	<li> <b> Top 5 male names:</b> Joseph (2 times), Anthony (2 times), Gabriel (1 times), Fermin (1 times), Remy (1 times)</li>
-	<li> <b> Top 5 female names:</b> Therese (1 times), Rochelle (1 times), Rose (1 times), Lakshmani (1 times), Tashika (1 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1765,10 +1656,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1813,7 +1700,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I1192" />
   <meta property="og:title" content="Descendants of Gabriel Ayam Perumal" />
-  <meta property="og:description" content="						Gabriel Ayam Perumal &#128141; 1. Unknown 2. Cecelia Fernandopulle													Therese Ayam Perumal &#128141; Vincent Ayam Perumal ..." />
+  <meta property="og:description" content="" />
   
 
 

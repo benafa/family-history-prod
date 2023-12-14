@@ -194,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Descendants of Abraham Casie Chetty">
-    <meta itemprop="description" content="						Abraham Casie Chetty &#128141; Unknown													John Domingo Casie Chetty &#128141; 1. Rosa Adaman (daughter of Andrew Adaman &amp; Unknown) 2. Anna Rodrigo Muniaram Perumal (daughter of Peter Rodrigo Muniaram Perumal &amp; Unknown)				  																			Linus Cletus Joseph Nicholas Anthony Domingo Casie Chetty &#128141; Beda Lourdes Therese Marcelline Casie Chetty (daughter of Abraham Peter &quot;A.P.&quot; Casie Chetty &amp; Mary Clara Anandappa)					  																									Elmo Casie Chetty																								Shyma Casie Chetty																								Flarvy Casie Chetty																								Bona Casie Chetty																								Vasantha Casie Chetty																								Duleep Casie Chetty																								Aiyeesha Casie Chetty																								Nirmala Casie Chetty																								Hermia Perpetua Josephine Casie Chetty &#128141; Anthony Athenasias Anandappa (son of Peter Philip Anandappa &amp; Unknown)					  																									Philomena Damasca Laurentana Anandappa &#128141; Neville Casie Chetty (son of Casper Lazarus Victor Casie Chetty &amp; Florence Alles)																								Winifred Josephine Annette Anandappa &#128141; Bede Jayaweera																								Margaret Josephine Therese Anandappa &#128141; Dennis Prins																								Anthony Joseph Augustus Anandappa &#128141; Grace Unknown																								Anacleutus Dimitrius Lysander Anandappa																								Hermia Rita Hortensia Anandappa &#128141; Robin Jayaweera																								Marie Celine Rose Anandappa &#128141; Quintus Andradi																								Clair Ethelreda Ruth Anandappa																								Lydia Casie Chetty &#128141; Basil Rodrigo Candappa					  																									Boniface Anthony Modestus Rodrigo Candappa																								Rex Rodrigo Candappa																								Nicholas Rodrigo Candappa																								Shirley Rodrigo Candappa																								Felicia Rodrigo Candappa																								Trevor Cedric Louis Rodrigo Candappa																								Mary Anne Rodrigo Candappa																							Maria Benedicta Casie Chetty &#128141; Michael Ayam Perumal (son of Francis Ayam Perumal &amp; Unknown)														Rosa Benedicta Perumal Casie Chetty &#128141; Arthur Percy Casie Chetty (son of Arthur Casie Chetty &amp; Unknown)														Anne Catherine Casie Chetty &#128141; Robert Alexander Rodrigo Pullenayagam (son of Matthew Rodrigo Pullenayagam &amp; Unknown)														William Pantaleon Casie Chetty &#128141; Lourdes Maria Laity Ramenaden (daughter of Francis Sales Laity Ramenaden &amp; Unknown)				  																			Mary Sybil Theodora Casie Chetty &#128141; Anthony Joseph Marion Canjemanaden (son of Andrew Benedict Canjemanaden &amp; Unknown)										 Fun facts! 	  Number of unique descendents: 32	  Top 5 male names: Anthony (3 times), Domingo (2 times), Joseph (2 times), Nicholas (2 times), Abraham (1 times)	  Top 5 female names: Josephine (3 times), Hermia (2 times), Mary (2 times), Anne (2 times), Benedicta (2 times)">
+    <meta itemprop="description" content="">
     
     
 
@@ -219,6 +219,30 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 <link rel="stylesheet" href="/assets/css/pagination_hidden.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/links.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/layout_common.css" type="text/css">
+<script id="tree-script" src="/assets/js/tree.js"></script>
+
+<script> 
+	let PAGE_INIT = false;
+
+	document.addEventListener('DOMContentLoaded', async function() {
+	    document.getElementById('activate_all').addEventListener('click', function() {
+	        activateAll();
+	    });
+	    try {
+	    	await initStaticTree("I0734");
+	    	PAGE_INIT = true;
+	    } catch(error) {
+	    	//
+	    }
+	});
+
+	document.addEventListener('MemberSpace.member.info', async function() {
+	    if (!PAGE_INIT) {
+	    	await initStaticTree("I0734");
+	    }
+	});
+
+</script>
 
 <div class="master">
 	<button class="btn btn--primary" id="activate_all">Expand/Collapse All</button>  <br />
@@ -258,197 +282,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 </div>
 
 <div id="tree-content">
-	<ul class="root">
-	<li class="root">
-		<div class="tree">
-			<span><a href="/person/I0734" class="link">Abraham Casie Chetty</a> &#128141; Unknown</span>
-		</div>
-	</li>
-	<ul class="level-0 nested active">
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0733" class="link">John Domingo Casie Chetty</a> &#128141; 1. <a href="/person/I0730" class="link">Rosa Adaman</a> (daughter of <a href="/person/I0727" class="link">Andrew Adaman</a> & Unknown) 2. <a href="/person/I0861" class="link">Anna Rodrigo Muniaram Perumal</a> (daughter of <a href="/person/I0740" class="link">Peter Rodrigo Muniaram Perumal</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0009" class="link">Linus Cletus Joseph Nicholas Anthony Domingo Casie Chetty</a> &#128141; <a href="/person/I0008" class="link">Beda Lourdes Therese Marcelline Casie Chetty</a> (daughter of <a href="/person/I0001" class="link">Abraham Peter "A.P." Casie Chetty</a> & <a href="/person/I0002" class="link">Mary Clara Anandappa</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0146" class="link">Elmo Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0147" class="link">Shyma Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0148" class="link">Flarvy Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0516" class="link">Bona Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0517" class="link">Vasantha Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0518" class="link">Duleep Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0519" class="link">Aiyeesha Casie Chetty</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0520" class="link">Nirmala Casie Chetty</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0060" class="link">Hermia Perpetua Josephine Casie Chetty</a> &#128141; <a href="/person/I0059" class="link">Anthony Athenasias Anandappa</a> (son of <a href="/person/I500106" class="link">Peter Philip Anandappa</a> & <a href="/person/I0521" class="link">Unknown</a>)</span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0058" class="link">Philomena Damasca Laurentana Anandappa</a> &#128141; <a href="/person/I0055" class="link">Neville Casie Chetty</a> (son of <a href="/person/I0045" class="link">Casper Lazarus Victor Casie Chetty</a> & <a href="/person/I0054" class="link">Florence Alles</a>)</span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0434" class="link">Winifred Josephine Annette Anandappa</a> &#128141; <a href="/person/I0441" class="link">Bede Jayaweera</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0435" class="link">Margaret Josephine Therese Anandappa</a> &#128141; <a href="/person/I0442" class="link">Dennis Prins</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0436" class="link">Anthony Joseph Augustus Anandappa</a> &#128141; <a href="/person/I0443" class="link">Grace Unknown</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0437" class="link">Anacleutus Dimitrius Lysander Anandappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0438" class="link">Hermia Rita Hortensia Anandappa</a> &#128141; <a href="/person/I0444" class="link">Robin Jayaweera</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0439" class="link">Marie Celine Rose Anandappa</a> &#128141; <a href="/person/I0445" class="link">Quintus Andradi</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I0440" class="link">Clair Ethelreda Ruth Anandappa</a></span>
-					</div>
-				</li>
-			</ul>
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I1063" class="link">Lydia Casie Chetty</a> &#128141; <a href="/person/I1064" class="link">Basil Rodrigo Candappa</a></span>
-					<div class="button-right"> <button class="collapsible"></button> </div>
-				</div>
-			</li>
-			<ul class="level-2 nested">
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1065" class="link">Boniface Anthony Modestus Rodrigo Candappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1077" class="link">Rex Rodrigo Candappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1078" class="link">Nicholas Rodrigo Candappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1079" class="link">Shirley Rodrigo Candappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1080" class="link">Felicia Rodrigo Candappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1081" class="link">Trevor Cedric Louis Rodrigo Candappa</a></span>
-					</div>
-				</li>
-				<li class="tree">
-					<div class="tree">
-						<span><a href="/person/I1082" class="link">Mary Anne Rodrigo Candappa</a></span>
-					</div>
-				</li>
-			</ul>
-		</ul>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0800" class="link">Maria Benedicta Casie Chetty</a> &#128141; <a href="/person/I0801" class="link">Michael Ayam Perumal</a> (son of <a href="/person/I0802" class="link">Francis Ayam Perumal</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0832" class="link">Rosa Benedicta Perumal Casie Chetty</a> &#128141; <a href="/person/I0833" class="link">Arthur Percy Casie Chetty</a> (son of <a href="/person/I0834" class="link">Arthur Casie Chetty</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0842" class="link">Anne Catherine Casie Chetty</a> &#128141; <a href="/person/I0843" class="link">Robert Alexander Rodrigo Pullenayagam</a> (son of <a href="/person/I0844" class="link">Matthew Rodrigo Pullenayagam</a> & Unknown)</span>
-			</div>
-		</li>
-		<li class="tree">
-			<div class="tree">
-				<span><a href="/person/I0931" class="link">William Pantaleon Casie Chetty</a> &#128141; <a href="/person/I0932" class="link">Lourdes Maria Laity Ramenaden</a> (daughter of <a href="/person/I0933" class="link">Francis Sales Laity Ramenaden</a> & Unknown)</span>
-				<div class="button-right"> <button class="collapsible"></button> </div>
-			</div>
-		</li>
-		<ul class="level-1 nested">
-			<li class="tree">
-				<div class="tree">
-					<span><a href="/person/I0823" class="link">Mary Sybil Theodora Casie Chetty</a> &#128141; <a href="/person/I0820" class="link">Anthony Joseph Marion Canjemanaden</a> (son of <a href="/person/I0719" class="link">Andrew Benedict Canjemanaden</a> & Unknown)</span>
-				</div>
-			</li>
-		</ul>
-	</ul>
-</ul>
-<p class="fun-facts"> Fun facts! </p>
-<ul class="fun-facts">
-	<li> <b> Number of unique descendents:</b> 32</li>
-	<li> <b> Top 5 male names:</b> Anthony (3 times), Domingo (2 times), Joseph (2 times), Nicholas (2 times), Abraham (1 times)</li>
-	<li> <b> Top 5 female names:</b> Josephine (3 times), Hermia (2 times), Mary (2 times), Anne (2 times), Benedicta (2 times)</li>
-</ul>
-
+	
 </div>
 
 <p class="children"><b> Relevant Documents </b></p>
@@ -1842,10 +1676,6 @@ input[readonly].default-cursor {
 }</style>
 
  <a href="/trees" class="btn btn--primary"> View all trees </a>
-
-
-<script id="tree-script" src="/assets/js/tree.js"></script>
-
         
       </section>
 
@@ -1890,7 +1720,7 @@ input[readonly].default-cursor {
   <meta property="og:ttl" content="600" />
   <meta property="og:url" content="https://colombochetty.com//tree/I0734" />
   <meta property="og:title" content="Descendants of Abraham Casie Chetty" />
-  <meta property="og:description" content="						Abraham Casie Chetty &#128141; Unknown													John Domingo Casie Chetty &#128141; 1. Rosa Adaman (daughter of Andrew Adaman & ..." />
+  <meta property="og:description" content="" />
   
 
 
