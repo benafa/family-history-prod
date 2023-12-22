@@ -1127,27 +1127,63 @@ var store = [{
         "url": "/2023/06/16/launch.html",
         "teaser": null
       },{
-        "title": "Photo of the Week #1: Anandappa - Casie Chetty Wedding",
+        "title": "Benson Anandappa & Rajie Casie Chetty",
         "excerpt":"Each week, I plan to post a photo of Colombo Chetty ancestors and discuss the relationships that exist between those in the photo. For the very first post, I’ll start with the wedding of my grandparents… Benson Anandappa and Rajie Casie Chetty's Wedding You may recognize this from the banner...","categories": [],
         "tags": [],
         "url": "/members/2023/07/01/photo-of-the-week",
         "teaser": null
       },{
-        "title": "Photo of the Week #2: The Adaman Family",
+        "title": "The Adaman Family",
         "excerpt":"Welcome back to the second installment of Colombo Chetty Genealogy’s Photo of the Week! If you missed last week’s post of Benson Anandappa and Rajie Casie Chetty’s wedding, be sure to check it out here. Let’s dive in to this week’s photo… 25th Wedding Anniversary of Ubaldus Adaman and Bridget...","categories": [],
         "tags": [],
         "url": "/members/2023/07/08/photo-of-the-week",
         "teaser": null
       },{
-        "title": "Photo of the Week #3: An Anandappa Wedding",
+        "title": "Ben Anandappa & Anna Anandappa",
         "excerpt":"Welcome back to our Photo of the Week - the third in the series. If you missed previous posts, check them out below: 25th Wedding Anniversary of Ubaldus Adaman and Bridget Rodrigo Sathianathan Wedding of Benson Anandappa and Rajie Casie Chetty It’s time to dive into this week’s photo… Wedding...","categories": [],
         "tags": [],
         "url": "/members/2023/07/18/photo-of-the-week",
         "teaser": null
       },{
-        "title": "Photo of the Week #4: Casie Chetty - Fernandopulle Wedding",
+        "title": "Joy Casie Chetty & Poomani Fernandopulle",
         "excerpt":"I hope you’re excited for this Photo of the Week! If you missed previous posts, you can view them below: Wedding of Anna Anandappa and Ben Anandappa 25th Wedding Anniversary of Ubaldus Adaman and Bridget Rodrigo Sathianathan Wedding of Benson Anandappa and Rajie Casie Chetty It’s time to check out...","categories": [],
         "tags": [],
         "url": "/members/2023/08/06/photo-of-the-week",
+        "teaser": null
+      },{
+        "title": "Introducing Dynamic Descendant View: A New Way to Explore",
+        "excerpt":"I'm excited to unveil the new Dynamic Descendant View on Colombo Chetty Genealogy! From Static to Dynamic In the past, the website showcased the family trees of key ancestors - these trees were static in that they lacked the ability to refocus the view to a different person's tree. Feedback...","categories": [],
+        "tags": [],
+        "url": "/post/announcement/dynamic-trees",
+        "teaser": null
+      },{
+        "title": "Philip Raphael and Mary Louise Anandappa",
+        "excerpt":"Here we have Mary Louise Anandappa and Philip Raphael Anandappa with their 5 children: Mary Anna Philomena Regis Peter Joseph Anthony Eubaldus “Tony” Anthony Xavier Benedict “Benson” Ronald Millanius “Ronson” In addition, in the center is Mary Louise’s father, Anthony Xavier. You may recognize this photo from the front page...","categories": [],
+        "tags": [],
+        "url": "/post/families/philip-raphael-mary-louise",
+        "teaser": null
+      },{
+        "title": "Abraham Peter Casie Chetty",
+        "excerpt":"Abraham Peter Casie Chetty, also known as A.P Casie Chitty, was born on October 19, 1885, to Caspar Casie Chetty and Maria Theresa Anandappa. According to Seaports of India &amp; Ceylon (1928), Abraham Peter’s heritage is rooted in a Tamil family from Benares, India, but extends as far as fifteen...","categories": [],
+        "tags": [],
+        "url": "/post/profiles/abraham-peter-casie-chetty",
+        "teaser": null
+      },{
+        "title": "Mary Clara Anandappa",
+        "excerpt":"Mary Clara Anandappa, born on April 4, 1898, was the eldest daughter of Emmanuel Anandappa and Maria Nathalia Canjemenaden. She grew up in a family of seven children. Her three brothers were Christopher Lazarus, Joseph Nicholas Anthony Emmanuel, and Lawrence Benedict Roche, while her sisters included Enid Augusta, Julia Anthonia,...","categories": [],
+        "tags": [],
+        "url": "/post/profiles/mary-clara-anandappa",
+        "teaser": null
+      },{
+        "title": "Ronson Anandappa & Joyce Hamer",
+        "excerpt":"Here we have the wedding of Ronson Anandappa and Joyce Hamer. The Wedding Party - Who's Who? The members of the wedding party are not currently known. I will be sure to update this post as I find out more information. Do you recognize anyone? Please comment below The Couple...","categories": [],
+        "tags": [],
+        "url": "/post/wedding-photo/ronson-joyce",
+        "teaser": null
+      },{
+        "title": "Tony Anandappa & Marnie Anandappa",
+        "excerpt":"This photo is from the wedding of Tony Anandappa and Marnie Anandappa. Let’s dive into who was in their wedding party. The Wedding Party - Who's Who? From left to right, we have: 👦🏾 Oswin Anandappa is the son of Rajie Casie Chetty and Benson Anandappa - Benson is one...","categories": [],
+        "tags": [],
+        "url": "/post/wedding-photo/tony-marnie",
         "teaser": null
       },]
