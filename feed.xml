@@ -1,4 +1,354 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://colombochetty.com//feed.xml" rel="self" type="application/atom+xml" /><link href="https://colombochetty.com//" rel="alternate" type="text/html" /><updated>2023-12-22T08:16:31-05:00</updated><id>https://colombochetty.com//feed.xml</id><title type="html">Colombo Chetty Genealogy</title><subtitle>This website contains genealogical research of the Colombo Chetty people conducted by Ben Anandappa. </subtitle><author><name>Ben Anandappa</name></author><entry><title type="html">Philip Raphael and Mary Louise Anandappa</title><link href="https://colombochetty.com//post/families/philip-raphael-mary-louise" rel="alternate" type="text/html" title="Philip Raphael and Mary Louise Anandappa" /><published>2023-12-16T00:00:00-05:00</published><updated>2023-12-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/families/family-photo-philip-raphael-mary-louise</id><content type="html" xml:base="https://colombochetty.com//post/families/philip-raphael-mary-louise">&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Old+Standard+TT&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://colombochetty.com//feed.xml" rel="self" type="application/atom+xml" /><link href="https://colombochetty.com//" rel="alternate" type="text/html" /><updated>2024-06-16T10:50:39-05:00</updated><id>https://colombochetty.com//feed.xml</id><title type="html">Colombo Chetty Genealogy</title><subtitle>This website contains genealogical research of the Colombo Chetty people conducted by Ben Anandappa. </subtitle><author><name>Ben Anandappa</name></author><entry><title type="html">Bonnie Anandappa &amp;amp; Victoria Candappa</title><link href="https://colombochetty.com//post/wedding-photo/bonnie-victoria" rel="alternate" type="text/html" title="Bonnie Anandappa &amp;amp; Victoria Candappa" /><published>2024-06-16T00:00:00-05:00</published><updated>2024-06-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/wedding-photo/wedding-bonnie-victoria</id><content type="html" xml:base="https://colombochetty.com//post/wedding-photo/bonnie-victoria">&lt;style&gt;
+  
+  h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  h3 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+   .responsive-image {
+    max-width: 50%;
+    height: auto;
+  }
+
+ .responsive-image-main {
+    max-width: 90%;
+    height: auto;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-bottom: 25px;
+    margin-top: 5px;
+  }
+&lt;/style&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/assets/images/weddings/bonnie_victoria_wedding_party.jpeg&quot; alt=&quot;weddings/bonnie_victoria_wedding_party.jpeg&quot; class=&quot;responsive-image-main&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ignatius Boniface Anandappa married Victoria Rodrigo Candappa on June 19, 1946. Together, they had 4 children: Anton, Roshan, Ronnie and Anne.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt; Do you recognize anyone? Please comment below to help keep them in our memory. &lt;/i&gt;&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" /><media:content medium="image" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Aloy Anandappa &amp;amp; Rita Anandappa</title><link href="https://colombochetty.com//post/wedding-photo/aloy-rita" rel="alternate" type="text/html" title="Aloy Anandappa &amp;amp; Rita Anandappa" /><published>2024-06-16T00:00:00-05:00</published><updated>2024-06-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/wedding-photo/wedding-aloy-rita</id><content type="html" xml:base="https://colombochetty.com//post/wedding-photo/aloy-rita">&lt;style&gt;
+  
+  h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  h3 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+   .responsive-image {
+    max-width: 50%;
+    height: auto;
+  }
+
+ .responsive-image-main {
+    max-width: 90%;
+    height: auto;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-bottom: 25px;
+    margin-top: 5px;
+  }
+&lt;/style&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/assets/images/weddings/aloy_rita_wedding_party.jpeg&quot; alt=&quot;weddings/aloy_rita_wedding_party.jpeg&quot; class=&quot;responsive-image-main&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Aloysius Gonzaga Anandappa married Rita Anandappa. Together, they had 5 children: Alex, Tony, Maurice, Rosemarie and Desmond.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt; Do you recognize anyone? Please comment below to help keep them in our memory. &lt;/i&gt;&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" /><media:content medium="image" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Rose Anandappa &amp;amp; Joe Casie Chetty</title><link href="https://colombochetty.com//post/wedding-photo/joe-rose" rel="alternate" type="text/html" title="Rose Anandappa &amp;amp; Joe Casie Chetty" /><published>2024-06-16T00:00:00-05:00</published><updated>2024-06-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/wedding-photo/wedding-rose-joe</id><content type="html" xml:base="https://colombochetty.com//post/wedding-photo/joe-rose">&lt;style&gt;
+  
+  h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  h3 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+   .responsive-image {
+    max-width: 50%;
+    height: auto;
+  }
+
+ .responsive-image-main {
+    max-width: 90%;
+    height: auto;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-bottom: 25px;
+    margin-top: 5px;
+  }
+&lt;/style&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/assets/images/weddings/joe_and_rose_wedding_party.jpeg&quot; alt=&quot;weddings/joe_and_rose_wedding_party.jpeg&quot; class=&quot;responsive-image-main&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Mary Rose Anandappa married Anthony Joseph Faustin Casie Chetty. Together, they had 3 children: Elmo, Eddie and Jacinta.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt; Do you recognize anyone? Please comment below to help keep them in our memory. &lt;/i&gt;&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" /><media:content medium="image" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Josephine Anandappa &amp;amp; A.D.R.M Perumal</title><link href="https://colombochetty.com//post/wedding-photo/josephine-adrm" rel="alternate" type="text/html" title="Josephine Anandappa &amp;amp; A.D.R.M Perumal" /><published>2024-06-16T00:00:00-05:00</published><updated>2024-06-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/wedding-photo/wedding-adrm-josephine</id><content type="html" xml:base="https://colombochetty.com//post/wedding-photo/josephine-adrm">&lt;style&gt;
+  
+  h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  h3 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+   .responsive-image {
+    max-width: 50%;
+    height: auto;
+  }
+
+ .responsive-image-main {
+    max-width: 90%;
+    height: auto;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-bottom: 25px;
+    margin-top: 5px;
+  }
+&lt;/style&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/assets/images/weddings/josephine_adrm_wedding_party.jpeg&quot; alt=&quot;weddings/josephine_adrm_wedding_party.jpeg&quot; class=&quot;responsive-image-main&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Cecilia Johanna Josephine Anandappa married Anthony Dominic Rodrigo Muniarem Perumal. Together, they had 2 children: Doreen and Neville.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt; Do you recognize anyone? Please comment below to help keep them in our memory. &lt;/i&gt;&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" /><media:content medium="image" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Colombo Chetty Genealogy: One Year Anniversary</title><link href="https://colombochetty.com//post/announcement/one-year-anniversary" rel="alternate" type="text/html" title="Colombo Chetty Genealogy: One Year Anniversary" /><published>2024-06-16T00:00:00-05:00</published><updated>2024-06-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/announcement/one-year-anniversary</id><content type="html" xml:base="https://colombochetty.com//post/announcement/one-year-anniversary">&lt;style&gt;
+  
+  h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  h3 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+   .responsive-image {
+    max-width: 90%;
+    height: auto;
+  }
+
+   .responsive-image-main {
+    max-width: 90%;
+    height: auto;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-bottom: 25px;
+    margin-top: 5px;
+  }
+
+&lt;/style&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;p&gt;Happy one year anniversary of Colombo Chetty Genealogy’s website launch! 🎉
+ Excited to celebrate this day by sharing a few more wedding photos with the community&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/post/wedding-photo/josephine-adrm&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Josephine Anandappa and Anthony D. Rodrigo Muniarem Perumal &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/post/wedding-photo/aloy-rita&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Aloysius Anandappa and Rita Anandappa&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/post/wedding-photo/bonnie-victoria&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Bonnie Anandappa and Victoria Candappa &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/post/wedding-photo/joe-joyce&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Joe Anandappa and Joyce Perumal &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/post/wedding-photo/joe-rose&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Rose Anandappa and Joe Casie Chetty &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Together, these are the weddings of almost all of Anthony Xavier Anandappa and Anna Pieris Tavarayan’s children: Josephine, Aloysius, Bonnie, Joe and Rose. The only sibling missing is Mary Louise whose wedding in 1917 unforunately has no known photos; however, you can check out &lt;a href=&quot;/post/families/philip-raphael-mary-louise&quot; class=&quot;link&quot;&gt; her family photo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m also excited to share the marriage records of their grandparents:&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/assets/images//1870_anthony_and_anna.jpg&quot; alt=&quot;1870_anthony_and_anna.jpg&quot; class=&quot;responsive-image&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;Anthony Xavier’s parents, Anthony Anandappa and Anna Wijeratnam, married on September 22, 1870.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/assets/images//1878_saviel_and_cecilia.jpg&quot; alt=&quot;1878_saviel_and_cecilia.jpg&quot; class=&quot;responsive-image&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Anna Pieris Tavarayan’s parents, Saviel Pieris Tavarayan and Cecilia Rodrigo, married on October 2, 1878.&lt;/p&gt;
+
+&lt;p&gt;You might also want to check out &lt;a href=&quot;/&quot; class=&quot;link&quot;&gt; Anthony Xavier’s profile on the home page &lt;/a&gt; which shows Mary Louise, Rose and Josephine as children.&lt;/p&gt;
+
+&lt;p&gt;Thank you everyone for your patronage over the last year! If you have more memories to share, know someone who might, or have any photos / articles, I’d love for you to reach out to me at  &lt;a href=&quot;mailto: ben@colombochetty.com&quot; class=&quot;link&quot;&gt;ben@colombochetty.com&lt;/a&gt; or comment below.&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" /><media:content medium="image" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Joe Anandappa &amp;amp; Joyce Perumal</title><link href="https://colombochetty.com//post/wedding-photo/joe-joyce" rel="alternate" type="text/html" title="Joe Anandappa &amp;amp; Joyce Perumal" /><published>2024-06-16T00:00:00-05:00</published><updated>2024-06-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/wedding-photo/wedding-joe-joyce</id><content type="html" xml:base="https://colombochetty.com//post/wedding-photo/joe-joyce">&lt;style&gt;
+  
+  h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  h3 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+   .responsive-image {
+    max-width: 50%;
+    height: auto;
+  }
+
+ .responsive-image-main {
+    max-width: 90%;
+    height: auto;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-bottom: 25px;
+    margin-top: 5px;
+  }
+&lt;/style&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/assets/images/weddings/joe_and_joyce_wedding_party.jpeg&quot; alt=&quot;weddings/joe_and_joyce_wedding_party.jpeg&quot; class=&quot;responsive-image-main&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Anthony Joseph Nicholas Anandappa married Joyce Perumal. Together, they had 3 children: Marie, Neil and Rienze.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt; Do you recognize anyone? Please comment below to help keep them in our memory. &lt;/i&gt;&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" /><media:content medium="image" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing Dynamic Descendant View: A New Way to Explore</title><link href="https://colombochetty.com//post/announcement/dynamic-trees" rel="alternate" type="text/html" title="Introducing Dynamic Descendant View: A New Way to Explore" /><published>2023-12-16T00:00:00-06:00</published><updated>2023-12-16T00:00:00-06:00</updated><id>https://colombochetty.com//post/announcement/dynamic-trees</id><content type="html" xml:base="https://colombochetty.com//post/announcement/dynamic-trees">&lt;style&gt;
+  
+  h2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  h3 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+&lt;/style&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;p&gt;
+I&apos;m excited to unveil the new &lt;a href=&quot;/dynamic&quot; class=&quot;link&quot;&gt;Dynamic Descendant View&lt;/a&gt; on Colombo Chetty Genealogy! 
+
+&lt;/p&gt;
+
+&lt;h2&gt;From Static to Dynamic&lt;/h2&gt;
+&lt;p&gt;
+  In the past, the website showcased the family trees of key ancestors - these trees were static in that they lacked the ability to refocus the view to a different person&apos;s tree. Feedback from users highlighted a desire for a more flexible way to connect with our ancestry. 
+&lt;/p&gt;
+&lt;p&gt;
+
+  With this feedback in mind, the family tree visualization has been enhanced to offer a richer, more interactive experience.
+&lt;/p&gt;
+
+&lt;h2&gt;Introducing the Dynamic Descendant View&lt;/h2&gt;
+&lt;p&gt;
+The &lt;a href=&quot;/dynamic&quot; class=&quot;link&quot;&gt;Dynamic Descendant View&lt;/a&gt; provides a straightforward and interactive way to explore family trees. By clicking on a name, you can easily navigate through ancestral lines. 
+&lt;/p&gt;
+&lt;p&gt;
+This is a change from the static view, where clicking a name just opened a profile. Now, clicking a name refocuses the tree on the selected individual, simplifying the process of discovering and learning about our relatives.
+&lt;/p&gt;
+
+&lt;h2&gt;How to Use the Dynamic Descendant View&lt;/h2&gt;
+&lt;p&gt;
+    Here’s how you can dive into this new feature:
+    &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;Directly&lt;/strong&gt;: 
+            &lt;ol&gt;
+                &lt;li&gt;Navigate to the &lt;a href=&quot;/dynamic&quot; class=&quot;link&quot;&gt;Dynamic Descendant View&lt;/a&gt;  page.&lt;/li&gt;
+                &lt;li&gt;Select a person from the dropdown or click on a name in the current view to explore their descendant tree.&lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;From a Profile&lt;/strong&gt;: 
+            &lt;ol&gt;
+                &lt;li&gt;Go to the &lt;a href=&quot;/people&quot; class=&quot;link&quot;&gt;List of People&lt;/a&gt; and use the Sort/Filter option to find someone.&lt;/li&gt;
+                &lt;li&gt;Visit their profile &lt;/li&gt;
+                &lt;li&gt; Click on “View Tree” which will direct you to the Dynamic Descendant View&lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; What do you think of the new feature? Let me know below!&lt;/b&gt; &lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary></entry><entry><title type="html">Philip Raphael and Mary Louise Anandappa</title><link href="https://colombochetty.com//post/families/philip-raphael-mary-louise" rel="alternate" type="text/html" title="Philip Raphael and Mary Louise Anandappa" /><published>2023-12-16T00:00:00-06:00</published><updated>2023-12-16T00:00:00-06:00</updated><id>https://colombochetty.com//post/families/family-photo-philip-raphael-mary-louise</id><content type="html" xml:base="https://colombochetty.com//post/families/philip-raphael-mary-louise">&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Old+Standard+TT&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
 
 &lt;style&gt;
   
@@ -108,7 +458,7 @@ The wedding was solemnized yesterday morning at the Mater Dolorosa Church, New C
   &lt;li&gt;&lt;a href=&quot;/post/wedding-photo/ronson-joyce&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Ronson Anandappa and Joy Hamer&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; Would you like to see more articles like this? Please share your thoughts and comments below! &lt;/b&gt; &lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary></entry><entry><title type="html">Abraham Peter Casie Chetty</title><link href="https://colombochetty.com//post/profiles/abraham-peter-casie-chetty" rel="alternate" type="text/html" title="Abraham Peter Casie Chetty" /><published>2023-12-16T00:00:00-05:00</published><updated>2023-12-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/profiles/profile-abraham-peter-casie-chetty</id><content type="html" xml:base="https://colombochetty.com//post/profiles/abraham-peter-casie-chetty">&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Old+Standard+TT&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; Would you like to see more articles like this? Please share your thoughts and comments below! &lt;/b&gt; &lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary></entry><entry><title type="html">Abraham Peter Casie Chetty</title><link href="https://colombochetty.com//post/profiles/abraham-peter-casie-chetty" rel="alternate" type="text/html" title="Abraham Peter Casie Chetty" /><published>2023-12-16T00:00:00-06:00</published><updated>2023-12-16T00:00:00-06:00</updated><id>https://colombochetty.com//post/profiles/profile-abraham-peter-casie-chetty</id><content type="html" xml:base="https://colombochetty.com//post/profiles/abraham-peter-casie-chetty">&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Old+Standard+TT&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
 
 &lt;style&gt;
   
@@ -239,140 +589,7 @@ P.S. - Since closing this report, the delegation has interviewed Mr. A. P. Casie
 
 &lt;p&gt;Abraham Peter passed away on November 16, 1952, at age 67.&lt;/p&gt;
 
-&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; Did this article pique your interest? I would love for you to share your thoughts below! &lt;/b&gt; &lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary></entry><entry><title type="html">Mary Clara Anandappa</title><link href="https://colombochetty.com//post/profiles/mary-clara-anandappa" rel="alternate" type="text/html" title="Mary Clara Anandappa" /><published>2023-12-16T00:00:00-05:00</published><updated>2023-12-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/profiles/profile-mary-clara-anandappa</id><content type="html" xml:base="https://colombochetty.com//post/profiles/mary-clara-anandappa">&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Old+Standard+TT&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
-
-&lt;style&gt;
-  
-  h2 {
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  h3 {
-    margin-bottom: 0px;
-    margin-top: 10px;
-  }
-
-  ul {
-    margin-top: 10px;
-  }
-    .old-newspaper-style {
-    font-family: &apos;Old Standard TT&apos;, serif;
-    text-align: center;
-   }
-
-  .profile-responsive-image {
-    max-width: 60%;
-    height: auto;
-  }
-  .profile-image-container {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    margin-bottom: 25px;
-    margin-top: 5px;
-  }
-
-  .responsive-image {
-    max-width: 75%;
-    height: auto;
-  }
-  .image-container {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    margin-bottom: 25px;
-}
-
-&lt;/style&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;div class=&quot;profile-image-container&quot;&gt;
-  &lt;img src=&quot;/assets/images/profiles/mary_clara_anandappa.jpg&quot; alt=&quot;profiles/mary_clara_anandappa.jpg&quot; class=&quot;profile-responsive-image&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Mary Clara Anandappa, born on April 4, 1898, was the eldest daughter of Emmanuel Anandappa and Maria Nathalia Canjemenaden. She grew up in a family of seven children. Her three brothers were Christopher Lazarus, Joseph Nicholas Anthony Emmanuel, and Lawrence Benedict Roche, while her sisters included Enid Augusta, Julia Anthonia, and Rose Angelina.&lt;/p&gt;
-
-&lt;p&gt;Below, you can find a copy of her birth record, verifying her birth date in 1898 and the names of her parents:&lt;/p&gt;
-
-&lt;div class=&quot;image-container&quot;&gt;
-  &lt;img src=&quot;/assets/images/1898_page_168_mary_clara_anandappa.jpeg&quot; alt=&quot;1898_page_168_mary_clara_anandappa&quot; class=&quot;responsive-image&quot; /&gt;
-&lt;/div&gt;
-
-&lt;h2&gt; Early Life &lt;/h2&gt;
-
-&lt;p&gt;Mary Clara Anandappa received her education at St. Bridget’s Convent and pursued her musical interests at the Trinity College of Music. As reported by the Ceylon Observer, she displayed early talent in music; at age 13, she successfully passed the “Preparatory Division” exam in 1911.&lt;/p&gt;
-
-&lt;p&gt;Tragically, Mary Clara faced significant losses early in her life. Her father passed away on April 8, 1915, just days after her 17th birthday. This loss was compounded eight years later when her mother also passed away, on May 11, 1923.&lt;/p&gt;
-
-&lt;h2&gt; Marriage to A.P. Casie Chetty &lt;/h2&gt;
-&lt;p&gt;Mary Clara Anandappa celebrated her marriage with Abraham Peter Casie Chetty, the youngest son of Caspar Casie Chetty and Maria Theresa Anandappa, in a ceremony held on July 2, 1917, at St. Lucia’s Cathedral.&lt;/p&gt;
-
-&lt;p&gt;I’m pleased to present an extract from the Ceylon Observer that details their wedding in 1917:&lt;/p&gt;
-
-&lt;p class=&quot;old-newspaper-style&quot;&gt;
-WEDDING
-&lt;/p&gt;
-
-&lt;p class=&quot;old-newspaper-style&quot;&gt;
-CASIE CHITTY - ANANDAPPA
-&lt;/p&gt;
-
-&lt;p class=&quot;old-newspaper-style&quot;&gt;
-The nuptials of Mr. Abraham Peter Casie Chitty, Broker of Messrs. R. Gordon &amp;amp; Co., and liquor merchant of Pettah, and Miss Mary Clara Anandappa, daughter of the late Mr. E. Anandappa, Broker of Messrs. Thompson Tetley &amp;amp; Co., were solemnised at 9 a.m. yesterday at S. Lucia&apos;s Cathedral, Kotahena by Rev. Father J B Meary, O.M.I. After Mass the register was signed, the attesting witnesses being Messrs J C Barton and M L Ramanadan (grand-father of the bride). After the ceremony at Church the bride&apos;s mother held a reception at her residence in New Chetty Street.&lt;/p&gt;
-
-&lt;h2&gt; Connection to M.L. Ramenaden &lt;/h2&gt;
-&lt;p&gt;This wedding extract sparked a research quest I’ve been on for the last year, centered around a perplexing question:&lt;/p&gt;
-
-&lt;p style=&quot;text-align: center;&quot;&gt; &lt;i&gt; How could Mary Clara&apos;s grandfather be M.L. Ramenaden?  &lt;/i&gt; &lt;/p&gt;
-
-&lt;p&gt;This is puzzling because Mary Clara’s parents were Emmanuel Anandappa and Maria Nathalia Canjemenaden - naturally, one would expect her grandfathers to bear the last names Anandappa and Canjemenaden, following traditional naming conventions.&lt;/p&gt;
-
-&lt;h3&gt; &lt;i&gt; Initial Theory &lt;/i&gt; &lt;/h3&gt;
-&lt;p&gt;Initially, I came up with the following theory:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Mary Clara’s maternal grandmother (Nathalia’s mother) was a Miss Ramenaden, and M.L. Ramenaden was Miss Ramenaden’s brother.&lt;/li&gt;
-  &lt;li&gt;This makes M.L. Ramenaden a grand-uncle of Mary Clara, and perhaps the newspaper simplified the relationship of grand-uncle to “grandfather”.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;However, this theory was debunked by a death record of Nathalia Canjemenaden, which revealed her mother as Maria Rodrigo, not a Ramenaden as hypothesized.&lt;/p&gt;
-
-&lt;h3&gt; &lt;i&gt;  New Evidence&lt;/i&gt;  &lt;/h3&gt;
-&lt;p&gt;I then discovered these below marriage records from the late 1800s that helped resolve the mystery:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;In 1879, Maria Rodrigo married Christopher Lazarus Canjemenaden - this is &lt;b&gt; Mary Clara’s maternal grandparents&lt;/b&gt;!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;image-container&quot;&gt;
-  &lt;img src=&quot;/assets/images//1879_christopher_lazarus_canjemenaden_maria_rodrigo.jpeg&quot; alt=&quot;1879_christopher_lazarus_canjemenaden_maria_rodrigo&quot; class=&quot;responsive-image&quot; /&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;In 1884, Maria Rodrigo, now a widow, remarried to Mariano Laity Ramenaden&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;image-container&quot;&gt;
-  &lt;img src=&quot;/assets/images/1884_mariano_ramenaden_maria_rodrigo.jpeg&quot; alt=&quot;1884_mariano_ramenaden_maria_rodrigo&quot; class=&quot;responsive-image&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;It appears that Maria Rodrigo’s first husband (Nathalia’s father), Christopher Lazarus Canjemenaden, passed away early, leading Maria Rodrigo to remarry Mariano Laity Ramenaden. Thus, “M.L. Ramenaden” became Mary Clara’s step-grandfather, clarifying the reference in the newspaper!&lt;/p&gt;
-
-&lt;h2&gt; Family Life &lt;/h2&gt;
-&lt;p&gt;Together,  Mary Clara Anandappa and Abraham Peter Casie Chetty had 5 children:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Beda Lourdes Therese Marcelline&lt;/li&gt;
-  &lt;li&gt;Anthony Mervyn Remington&lt;/li&gt;
-  &lt;li&gt;Emmanuel Joseph Gasper “Joy”&lt;/li&gt;
-  &lt;li&gt;Annabelle Mary Nathalia Rasappopathy “Rajie”&lt;/li&gt;
-  &lt;li&gt;Marie Hyacinth Genevieve Antoinette&lt;/li&gt;
-  &lt;li&gt;Queenie Bertha Immaculate&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In 1952, Mary Clara faced the loss of her husband. Nevertheless, she persevered for nearly thirty more years, witnessing many momentous occasions in her children’s lives, including the joy of welcoming numerous grandchildren. Her journey came to a peaceful end in 1980, when she passed away at the age of 82.&lt;/p&gt;
-
-&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; Did you enjoy reading this article? I&apos;d love to hear from you in the comments!&lt;/b&gt; &lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary></entry><entry><title type="html">Ronson Anandappa &amp;amp; Joyce Hamer</title><link href="https://colombochetty.com//post/wedding-photo/ronson-joyce" rel="alternate" type="text/html" title="Ronson Anandappa &amp;amp; Joyce Hamer" /><published>2023-12-16T00:00:00-05:00</published><updated>2023-12-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/wedding-photo/wedding-ronson-joyce</id><content type="html" xml:base="https://colombochetty.com//post/wedding-photo/ronson-joyce">&lt;style&gt;
+&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; Did this article pique your interest? I would love for you to share your thoughts below! &lt;/b&gt; &lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary></entry><entry><title type="html">Ronson Anandappa &amp;amp; Joyce Hamer</title><link href="https://colombochetty.com//post/wedding-photo/ronson-joyce" rel="alternate" type="text/html" title="Ronson Anandappa &amp;amp; Joyce Hamer" /><published>2023-12-16T00:00:00-06:00</published><updated>2023-12-16T00:00:00-06:00</updated><id>https://colombochetty.com//post/wedding-photo/wedding-ronson-joyce</id><content type="html" xml:base="https://colombochetty.com//post/wedding-photo/ronson-joyce">&lt;style&gt;
   
   h2 {
     margin-bottom: 0px;
@@ -440,531 +657,4 @@ The nuptials of Mr. Abraham Peter Casie Chitty, Broker of Messrs. R. Gordon &amp
   &lt;li&gt;&lt;a href=&quot;/post/wedding-photo/tony-marnie&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Tony Anandappa and Marnie Anandappa &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Find out more about Ronson’s parents &lt;a href=&quot;/post/families/philip-raphael-mary-louise&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" /><media:content medium="image" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing Dynamic Descendant View: A New Way to Explore</title><link href="https://colombochetty.com//post/announcement/dynamic-trees" rel="alternate" type="text/html" title="Introducing Dynamic Descendant View: A New Way to Explore" /><published>2023-12-16T00:00:00-05:00</published><updated>2023-12-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/announcement/dynamic-trees</id><content type="html" xml:base="https://colombochetty.com//post/announcement/dynamic-trees">&lt;style&gt;
-  
-  h2 {
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  h3 {
-    margin-bottom: 0px;
-    margin-top: 10px;
-  }
-
-  ul {
-    margin-top: 10px;
-  }
-
-&lt;/style&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;p&gt;
-I&apos;m excited to unveil the new &lt;a href=&quot;/dynamic&quot; class=&quot;link&quot;&gt;Dynamic Descendant View&lt;/a&gt; on Colombo Chetty Genealogy! 
-
-&lt;/p&gt;
-
-&lt;h2&gt;From Static to Dynamic&lt;/h2&gt;
-&lt;p&gt;
-  In the past, the website showcased the family trees of key ancestors - these trees were static in that they lacked the ability to refocus the view to a different person&apos;s tree. Feedback from users highlighted a desire for a more flexible way to connect with our ancestry. 
-&lt;/p&gt;
-&lt;p&gt;
-
-  With this feedback in mind, the family tree visualization has been enhanced to offer a richer, more interactive experience.
-&lt;/p&gt;
-
-&lt;h2&gt;Introducing the Dynamic Descendant View&lt;/h2&gt;
-&lt;p&gt;
-The &lt;a href=&quot;/dynamic&quot; class=&quot;link&quot;&gt;Dynamic Descendant View&lt;/a&gt; provides a straightforward and interactive way to explore family trees. By clicking on a name, you can easily navigate through ancestral lines. 
-&lt;/p&gt;
-&lt;p&gt;
-This is a change from the static view, where clicking a name just opened a profile. Now, clicking a name refocuses the tree on the selected individual, simplifying the process of discovering and learning about our relatives.
-&lt;/p&gt;
-
-&lt;h2&gt;How to Use the Dynamic Descendant View&lt;/h2&gt;
-&lt;p&gt;
-    Here’s how you can dive into this new feature:
-    &lt;ul&gt;
-        &lt;li&gt;&lt;strong&gt;Directly&lt;/strong&gt;: 
-            &lt;ol&gt;
-                &lt;li&gt;Navigate to the &lt;a href=&quot;/dynamic&quot; class=&quot;link&quot;&gt;Dynamic Descendant View&lt;/a&gt;  page.&lt;/li&gt;
-                &lt;li&gt;Select a person from the dropdown or click on a name in the current view to explore their descendant tree.&lt;/li&gt;
-            &lt;/ol&gt;
-        &lt;/li&gt;
-        &lt;li&gt;&lt;strong&gt;From a Profile&lt;/strong&gt;: 
-            &lt;ol&gt;
-                &lt;li&gt;Go to the &lt;a href=&quot;/people&quot; class=&quot;link&quot;&gt;List of People&lt;/a&gt; and use the Sort/Filter option to find someone.&lt;/li&gt;
-                &lt;li&gt;Visit their profile &lt;/li&gt;
-                &lt;li&gt; Click on “View Tree” which will direct you to the Dynamic Descendant View&lt;/li&gt;
-            &lt;/ol&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; What do you think of the new feature? Let me know below!&lt;/b&gt; &lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary></entry><entry><title type="html">Tony Anandappa &amp;amp; Marnie Anandappa</title><link href="https://colombochetty.com//post/wedding-photo/tony-marnie" rel="alternate" type="text/html" title="Tony Anandappa &amp;amp; Marnie Anandappa" /><published>2023-12-16T00:00:00-05:00</published><updated>2023-12-16T00:00:00-05:00</updated><id>https://colombochetty.com//post/wedding-photo/wedding-tony-marnie</id><content type="html" xml:base="https://colombochetty.com//post/wedding-photo/tony-marnie">&lt;style&gt;
-  
-  h2 {
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  h3 {
-    margin-bottom: 0px;
-    margin-top: 10px;
-  }
-
-  ul {
-    margin-top: 10px;
-  }
-
-   .responsive-image {
-    max-width: 50%;
-    height: auto;
-  }
-
-   .responsive-image-main {
-    max-width: 90%;
-    height: auto;
-  }
-  .image-container {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    margin-bottom: 25px;
-    margin-top: 5px;
-  }
-
-&lt;/style&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;div class=&quot;image-container&quot;&gt;
-  &lt;img src=&quot;/assets/images/weddings/tony_marnie_wedding_party.jpg&quot; alt=&quot;weddings/tony_marnie_wedding_party.jpg&quot; class=&quot;responsive-image-main&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This photo is from the wedding of Tony Anandappa and Marnie Anandappa. Let’s dive into who was in their wedding party.&lt;/p&gt;
-
-&lt;h2&gt; &lt;i&gt; The Wedding Party - Who&apos;s Who? &lt;/i&gt; &lt;/h2&gt;
-&lt;p&gt;From left to right, we have:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;👦🏾 &lt;b&gt;Oswin Anandappa&lt;/b&gt; is the son of Rajie Casie Chetty and Benson Anandappa - Benson is one of Tony’s younger brothers;&lt;/li&gt;
-  &lt;li&gt;👨🏾 &lt;b&gt;Mr. Rasanayagam&lt;/b&gt; is a friend of the groom;&lt;/li&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Dinky Candappa&lt;/b&gt; is a daughter of Herman Candappa - Herman is Marnie’s uncle from her mother’s side.&lt;/li&gt;
-  &lt;li&gt;👨🏾 &lt;b&gt;Donovan Paktsun&lt;/b&gt; is another friend of the groom;&lt;/li&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Pearlie Anandappa&lt;/b&gt; is a sister of the bride;&lt;/li&gt;
-  &lt;li&gt;👧🏾 &lt;b&gt; Roshan Casie Chetty &lt;/b&gt; is a daughter of Julie Alles and Mervyn Casie Chetty - Mervyn is a cousin of the couple.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt; &lt;i&gt; The Couple &lt;/i&gt; &lt;/h2&gt;
-&lt;div class=&quot;image-container&quot;&gt;
-  &lt;img src=&quot;/assets/images/weddings/tony_marnie.jpg&quot; alt=&quot;weddings/tony_marnie.jpg&quot; class=&quot;responsive-image&quot; /&gt;
-&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;👰🏾 &lt;b&gt;Marnie &lt;/b&gt; is a daughter of Joseph Nicholas Anthony Emmanuel Anandappa and Grace Vivien Pearl Candappa. Her full name is Justina Marina Therese Anandappa;&lt;/li&gt;
-  &lt;li&gt;🤵🏾 &lt;b&gt;Tony &lt;/b&gt; is the second son of Mary Louise and Philip Raphael Anandappa. His full name is Anthony Eubaldus Anandappa.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Together, Tony and Marnie had three children: Sandra, Deidre and Adrian.&lt;/p&gt;
-
-&lt;h2&gt; Related Content &lt;/h2&gt;
-&lt;p&gt;Check out the wedding photo’s of Tony’s siblings:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/members/2023/07/18/photo-of-the-week&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Anna Anandappa and Ben Anandappa &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/members/2023/07/01/photo-of-the-week&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Benson Anandappa and Rajie Casie Chetty&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/post/wedding-photo/ronson-joyce&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Ronson Anandappa and Joy Hamer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Find out more about Tony’s parents &lt;a href=&quot;/post/families/philip-raphael-mary-louise&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" /><media:content medium="image" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Joy Casie Chetty &amp;amp; Poomani Fernandopulle</title><link href="https://colombochetty.com//members/2023/08/06/photo-of-the-week" rel="alternate" type="text/html" title="Joy Casie Chetty &amp;amp; Poomani Fernandopulle" /><published>2023-08-06T00:00:00-04:00</published><updated>2023-08-06T00:00:00-04:00</updated><id>https://colombochetty.com//members/2023/08/06/photo-of-the-week</id><content type="html" xml:base="https://colombochetty.com//members/2023/08/06/photo-of-the-week">&lt;style&gt;
-  
-  h2 {
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  h3 {
-    margin-bottom: 0px;
-    margin-top: 10px;
-  }
-
-  ul {
-    margin-top: 10px;
-  }
-
-&lt;/style&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;p&gt;I hope you’re excited for this Photo of the Week!&lt;/p&gt;
-
-&lt;p&gt;If you missed previous posts, you can view them below:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://colombochetty.com/members/2023/07/18/photo-of-the-week&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Anna Anandappa and Ben Anandappa &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://colombochetty.com/members/2023/07/08/photo-of-the-week&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; 25th Wedding Anniversary of Ubaldus Adaman and Bridget Rodrigo Sathianathan &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://colombochetty.com/members/2023/07/01/photo-of-the-week&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Benson Anandappa and Rajie Casie Chetty&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It’s time to check out this week’s photo…&lt;/p&gt;
-
-&lt;h2&gt; Wedding of Joy Casie Chetty and Poomani Fernandopulle &lt;/h2&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/joy_and_poomani.jpeg&quot; alt=&quot;Wedding of Joy Casie Chetty and Poomani Fernandopulle&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Thanks to &lt;b&gt;Nirmalie Mirando&lt;/b&gt; for providing this photo of the wedding of her parents!&lt;/p&gt;
-
-&lt;h2&gt; &lt;i&gt; Who&apos;s Who? (Left to Right) &lt;/i&gt; &lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Amy Fernandopulle&lt;/b&gt;. She is Poomani’s younger sister;&lt;/li&gt;
-  &lt;li&gt;👨🏾 &lt;b&gt;Mervyn Casie Chetty&lt;/b&gt;. He is Joy’s younger brother. Mervyn married Julie Alles, daughter of Emmanuel  Caetan Alles;&lt;/li&gt;
-  &lt;li&gt;👧🏾 &lt;b&gt;Flavia Casie Chetty&lt;/b&gt;. She is the daughter of Joy’s sister Beda and her husband Linus Casie Chetty;&lt;/li&gt;
-  &lt;li&gt;🤵🏾 &lt;b&gt;Joy Casie Chetty&lt;/b&gt;. He is the son of Abraham Peter Casie Chetty and Mary Clara Anandappa. His full name is Emmanuel Joseph Gasper, and he likely got his name Gasper from his paternal grandfather and Emmanuel from his maternal grandfather;&lt;/li&gt;
-  &lt;li&gt;👰🏾 &lt;b&gt;Poomani Fernandopulle&lt;/b&gt;. She is the daughter of Anthony Joseph Fernandopulle and Mary Chitty. Her full name is Daisy Margaret Poomani;&lt;/li&gt;
-  &lt;li&gt;👦🏾 &lt;b&gt;Joseph&lt;/b&gt;. He is the son of Poomani’s sister Othelia;&lt;/li&gt;
-  &lt;li&gt;👨🏾 &lt;b&gt;Zernie Serpachy&lt;/b&gt;. He is the best man and friend of the groom;&lt;/li&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Rajie Casie Chetty&lt;/b&gt;. She is Joy’s sister.
-    &lt;ul&gt;
-      &lt;li&gt;Fun fact: Rajie’s wedding was featured in the &lt;a href=&quot;https://colombochetty.com/members/2023/07/01/photo-of-the-week&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; first Photo of the Week &lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; Feel free to leave a comment below - share your thoughts on the photo or memories of the couple!&lt;/b&gt; &lt;/p&gt;
-
-&lt;h2&gt; Related Content &lt;/h2&gt;
-&lt;p&gt;Explore a few  historical documents of their ancestors:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/marriage/marriage-of-abraham-peter-casiechetty-and-mary-clara-anandappa&quot; class=&quot;link&quot;&gt;💍 Marriage of Joy’s parents, Mary Clara Anandappa and Abraham Peter Casie Chetty &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/abraham-peter-casie-chitty-&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Joy’s father, Abraham Peter Casie Chetty &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/mary-teresa-casie-chitty&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Joy’s paternal grandmother, Maria Theresa (maiden name unknown) &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/maria-nathalia-anandappa-&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Joy’s maternal grandmother, Maria Nathalia Canjemenaden&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/emmanuel-anandappa&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Joy’s maternal grandfather, Emmanuel Anandappa &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/anthony_joseph_ferandopulle&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Poomani’s father, Anthony Joseph Fernandopulle &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here are some relevant family trees for Joy and Poomani:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I500097&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Casper Casie Chetty &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I500013&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Anthony Anandappa &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I1087&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Anthony Joseph Fernandopulle&lt;/a&gt; - recently added!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt; Research Questions - &lt;i&gt; Can you help? &lt;/i&gt; &lt;/h2&gt;
-&lt;ul&gt;
-    &lt;li&gt; &lt;i&gt; Do you have any photos of Joy Casie Chetty, particularly with his siblings? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; Do you have any photos of Poomani Fernandopulle, particularly with her siblings? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; Who are the siblings of Poomani&apos;s father Anthony Joseph Fernandopulle?&lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; Who are the siblings of Joy&apos;s grandfather Casper Casie Chetty? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; What is the maidan name of Joy&apos;s paternal grandmother (i.e. A.P. Casie Chetty&apos;s mother)? &lt;/i&gt; &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt; Tree updates &lt;/h2&gt;
-&lt;p&gt;A few new trees have been added…&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I1087&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Anthony Joseph Fernandopulle: &lt;/a&gt; this is the family tree of the father of Poomani (from today’s post!)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I1192&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Gabriel Ayam Perumal &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I1182&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Michael Caderamanpulle &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I0753&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Caitan Fernandopulle &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I1278&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Xavier Rodrigo Muniarem &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There were also a few updates to existing trees:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Descendants of Sabina Rodrigo Muttupulle and Henry Theobold Mutukisna have been added - they can be seen in the family trees of &lt;a href=&quot;/tree/I0879&quot; class=&quot;link&quot;&gt;Michael Rodrigo Muttupulle&lt;/a&gt; and &lt;a href=&quot;/tree/I0841&quot; class=&quot;link&quot;&gt;Philip James Mutukisna&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Children of Maria Theresa Casie Chetty and Charles Nhavel Fernandopulle - they can be seen in the family trees of &lt;a href=&quot;/tree/I500097&quot; class=&quot;link&quot;&gt;Casper Casie Chetty&lt;/a&gt; and &lt;a href=&quot;/tree/I0840&quot; class=&quot;link&quot;&gt;Caitan Nahvel Fernandopulle&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Feature update: The family trees have been adjusted to show whether a person had more than one spouse. For example, in the &lt;a href=&quot;/tree/I0841&quot; class=&quot;link&quot;&gt; family tree of Philip James Mutukisna&lt;/a&gt;, we can now see that Henry Theobold Mutukisna married Juliana Casie Chetty and Sabina Rodrigo Muttupulle.&lt;/p&gt;
-
-&lt;h2&gt; Contributions &lt;/h2&gt;
-
-&lt;p&gt;If you have any memories to share, know someone who might, or have relevant primary source material, definitely reach out to me at  &lt;a href=&quot;mailto: ben@colombochetty.com&quot; class=&quot;link&quot;&gt;ben@colombochetty.com&lt;/a&gt; or comment below!&lt;/p&gt;
-
-&lt;p&gt;For more ideas of ways to contribute, check out the new &lt;a href=&quot;/contribute&quot; class=&quot;link&quot;&gt;contributions page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p style=&quot;color:black;&quot;&gt; &lt;b&gt; I hope you&apos;re enjoying the website &amp;#128516; Please continue to spread the word about Colombo Chetty Genealogy and help others connect with their heritage. Feel free to leave a comment below and click a share button! &lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;– Ben Anandappa&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary></entry><entry><title type="html">Ben Anandappa &amp;amp; Anna Anandappa</title><link href="https://colombochetty.com//members/2023/07/18/photo-of-the-week" rel="alternate" type="text/html" title="Ben Anandappa &amp;amp; Anna Anandappa" /><published>2023-07-18T00:00:00-04:00</published><updated>2023-07-18T00:00:00-04:00</updated><id>https://colombochetty.com//members/2023/07/18/photo-of-the-week</id><content type="html" xml:base="https://colombochetty.com//members/2023/07/18/photo-of-the-week">&lt;style&gt;
-  
-  h2 {
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  h3 {
-    margin-bottom: 0px;
-    margin-top: 10px;
-  }
-
-  ul {
-    margin-top: 10px;
-  }
-
-&lt;/style&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;p&gt;Welcome back to our Photo of the Week - the third in the series.&lt;/p&gt;
-
-&lt;p&gt;If you missed previous posts, check them out below:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://colombochetty.com/members/2023/07/08/photo-of-the-week&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; 25th Wedding Anniversary of Ubaldus Adaman and Bridget Rodrigo Sathianathan &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://colombochetty.com/members/2023/07/01/photo-of-the-week&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; Wedding of Benson Anandappa and Rajie Casie Chetty&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It’s time to dive into this week’s photo…&lt;/p&gt;
-
-&lt;h2&gt; Wedding of Ben Anandappa and Anna Anandappa &lt;/h2&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/ben_anna_anandappa_wedding.jpeg&quot; alt=&quot;Wedding of Ben Anandappa and Anna Anandappa&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Firstly, the post author Ben Anandappa would like to point out that the Ben Anandappa above is not him 😂 We are related though… he is my great-grandmother’s brother!&lt;/p&gt;
-
-&lt;p&gt;Thanks to &lt;b&gt;Genevieve Rodrigopulle&lt;/b&gt; for providing this photo of the wedding of her parents!&lt;/p&gt;
-
-&lt;p&gt;Ben and Anna married on June 14th, 1944. Let’s look into who were in their wedding party.&lt;/p&gt;
-
-&lt;h2&gt; &lt;i&gt; Who&apos;s Who? (Left to Right) &lt;/i&gt; &lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Poomanie Rodrigo Muniarem Perumal&lt;/b&gt;. She is Ben’s niece - the daughter of Ben’s sister Rose Angelina Anandappa and her husband Emmanuel Stephen Rodrigo Muniarem Perumal. Poomanie married Casper Lazarus Joseph Casie Chetty;&lt;/li&gt;
-  &lt;li&gt;👦🏾 &lt;b&gt;Neil Anandappa&lt;/b&gt;. He is Anna’s first cousin as his father Joe Anandappa is Anna’s mother’s brother. Neil’s mother was Joyce Perumal, and Neil married Eileen Casie Chetty;
-    &lt;ul&gt;
-      &lt;li&gt;Fun fact: Eileen’s brother Neville married Yvonne Adaman who was featured in &lt;a href=&quot;https://colombochetty.com/members/2023/07/08/photo-of-the-week&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; last week’s post&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;👰🏾 &lt;b&gt;Anna Anandappa&lt;/b&gt;. She is the daughter of Mary Louise Anandappa and Philip Raphael Anandappa, and Anna’s full name was Mary Anna Philomena. She possibly got her name from her maternal grandmother Anna Tavarayan;
-    &lt;ul&gt;
-      &lt;li&gt;Fun fact: Anna is Benson’s sister - Benson’s wedding was featured in the &lt;a href=&quot;https://colombochetty.com/members/2023/07/01/photo-of-the-week&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt; first Photo of the Week &lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;🤵🏾 &lt;b&gt;Ben Anandappa&lt;/b&gt;. He is the son of Emmanuel Anandappa and Mary Nathalia Canjemenaden, and his full name was Lawrence Benedict Roche;&lt;/li&gt;
-  &lt;li&gt;👨🏾 &lt;b&gt;Prosper Rodrigo Muniarem Perumal&lt;/b&gt;. He is Ben’s first cousin as his mother Maria Johanna Anandappa is Ben’s father’s sister. Prosper’s father was J.C. Rodrigo Muniarem Perumal, and Prosper married Helen Juliana Fernandopulle;&lt;/li&gt;
-  &lt;li&gt;👧🏾 &lt;b&gt;Marie Anandappa&lt;/b&gt; She is Neil’s brother and she married Joseph Candappa;&lt;/li&gt;
-  &lt;li&gt;👧🏾 &lt;b&gt;Doreen Rodrigo Muniarem Perumal&lt;/b&gt; She is Anna’s first cousin as her mother Josephine is Anna’s mother’s sister. Doreen’s father was Anthony Dominic Rodrigo Muniarem Perumal, and Doreen married Philip Cajetan Anthony Anandappa.
-    &lt;ul&gt;
-      &lt;li&gt;Fun fact: Doreen is also Prosper Perumal’s niece as Prosper and Anthony Dominic were brothers.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; Share your thoughts on the photo and relationships below! &lt;/b&gt; &lt;/p&gt;
-
-&lt;h2&gt; Research Questions - &lt;i&gt; Can you help? &lt;/i&gt; &lt;/h2&gt;
-&lt;ul&gt;
-    &lt;li&gt; &lt;i&gt; Who are the parents of Ben&apos;s mother Maria Nathalia Canjemenaden? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; Who are the siblings of Ben&apos;s mother Maria Nathalia Canjemenaden? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; Who are the parents of Ben&apos;s grandfather Anthony Anandappa? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; Who are the siblings of Ben&apos;s grandfather Anthony Anandappa? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; Who are the parents of Ben&apos;s grandmother Anthonia Wijeratnam? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; Who are the siblings of Ben&apos;s grandmother Anthonia Wijeratnam? &lt;/i&gt; &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt; Related Content &lt;/h2&gt;
-&lt;p&gt;Here are some relevant family trees for Ben and Anna:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I500013&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Anthony Anandappa &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I500017&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Saviel Pieris Tavarayan &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I500031&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Peter Benedict Anandappa &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Explore a few historical documents of their ancestors:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/maria-nathalia-anandappa-&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Ben’s mother, Maria Nathalia Canjemenaden&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/emmanuel-anandappa&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Ben’s father, Emmanuel Anandappa &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/peter-benedict-anandappa&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Anna’s paternal grandfather, Peter Benedict Anandappa &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/saviel-pieris-tavarayen&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Anna’s great-grandfather, Saviel Pieris Tavarayan &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/marriage/marriage-of-philip-raphael-anandappa-and-mary-louise-anandappa&quot; class=&quot;link&quot;&gt;💍 Marriage of Anna’s parents, Mary Louise Anandappa and Philip Raphael Anandappa &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt; Contributions &lt;/h2&gt;
-&lt;p&gt;Do you have family photos, wedding photos, portraits or other images of ancestors? We would love to include them, and the website would greatly benefit from your contributions. Please send them to &lt;a href=&quot;mailto: ben@colombochetty.com&quot; class=&quot;link&quot;&gt;ben@colombochetty.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In addition, if you have any memories to share, know someone who might, or have relevant primary source material, definitely reach out or comment below!&lt;/p&gt;
-
-&lt;p style=&quot;color:black;&quot;&gt; &lt;b&gt; I hope you&apos;re enjoying the website &amp;#128516; Please continue to spread the word about Colombo Chetty Genealogy and help others connect with their heritage. Feel free to leave a comment below and click a share button! &lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;– Ben Anandappa&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary></entry><entry><title type="html">The Adaman Family</title><link href="https://colombochetty.com//members/2023/07/08/photo-of-the-week" rel="alternate" type="text/html" title="The Adaman Family" /><published>2023-07-08T00:00:00-04:00</published><updated>2023-07-08T00:00:00-04:00</updated><id>https://colombochetty.com//members/2023/07/08/photo-of-the-week</id><content type="html" xml:base="https://colombochetty.com//members/2023/07/08/photo-of-the-week">&lt;style&gt;
-  
-  h2 {
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  h3 {
-    margin-bottom: 0px;
-    margin-top: 10px;
-  }
-
-  ul {
-    margin-top: 10px;
-  }
-
-&lt;/style&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;p&gt;Welcome back to the second installment of Colombo Chetty Genealogy’s Photo of the Week!&lt;/p&gt;
-
-&lt;p&gt;If you missed last week’s post of Benson Anandappa and Rajie Casie Chetty’s wedding, be sure to &lt;a href=&quot;https://colombochetty.com/members/2023/07/01/photo-of-the-week&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt;  check it out here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Let’s dive in to this week’s photo…&lt;/p&gt;
-
-&lt;h2&gt; 25th Wedding Anniversary of Ubaldus Adaman and Bridget Rodrigo Sathianathan&lt;/h2&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/adaman_family.jpg&quot; alt=&quot;25th Wedding Anniversary of Ubaldus Adaman and Bridget Rodrigo Sathianathan&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;I’m so excited to share this beautiful photo with you all. I must thank &lt;b&gt; Carmel Adaman &lt;/b&gt;for providing it, as well as &lt;b&gt; Delano Caderamanpulle &lt;/b&gt; for introducing me to your Aunty Carmel. I meant it when I said that I was awestruck when I first saw this photo!&lt;/p&gt;
-
-&lt;h2&gt; &lt;i&gt; Who&apos;s Who? (Left to Right) &lt;/i&gt; &lt;/h2&gt;
-&lt;h3&gt; &lt;i&gt; Standing &lt;/i&gt; &lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;👨🏾 &lt;b&gt;Canute Solomon Adaman&lt;/b&gt;. He would go on to marry Olu de Alwis;&lt;/li&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Mary Iphegenia Adaman&lt;/b&gt;. She married Didacus Caderamanpulle, who is the son of Michael Caderamanpulle and Regina Laity Ramanaden;&lt;/li&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Yvonne Adaman&lt;/b&gt;. Her husband is Neville Casie Chetty, who is son of Mary Cecelia Anandappa and Caspar Joseph Casie Chetty (Fun Fact: Caspar Joseph is Rajie Casie Chetty’s first cousin);&lt;/li&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Cheryl Bridget Adaman&lt;/b&gt;. She married Joseph Sinniah.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt; &lt;i&gt; Sitting &lt;/i&gt; &lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Praxede Venetia Adaman&lt;/b&gt;;&lt;/li&gt;
-  &lt;li&gt;👨🏾 &lt;b&gt;Ubaldus Stanislaus Adaman&lt;/b&gt;. Also known by his initials U.S.A. His parents aren’t known at this time;&lt;/li&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Carmel Adaman&lt;/b&gt;. The very person who provided this family photo!&lt;/li&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Mary Bridget Rodrigo Sathianathan&lt;/b&gt;. She is the daughter of Caitan Dominic Rodrigo Sathianathan and Theresa Laity Ramanaden;&lt;/li&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Callista Adaman&lt;/b&gt;. Her husband is Chelva Rajaratnam.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; What do you think of the photo? Share your comments below! &lt;/b&gt; &lt;/p&gt;
-
-&lt;h2&gt; Related Content &lt;/h2&gt;
-&lt;p&gt;Here are some relevant family trees and documents for Ubaldus and Bridget:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I0881&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Caitan Dominic Rodrigo Sathianathan &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I0754&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Paul Laity Ramanaden &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I0724&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Ubaldus Stanislaus Adaman &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/marriage/marriage-of-caitan-dominic-rodrigo-sathianathan-and-theresa-laity-ramanaden&quot; class=&quot;link&quot;&gt;💍 Marriage of Bridget’s parents, Caitan Dominic Rodrigo Sathianathan and Theresa Laity Ramanaden &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt; Research Questions - &lt;i&gt; Can you help? &lt;/i&gt; &lt;/h2&gt;
-&lt;ul&gt;
-    &lt;li&gt; &lt;i&gt; Who are the parents of Ubaldus Stanislaus Adaman? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; Who are the siblings Ubaldus Stanislaus Adaman? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; What are the full names of the siblings of Bridget Rodrigo Sathianathan? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; Who are the siblings of Bridget’s father Caitan Rodrigo Sathianathan? &lt;/i&gt; &lt;/li&gt;
-    &lt;li&gt; &lt;i&gt; Who are the siblings of Bridget&apos;s mother Theresa Laity Ramanaden? &lt;/i&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt;If you have any memory of these people, know someone who might, or have relevant primary source material, definitely reach out or comment below! &lt;/b&gt; &lt;/p&gt;
-
-&lt;p&gt;What about secondary sources? In order to keep the website as accurate as possible, I kindly request that that you refrain from providing information from secondary sources (such as Worldgenweb). Thanks for understanding!&lt;/p&gt;
-
-&lt;h2&gt; Site Updates &lt;/h2&gt;
-
-&lt;p&gt;A few important site updates…&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;🎉 We welcomed 10 new members this week!&lt;/li&gt;
-  &lt;li&gt;🌳 Thanks to members Ephrem Mutukisna and Michael Fernandopulle for helping to form more connections on the family trees. These additions will be made in the coming week.&lt;/li&gt;
-  &lt;li&gt;🖼️ Thanks to member Nirmalie Mirando for sending a wedding photo of her parents Joy Casie Chetty and Poomani Fernandopulle. Be on the look out for this photo in a future Photo of the Week!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; Do you have family photos, wedding photos, portraits or other images of ancestors? We would love to include them, and the website would greatly benefit from your contributions. Please send them to &lt;a href=&quot;mailto: ben@colombochetty.com&quot; class=&quot;link&quot;&gt;ben@colombochetty.com&lt;/a&gt;. &lt;/b&gt; &lt;/p&gt;
-
-&lt;p style=&quot;color:black;&quot;&gt; &lt;b&gt; I hope you&apos;re enjoying the website &amp;#128516; Please continue to spread the word about Colombo Chetty Genealogy and help others connect with their heritage. Feel free to leave a comment below and click a share button! &lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;– Ben Anandappa&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary></entry><entry><title type="html">Benson Anandappa &amp;amp; Rajie Casie Chetty</title><link href="https://colombochetty.com//members/2023/07/01/photo-of-the-week" rel="alternate" type="text/html" title="Benson Anandappa &amp;amp; Rajie Casie Chetty" /><published>2023-07-01T00:00:00-04:00</published><updated>2023-07-01T00:00:00-04:00</updated><id>https://colombochetty.com//members/2023/07/01/photo-of-the-week</id><content type="html" xml:base="https://colombochetty.com//members/2023/07/01/photo-of-the-week">&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/pagination.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/links.css&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;p&gt;Each week, I plan  to post a photo of Colombo Chetty ancestors and discuss the relationships that exist between those in the photo. For the very first post, I’ll start with the wedding of my grandparents…&lt;/p&gt;
-
-&lt;h2&gt; Benson Anandappa and Rajie Casie Chetty&apos;s Wedding &lt;/h2&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/rajie_benson_for_post.jpg&quot; alt=&quot;Wedding of Benson Anandappa and Rajie Casie Chetty&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;You may recognize this from the banner on the front page of &lt;a href=&quot;https://colombochetty.com&quot; class=&quot;link&quot;&gt;colombochetty.com&lt;/a&gt;! Thank you to &lt;b&gt;Genevieve Rodrigopulle&lt;/b&gt; for providing this photo and for helping to identify everyone. I was so excited when I first saw this photo in February 2023 as it was the first time I saw my grandfather 🤯&lt;/p&gt;
-
-&lt;p&gt;Without further ado, let’s get into the &lt;i&gt;“who’s who” &lt;/i&gt; of the photo:&lt;/p&gt;
-
-&lt;h3&gt; &lt;i&gt; Back Row &lt;/i&gt; &lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Annette Anandappa&lt;/b&gt; is the daughter of Enid Anandappa &amp;amp; Theodore “Tiddy” Anandappa, and she is Rajie’s first cousin;&lt;/li&gt;
-  &lt;li&gt;👨🏾 &lt;b&gt;Tony Anandappa&lt;/b&gt; is Benson’s brother;&lt;/li&gt;
-  &lt;li&gt;👨🏾 &lt;b&gt;Pius Anandappa&lt;/b&gt; is the son of Joseph Caitan Anandappa &amp;amp; Magdalene Tavarayan, and he is the first cousin of both Rajie’s mother and Benson’s mother;&lt;/li&gt;
-  &lt;li&gt;👩🏾 &lt;b&gt;Hyacinth Casie Chetty&lt;/b&gt; is Rajie’s sister, and she later married Pius!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt; &lt;i&gt; Front Row &lt;/i&gt; &lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;👧🏾 &lt;b&gt;Mano Casie Chetty&lt;/b&gt; is a daughter of Rajie’s brother Joy;&lt;/li&gt;
-  &lt;li&gt;👧🏾 &lt;b&gt;Carmel Anandappa&lt;/b&gt; is a daughter of Rajie’s sister Queenie;&lt;/li&gt;
-  &lt;li&gt;👦🏾 &lt;b&gt;Frank Anandappa&lt;/b&gt; is Carmel’s brother;&lt;/li&gt;
-  &lt;li&gt;👧🏾 &lt;b&gt;Romany Anandappa&lt;/b&gt; is a daughter of Benson’s sister Anna;&lt;/li&gt;
-  &lt;li&gt;👦🏾 &lt;b&gt;Elmo Casie Chetty&lt;/b&gt; is a son of Rajie’s sister Beda.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That’s all for the wedding party. Let’s talk more about the bride and groom themselves…&lt;/p&gt;
-
-&lt;h3&gt; &lt;i&gt; The Couple &lt;/i&gt; &lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;👰🏾 &lt;b&gt;Rajie’s&lt;/b&gt; parents were Mary Clara Anandappa and Abraham Peter Casie Chetty. Rajie was her nickname - her full name was Annabelle Mary Nathalia Rasappopathy. It appears that she got one of her middle names, Nathalia, from Mary Clara’s mother Nathalia Canjemenaden;&lt;/li&gt;
-  &lt;li&gt;🤵🏾 &lt;b&gt;Benson&lt;/b&gt; was the son of Mary Louise Anandappa and Philip Raphael Anandappa. His full name, Anthony Xavier Benedict, is likely a combination of both of his grandfathers - Mary Louise’s father Anthony Xavier and Philip Raphael’s father Peter Benedict.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Benson and Rajie would go on to have four children together: Charmaine, Oswin, Fiona and Romello (my dad!).&lt;/p&gt;
-
-&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; Did you know Benson, Rajie, or anyone from their wedding party? Please share your memories in the comments. &lt;/b&gt; &lt;/p&gt;
-
-&lt;h2&gt; Related Content &lt;/h2&gt;
-&lt;p&gt;Here are some relevant family trees for Rajie and Benson:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I500097&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Casper Casie Chetty &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I500013&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Anthony Anandappa &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I500017&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Saviel Pieris Tavarayan &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/tree/I500031&quot; class=&quot;link&quot;&gt; 🌳 Family Tree of Peter Benedict Anandappa &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Explore a few historical documents of their ancestors:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/marriage/marriage-of-abraham-peter-casiechetty-and-mary-clara-anandappa&quot; class=&quot;link&quot;&gt;💍 Marriage of Rajie’s parents, Mary Clara Anandappa and Abraham Peter Casie Chetty &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/marriage/marriage-of-philip-raphael-anandappa-and-mary-louise-anandappa&quot; class=&quot;link&quot;&gt;💍 Marriage of Benson’s parents, Mary Louise Anandappa and Philip Raphael Anandappa &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/abraham-peter-casie-chitty-&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Rajie’s father, Abraham Peter Casie Chetty &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/mary-teresa-casie-chitty&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Rajie’s paternal grandmother, Maria Theresa (maiden name unknown) &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/maria-nathalia-anandappa-&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Rajie’s maternal grandmother, Maria Nathalia Canjemenaden&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/emmanuel-anandappa&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Rajie’s maternal grandfather, Emmanuel Anandappa &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/peter-benedict-anandappa&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Benson’s paternal grandfather, Peter Benedict Anandappa &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/newspaper/saviel-pieris-tavarayen&quot; class=&quot;link&quot;&gt;🪦 Testamentary of Benson’s great-grandfather, Saviel Pieris Tavarayan &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt; Site updates &lt;/h2&gt;
-&lt;p&gt;A few important site updates…&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;🎉 We have reached over 50 members since launch!&lt;/li&gt;
-  &lt;li&gt;🌐 Some members reached out to provide additional people to the trees and these are reflected in the website. We’re now almost at 1,300 people in the database!&lt;/li&gt;
-  &lt;li&gt;✏ A few misspellings were brought to my attention and these have been updated.&lt;/li&gt;
-  &lt;li&gt;🗑 The “Photo” tab has been removed as photos will appear in blog posts (like this one) instead.&lt;/li&gt;
-  &lt;li&gt;🔍 There is now a tab for &lt;a href=&quot;/people&quot; class=&quot;link&quot;&gt;“People”  &lt;/a&gt; to make the page easier to find. This page is a good starting point to find profiles and their corresponding trees.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Further corrections and additions are more than welcome, and these contributions are invaluable towards the mission of creating an accurate, well-documented genealogy of the Colombo Chetty Community!&lt;/p&gt;
-
-&lt;p&gt;If you have any &lt;b&gt; primary source material &lt;/b&gt; (e.g. marriage certificates, birth records, obituaries, newspapers, memorial cards, obituaries, photos), the website would greatly benefit from including these. I would be happy to hear from you at &lt;a href=&quot;mailto: ben@colombochetty.com&quot; class=&quot;link&quot;&gt;ben@colombochetty.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p style=&quot;color:brown;&quot;&gt; &lt;b&gt; If you&apos;re enjoying the website, I hope you continue to spread the word about Colombo Chetty Genealogy and help others connect with their ancestry. Click one of the share buttons below! &lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;– Ben Anandappa&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" /><media:content medium="image" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;Find out more about Ronson’s parents &lt;a href=&quot;/post/families/philip-raphael-mary-louise&quot; target=&quot;_blank&quot; style=&quot;color:#0077CC;text-decoration:none;font-weight:bold;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ben Anandappa</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" /><media:content medium="image" url="https://colombochetty.com//assets/images/rajie_benson_for_post.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

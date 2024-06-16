@@ -1186,4 +1186,40 @@ var store = [{
         "tags": [],
         "url": "/post/wedding-photo/tony-marnie",
         "teaser": null
+      },{
+        "title": "Colombo Chetty Genealogy: One Year Anniversary",
+        "excerpt":"Happy one year anniversary of Colombo Chetty Genealogy’s website launch! 🎉 Excited to celebrate this day by sharing a few more wedding photos with the community Wedding of Josephine Anandappa and Anthony D. Rodrigo Muniarem Perumal Wedding of Aloysius Anandappa and Rita Anandappa Wedding of Bonnie Anandappa and Victoria Candappa...","categories": [],
+        "tags": [],
+        "url": "/post/announcement/one-year-anniversary",
+        "teaser": null
+      },{
+        "title": "Josephine Anandappa & A.D.R.M Perumal",
+        "excerpt":"            Cecilia Johanna Josephine Anandappa married Anthony Dominic Rodrigo Muniarem Perumal. Together, they had 2 children: Doreen and Neville.    Do you recognize anyone? Please comment below to help keep them in our memory.    ","categories": [],
+        "tags": [],
+        "url": "/post/wedding-photo/josephine-adrm",
+        "teaser": null
+      },{
+        "title": "Aloy Anandappa & Rita Anandappa",
+        "excerpt":"            Aloysius Gonzaga Anandappa married Rita Anandappa. Together, they had 5 children: Alex, Tony, Maurice, Rosemarie and Desmond.    Do you recognize anyone? Please comment below to help keep them in our memory.    ","categories": [],
+        "tags": [],
+        "url": "/post/wedding-photo/aloy-rita",
+        "teaser": null
+      },{
+        "title": "Bonnie Anandappa & Victoria Candappa",
+        "excerpt":"            Ignatius Boniface Anandappa married Victoria Rodrigo Candappa on June 19, 1946. Together, they had 4 children: Anton, Roshan, Ronnie and Anne.    Do you recognize anyone? Please comment below to help keep them in our memory.   ","categories": [],
+        "tags": [],
+        "url": "/post/wedding-photo/bonnie-victoria",
+        "teaser": null
+      },{
+        "title": "Joe Anandappa & Joyce Perumal",
+        "excerpt":"            Anthony Joseph Nicholas Anandappa married Joyce Perumal. Together, they had 3 children: Marie, Neil and Rienze.    Do you recognize anyone? Please comment below to help keep them in our memory.    ","categories": [],
+        "tags": [],
+        "url": "/post/wedding-photo/joe-joyce",
+        "teaser": null
+      },{
+        "title": "Rose Anandappa & Joe Casie Chetty",
+        "excerpt":"            Mary Rose Anandappa married Anthony Joseph Faustin Casie Chetty. Together, they had 3 children: Elmo, Eddie and Jacinta.    Do you recognize anyone? Please comment below to help keep them in our memory.   ","categories": [],
+        "tags": [],
+        "url": "/post/wedding-photo/joe-rose",
+        "teaser": null
       },]
