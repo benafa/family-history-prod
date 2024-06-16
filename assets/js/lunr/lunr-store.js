@@ -1188,7 +1188,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Colombo Chetty Genealogy: One Year Anniversary",
-        "excerpt":"Happy one year anniversary of Colombo Chetty Genealogy’s website launch! 🎉 Excited to celebrate this day by sharing a few more wedding photos with the community Wedding of Josephine Anandappa and Anthony D. Rodrigo Muniarem Perumal Wedding of Aloysius Anandappa and Rita Anandappa Wedding of Bonnie Anandappa and Victoria Candappa...","categories": [],
+        "excerpt":"Happy one year anniversary of Colombo Chetty Genealogy’s website launch! 🎉 Excited to celebrate this day by sharing a few more wedding photos with the community: Wedding of Josephine Anandappa and Anthony D. Rodrigo Muniarem Perumal Wedding of Aloysius Anandappa and Rita Anandappa Wedding of Bonnie Anandappa and Victoria Candappa...","categories": [],
         "tags": [],
         "url": "/post/announcement/one-year-anniversary",
         "teaser": null
