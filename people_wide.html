@@ -82,28 +82,9 @@
 
 
 
-<script>
-var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
-(function(d){
-  var s = d.createElement("script");
-  s.src = "https://cdn.memberspace.com/scripts/widgets.js";
-  var e = d.getElementsByTagName("script")[0];
-  e.parentNode.insertBefore(s,e);
-}(document));
-</script>
-
-<style> 
-  svg.MemberSpaceWidgetInternal__StatusIndicator_icon {
-    display: none;
-  }
-
-  ms-footer.MemberSpaceWidgetInternal__BrandedInterface_footer {
-    display: none;
-  }
-
-</style>
-
 <meta name="description" content="">
+
+
 
 
 <!-- Google tag (gtag.js) -->
@@ -192,8 +173,10 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
     
 
     <section class="page__content" itemprop="text">
-      
-<meta name="robots" content="noindex, nofollow"><style>#__memberspace_modal_protected_page { position:fixed; top:0; left:0; width:100%; height:100%; background:#fff; z-index:2147483646; }</style><div id="__memberspace_modal_protected_page"></div>
+      <meta name="robots" content="noindex, nofollow">
+<style>html.member-gate-pending body { visibility: hidden; }</style>
+<script>document.documentElement.classList.add('member-gate-pending');</script>
+<script src="/assets/js/gate.js" onerror="document.documentElement.classList.remove('member-gate-pending')"></script>
 
 
 <script src="/assets/js/all_people_wide.js"></script>

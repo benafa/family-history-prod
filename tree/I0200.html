@@ -82,28 +82,9 @@
 
 
 
-<script>
-var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
-(function(d){
-  var s = d.createElement("script");
-  s.src = "https://cdn.memberspace.com/scripts/widgets.js";
-  var e = d.getElementsByTagName("script")[0];
-  e.parentNode.insertBefore(s,e);
-}(document));
-</script>
-
-<style> 
-  svg.MemberSpaceWidgetInternal__StatusIndicator_icon {
-    display: none;
-  }
-
-  ms-footer.MemberSpaceWidgetInternal__BrandedInterface_footer {
-    display: none;
-  }
-
-</style>
-
 <meta name="description" content="">
+
+
 
 
 <!-- Google tag (gtag.js) -->
@@ -209,8 +190,10 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
       <section class="page__content" itemprop="text">
         
-        
-<meta name="robots" content="noindex, nofollow"><style>#__memberspace_modal_protected_page { position:fixed; top:0; left:0; width:100%; height:100%; background:#fff; z-index:2147483646; }</style><div id="__memberspace_modal_protected_page"></div>
+        <meta name="robots" content="noindex, nofollow">
+<style>html.member-gate-pending body { visibility: hidden; }</style>
+<script>document.documentElement.classList.add('member-gate-pending');</script>
+<script src="/assets/js/gate.js" onerror="document.documentElement.classList.remove('member-gate-pending')"></script>
 
 
 <link rel="stylesheet" href="/assets/css/tree_style.css" type="text/css">
@@ -231,12 +214,6 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 	    	PAGE_INIT = true;
 	    } catch(error) {
 	    	//
-	    }
-	});
-
-	document.addEventListener('MemberSpace.member.info', async function() {
-	    if (!PAGE_INIT) {
-	    	await initStaticTree("I0200");
 	    }
 	});
 
@@ -1458,9 +1435,9 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 			<p>Describe your reaction, start a discussion or contribute additional information by writing a comment. Please check back on this page periodically for replies to comments.</p></div>	
 		<div class="comments-form"><form onsubmit="return postComment()" id="comment-form" autocomplete="off"><ul>
 					<li>
-						<input class="default-cursor" id="comment-name" name="username" type="text" placeholder="Name" required="" value="" data-ms-member-info="name" readonly></li>
+						<input class="default-cursor" id="comment-name" name="username" type="text" placeholder="Name" required="" value="" readonly></li>
 					<li>
-						<input id="comment-email" name="email" type="hidden" placeholder="Email" required="" value="" data-ms-member-info="email" readonly>
+						<input id="comment-email" name="email" type="hidden" placeholder="Email" required="" value="" readonly>
 					</li>
 					<li><textarea id="comment-comment" name="comment" placeholder="Comment" required=""></textarea></li>
 					<li><button id="comment-submit" type="submit" class="btn btn--info">Submit</button></li>

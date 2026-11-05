@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Login or create an account - Colombo Chetty Genealogy</title>
-<meta name="description" content="Login or create an account">
+<!-- begin _includes/seo.html --><title>Sign in or create an account - Colombo Chetty Genealogy</title>
+<meta name="description" content="Sign in or create an account">
 
 
   <meta name="author" content="Ben Anandappa">
@@ -20,11 +20,11 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Colombo Chetty Genealogy">
-<meta property="og:title" content="Login or create an account">
+<meta property="og:title" content="Sign in or create an account">
 <meta property="og:url" content="https://colombochetty.com//account">
 
 
-  <meta property="og:description" content="Login or create an account">
+  <meta property="og:description" content="Sign in or create an account">
 
 
 
@@ -82,28 +82,23 @@
 
 
 
-<script>
-var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
-(function(d){
-  var s = d.createElement("script");
-  s.src = "https://cdn.memberspace.com/scripts/widgets.js";
-  var e = d.getElementsByTagName("script")[0];
-  e.parentNode.insertBefore(s,e);
-}(document));
-</script>
-
-<style> 
-  svg.MemberSpaceWidgetInternal__StatusIndicator_icon {
-    display: none;
-  }
-
-  ms-footer.MemberSpaceWidgetInternal__BrandedInterface_footer {
-    display: none;
-  }
-
-</style>
-
 <meta name="description" content="">
+
+
+
+<script>
+  // Moves one-time links out of the address bar before analytics reads it
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    window.authLink = { token: params.get('token'), review: params.get('review') };
+    if (window.authLink.token || window.authLink.review) {
+      params.delete('token');
+      params.delete('review');
+      var query = params.toString();
+      window.history.replaceState({}, '', window.location.pathname + (query ? '?' + query : ''));
+    }
+  })();
+</script>
 
 
 <!-- Google tag (gtag.js) -->
@@ -191,7 +186,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Login or create an account">
+    <meta itemprop="headline" content="Sign in or create an account">
     
     
     
@@ -199,7 +194,7 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Login or create an account
+          <h1 id="page-title" class="page__title" itemprop="headline">Sign in or create an account
 </h1>
           
 
@@ -213,10 +208,50 @@ var MemberSpace = window.MemberSpace || {"subdomain":"colombochetty"};
 
 <script id="fetch_data" src="/assets/js/account.js"></script>
 
-<div class="account_info" style="width:100%;text-align:center;display:none"><iframe src="https://colombochetty.com?msopen=/member/sign_in" width="100%" height="500" frameborder="0" seamless="true"></iframe></div>
+<div id="account-error" class="notice--danger" style="display:none"></div>
+
+<div id="account-panel" style="display:none">
+	<p>Signed in as <b id="account-email"></b></p>
+	<button id="sign-out" class="btn btn--primary">Sign out</button>
+</div>
+
+<div id="confirm-sign-in-panel" style="display:none">
+	<p>Click below to finish signing in.</p>
+	<button id="confirm-sign-in" class="btn btn--primary">Sign in</button>
+</div>
+
+<div id="review-panel" style="display:none">
+	<p id="review-details" style="display:none"></p>
+	<div id="review-buttons" style="display:none">
+		<button id="review-approve" class="btn btn--primary">Approve</button>
+		<button id="review-reject" class="btn">Reject</button>
+	</div>
+	<p id="review-result" style="display:none"></p>
+</div>
+
+<div id="sign-in-panel" style="display:none">
+	<h2>Sign in</h2>
+	<p>Enter your email and we'll send you a sign-in link. No password needed.</p>
+	<form id="sign-in-form">
+		<label>Email <input type="email" name="email" autocomplete="email" required></label>
+		<button type="submit" class="btn btn--primary">Email me a link</button>
+	</form>
+	<p id="sign-in-message" style="display:none"></p>
+
+	<h2>Create an account</h2>
+	<form id="sign-up-form">
+		<label>First name <input type="text" name="first_name" autocomplete="given-name" required></label>
+		<label>Last name <input type="text" name="last_name" autocomplete="family-name" required></label>
+		<label>Email <input type="email" name="email" autocomplete="email" required></label>
+		<label>What city do you live in? <input type="text" name="city" autocomplete="address-level2"></label>
+		<label>How did you hear about the website? <input type="text" name="how_heard"></label>
+		<button type="submit" class="btn btn--primary">Create account</button>
+	</form>
+	<p id="sign-up-message" style="display:none"></p>
+</div>
 
 
-<div class="site_info" style="display:none"> 
+<div id="site-info" style="display:none"> 
 	<h2>Why create an account?</h2>
 	Creating an account will provide full access to content such as <a href="/records" class="link">historical documents</a>, <a href="/trees" class="link">family trees</a> and a <a href="/people" class="link"> list of all people in the Colombo Chetty database</a>. Account creation is required to help protect the privacy of the members and foster a closer community. 
 </div>
